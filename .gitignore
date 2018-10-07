@@ -1,3 +1,6 @@
 venv
 *.pyc
 output/
+pelican.pid
+__pycache__
+*.pid
