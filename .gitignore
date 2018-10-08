@@ -4,3 +4,4 @@ output/
 pelican.pid
 __pycache__
 *.pid
+.sass-cache/
