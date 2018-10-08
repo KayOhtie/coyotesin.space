@@ -4,36 +4,36 @@
 
 {% block content %}
 <p class="has-text-centered"> 
-  <img class="banner" src="banner.png" alt="Kay Ohtie floating in space happily">
+  <img class="banner" src="{{ SITEURL }}/images/banner.png" alt="Kay Ohtie floating in space happily">
   <!-- Artwork credit to https://twitter.com/fans_tastic as a really amazing birthday present <3 -->
 </p>
-<h1 class="title has-text-light">
+<h1 class="title">
   coyotes in space
 </h1>
 <nav class="level">
   <p class="level-item has-text-centered">
-    <a class="link has-text-grey-lighter has-background-grey-darker" href="https://t.me/ceralor">telegram</a>
+    <a class="link" href="https://t.me/ceralor">telegram</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link has-text-grey-lighter has-background-grey-darker" href="https://blimps.xyz/@ceralor" rel="me">mastodon</a>
+    <a class="link" href="https://blimps.xyz/@ceralor" rel="me">mastodon</a>
   </p>
   <p class="level-item has-text-centered">
-      <a class="link has-text-grey-lighter has-background-grey-darker" href="https://furaffinity.net/user/ceralor">fur affinity</a>
+      <a class="link" href="https://furaffinity.net/user/ceralor">fur affinity</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link has-text-grey-lighter has-background-grey-darker" href="https://keybase.io/ceralor">keybase</a>
+    <a class="link" href="https://keybase.io/ceralor">keybase</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link has-text-grey-lighter has-background-grey-darker" href="https://ko-fi.com/ceralor">ko-fi</a>
+    <a class="link" href="https://ko-fi.com/ceralor">ko-fi</a>
   </p>
 </nav>
-<p class="has-text-light">
+<p>
   Hello! I go by Kay or Ceralor on the internet, and I travel the interwebs with a pooltoy-like coyote as my avatar. I don't bite, hard at least, and try to be very friendly.
 </p>
-
-<p class="has-text-light">
-  <h2 class="title has-text-light"><a href="/{{ articles[0].slug }}.html">{{ articles[0].title }}</a></h2>
-  <label>posted <strong>{{ articles[0].date }}</strong></label>
-  {{ articles[0].content|truncate(110) }}
+<hr>
+<p>
+  <h2 class="subtitle"><a class="link" href="{{ articles[0].url }}">{{ articles[0].title }}</a></h2>
+  <label>posted <strong>{{ articles[0].date|strftime('%Y-%m-%d @ %I:%M %p') }}</strong></label>
+  {{ articles[0].summary }} <a class="link" href="{{ articles[0].url }}">(read more)</a>
 </p>
 {% endblock %}

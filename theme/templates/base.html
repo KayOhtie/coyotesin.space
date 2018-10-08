@@ -4,17 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{% endblock %}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  {% assets filters="libsass,cssmin", output="css/style.min.css", "../source/scss/style.scss" %}
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
   <style>
-  html {
-    background-color: #4b2fdf;
-  }
-  body {
-    font-family: monospace;
-  } 
-  .banner {
-    max-height: 70vh; 
-  }
 </style>
 </head>
 <body>

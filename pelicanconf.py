@@ -7,6 +7,10 @@ SITENAME = 'Coyotes in Space'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['blog','images']
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 TIMEZONE = 'US/Central'
 
@@ -18,6 +22,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS=['assets','gallery']
 
 THEME="theme"
 
