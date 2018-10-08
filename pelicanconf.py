@@ -15,7 +15,7 @@ ARTICLE_URL = '{date:%Y}/{slug}.html'
 TIMEZONE = 'US/Central'
 
 DEFAULT_LANG = 'English'
-
+LOCALE="en_US.UTF-8"
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -24,21 +24,21 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS=['assets','gallery']
+PLUGINS=['assets']
 
 THEME="theme"
 
-TEMPLATE_PAGES = { 'pages/kaypics.html': 'kaypics.html'}
-LINKS = ()
+#TEMPLATE_PAGES = { 'pages/kaypics.html': 'kaypics.html'}
+
 # Blogroll
-#LINKS = (('Keybase', 'https://keybase.io/ceralor'),
-#         ('Python.org', 'http://python.org/'),
-#         ('Jinja2', 'http://jinja.pocoo.org/'),
-#         ('You can modify those links in your config file', '#'),)
+LINKS = (('Keybase', 'https://keybase.io/ceralor'),
+	('Github', 'https://github.com/ceralor'),
+	('BitBucket', 'https://bitbucket.com/ceralor'))
 
 # Social widget
 SOCIAL = (('Mastodon', 'https://blimps.xyz/@ceralor'),
-	('Fur Affinity','https://furaffinity.net/user/ceralor'))
+	('Fur Affinity','https://furaffinity.net/user/ceralor'),
+	('Twitter','https://twitter.com/ceralor'))
 
 DEFAULT_PAGINATION = 10
 
