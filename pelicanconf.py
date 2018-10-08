@@ -28,6 +28,7 @@ PLUGINS=['assets','gallery']
 
 THEME="theme"
 
+TEMPLATE_PAGES = { 'pages/kaypics.html': 'kaypics.html'}
 LINKS = ()
 # Blogroll
 #LINKS = (('Keybase', 'https://keybase.io/ceralor'),
