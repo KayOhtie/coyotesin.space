@@ -7,10 +7,14 @@ SITENAME = 'Coyotes in Space'
 SITEURL = ''
 
 PATH = 'content'
-STATIC_PATHS = ['blog','images']
+STATIC_PATHS = ['images']
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
+INDEX_SAVE_AS = 'blog_index.html'
+TEMPLATE_PAGES = { 'pages/index.html': 'index.html'}
+DIRECT_TEMPLATES = ['index','categories','tags']
+
 
 TIMEZONE = 'US/Central'
 
@@ -28,7 +32,6 @@ PLUGINS=['assets']
 
 THEME="theme"
 
-#TEMPLATE_PAGES = { 'pages/kaypics.html': 'kaypics.html'}
 
 # Blogroll
 LINKS = (('Keybase', 'https://keybase.io/ceralor'),
