@@ -11,6 +11,6 @@ cd theme/source/scss/bulma
 git config core.sparseCheckout true
 # change next tag to current version
 version="0.7.2"
-git fetch $version
+git fetch origin $version
 git pull origin $version
 git checkout $version
