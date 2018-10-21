@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title">
+			{{ article.title }}
+		</p>
+		<time class="card-header-icon" datetime="{{ article.date|strftime('%Y-%m-%d %H:%M:%S') }}">
+				{{ article.date|strftime('%a %d %b %Y @ %H:%M') }}
+		</time>
+	</header>
+	<div class="card-content">
+		<div class="content">
+		 {{ article.content }}
+		</div>
+	</div>
+</div>
+{% endblock %}
