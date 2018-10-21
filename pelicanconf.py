@@ -43,7 +43,7 @@ SOCIAL = (('Mastodon', 'https://blimps.xyz/@ceralor'),
 	('Fur Affinity','https://furaffinity.net/user/ceralor'),
 	('Twitter','https://twitter.com/ceralor'))
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 9
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
