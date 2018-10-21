@@ -10,4 +10,7 @@ echo "README.md" >> .git/modules/theme/source/scss/bulma/info/sparse-checkout
 cd theme/source/scss/bulma
 git config core.sparseCheckout true
 # change next tag to current version
-git checkout 0.7.2
+version="0.7.2"
+git fetch $version
+git pull $version
+git checkout $version
