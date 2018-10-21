@@ -12,5 +12,5 @@ git config core.sparseCheckout true
 # change next tag to current version
 version="0.7.2"
 git fetch $version
-git pull $version
+git pull origin $version
 git checkout $version
