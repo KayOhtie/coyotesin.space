@@ -26,7 +26,7 @@
     "overview-customize": {
       "name": "Customize",
       "subtitle": "Create your <strong>own theme</strong> with a simple set of <strong>variables</strong>",
-      "color": "purple",
+      "color": "orange",
       "icon": "paint-brush",
       "path": "/documentation/overview/customize"
     },
@@ -83,7 +83,7 @@
     "customize": {
       "name": "Customize",
       "subtitle": "Create your <strong>own theme</strong> with a simple set of <strong>variables</strong>",
-      "color": "purple",
+      "color": "star",
       "icon": "paint-brush",
       "path": "/documentation/customize"
     },
