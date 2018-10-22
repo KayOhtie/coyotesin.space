@@ -22,7 +22,9 @@
       I'm starting to work on a very simple <a class="link" href="/blog_index.html">blog</a> on here, so take a peeky-peek.
     </p>
     <p>
-      <a href="/{{ articles[0].url }}" class="link">Most Recent Post</a>
+      <a href="/{{ articles[0].url }}" class="link">Most Recent Post -- <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">
+				{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}
+		</time></a>
     </p>
   </div>
 </div>
