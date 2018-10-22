@@ -31,7 +31,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS=['assets']
 
 THEME="theme"
-
+THEME_STATIC_DIR = ''
 
 # Blogroll
 LINKS = (('Keybase', 'https://keybase.io/ceralor'),
