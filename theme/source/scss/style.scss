@@ -1,7 +1,11 @@
 @charset "utf-8";
+/*@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
 @import "bulma/sass/utilities/_all.sass";
 $body-background-color: #4b2fdf;
-$body-family: $family-monospace;
+$family-monospace: 'Inconsolata', monospace;
+$family-primary: 'Noto Sans', $family-sans-serif;
+/*$body-family: 'Inconsolata', $family-monospace;*/
 $body-color: $light;
 $strong-color: $grey-lighter;
 $link: $grey-lighter;
@@ -12,6 +16,9 @@ $title-color: $grey-lighter;
 $subtitle-color: $grey-light;
 .link {
 	background-color: $grey-darker;
+}
+.title,.subtitle,.card-header-title,.card-header-icon,.link,.tag,time {
+	font-family: $family-monospace;
 }
 .banner {
     max-height: 60vh; 
