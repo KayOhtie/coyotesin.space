@@ -21,10 +21,11 @@
     <p>
       I'm starting to work on a very simple <a class="link" href="/blog_index.html">blog</a> on here, so take a peeky-peek.
     </p>
+    <br>
     <p>
-      <a href="/{{ articles[0].url }}" class="link">Most Recent Post -- <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">
-				{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}
-		</time></a>
+      <br>
+		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}</time></a>
+		<div class="content">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
     </p>
   </div>
 </div>
