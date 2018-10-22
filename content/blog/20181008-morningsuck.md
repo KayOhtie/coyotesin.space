@@ -1,6 +1,7 @@
 Title:In which I don't imitate Garfield...
 Date: 2018-10-08 9:51
 Category: General
+Tags: work, website, tech, venting
 Good morning. Or bad. Or meh! I dunno. It's a morning at least, and one in which plans don't seem to matter, so horray for that I guess? Buh.
 
 Was hoping to go for a walk this morning but my earlier alarm never went off, so oops! At least had a decent breakfast, bottled as it may be, and settling in for work included walking in to a systems down, which is what brings me to venting today.

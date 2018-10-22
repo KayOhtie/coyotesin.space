@@ -12,8 +12,9 @@ ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 INDEX_SAVE_AS = 'blog_index.html'
-TEMPLATE_PAGES = { 'pages/index.html': 'index.html'}
-DIRECT_TEMPLATES = ['index','categories','tags']
+TEMPLATE_PAGES = { 'pages/home.html': 'index.html'}
+DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
+PAGINATED_DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
 
 
 TIMEZONE = 'US/Central'

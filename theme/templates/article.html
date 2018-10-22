@@ -3,9 +3,6 @@
 {% block title %}{{ SITENAME }}{% endblock %}
 
 {% block content %}
-<h1 class="title">
-  <a href="/">coyotes in space</a>
-</h1>
 <div class="card">
 	<header class="card-header">
 		<p class="card-header-title">
@@ -21,5 +18,8 @@
 		 {% include 'taglist.html' %}
 		</div>
 	</div>
+	<footer class="card-footer">
+		<a class="card-footer-item link" href="/blog_index.html">Back to index of articles</a>
+	</footer>
 </div>
 {% endblock %}

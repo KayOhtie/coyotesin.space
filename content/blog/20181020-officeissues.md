@@ -1,7 +1,7 @@
 Title:Which office suite am I using?
 Date: 2018-10-20 16:30
 Category: General
-Tags: parents, support, tech, office, microsoft, google
+Tags: parents, support, tech, msoffice, microsoft, google
 I've been handling computer support for my dad for the better part of the last 15 years, give and take some times when he's had someone else working on it. I've helped him grow from using a local ISP's email, to using self-hosted email with his own domain on some Windows 2000 server, to using Exchange Server on a 2008 Small Biz server, and finally to using Google Apps for Biz. And this, my friends, is where the story begins.
 
 Now, I have to preface this story with something. Throughout using Google, the debit card he had attached frequently wouldn't have money in the specific account for it and couldn't pay the monthly bill. He'd ignore the billing messages until it was too late and service was suspended. Sometimes he'd put money on that card, sometimes he changed to a different card. But without fail, this issue would occur, regardless of the card. Seriously why do some boomers have so many debit cards what the fuck. There were like, 6 or 7 different banks.
