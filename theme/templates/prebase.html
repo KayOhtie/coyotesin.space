@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{% endblock %}</title>
-  {% assets filters="libsass,cssmin", output="css/style.min.css", "../source/scss/style.scss" %}
+  {% assets filters="libsass,cssmin", output="css/style.min.css", "../source/scss/style.scss", "../static/pelimoji.css" %}
   <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}
     <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->

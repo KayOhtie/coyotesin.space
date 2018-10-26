@@ -29,7 +29,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS=['assets']
+PLUGINS=['assets','pelimoji']
+PELIMOJI_PATH = 'images/emoji'
+
 
 THEME="theme"
 THEME_STATIC_DIR = ''
