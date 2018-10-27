@@ -14,10 +14,11 @@ $link-focus: $grey-light;
 $link-active: $grey-light;
 $title-color: $grey-lighter;
 $subtitle-color: $grey-light;
+$footer-background-color: $body-background-color;
 .link {
 	background-color: $grey-darker;
 }
-.title,.subtitle,.card-header-title,.card-header-icon,.link,.tag,time {
+.footer,.title,.subtitle,.card-header-title,.card-header-icon,.link,.tag,time {
 	font-family: $family-monospace;
 }
 .banner {
