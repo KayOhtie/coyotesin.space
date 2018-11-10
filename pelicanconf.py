@@ -35,6 +35,7 @@ PELIMOJI_PATH = 'images/emoji'
 
 THEME="theme"
 THEME_STATIC_DIR = ''
+CSS_FILE = 'main.css'
 
 # Blogroll
 LINKS = (('Keybase', 'https://keybase.io/ceralor'),
