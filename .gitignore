@@ -6,3 +6,4 @@ pelican.pid
 __pycache__
 *.pid
 .sass-cache/
+content/emoji_map
