@@ -2,11 +2,13 @@ blinker==1.4
 cssmin==0.2.0
 docutils==0.14
 feedgenerator==1.9
-Jinja2==2.10
+glue==0.13
+Jinja2==2.9.6
 libsass==0.15.1
 Markdown==3.0.1
 MarkupSafe==1.0
 pelican==3.7.1
+Pillow==5.3.0
 Pygments==2.2.0
 python-dateutil==2.7.3
 pytz==2018.5

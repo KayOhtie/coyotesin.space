@@ -24,4 +24,12 @@ $footer-background-color: $body-background-color;
 .banner {
     max-height: 60vh; 
   }
+div.content  p a {
+	color: $grey-light;
+	text-decoration: underline;
+}
+footer.footer p a, div.content p a.tag {
+	color: $grey;
+	text-decoration: none;
+}
 @import "bulma/bulma.sass";
