@@ -16,6 +16,6 @@ Kay, after his permanent transformation into a toy, possibly 'courtesy' of Coyot
 
 Going home the night after his TF, it's dark in his dorm when he arrives, wandering in with the lights off, and slumping onto his bed. He catches sight of his guitar and, after a moment of adjusting, finds he can still play, this wasn't taken from him. Playing slowly helps give him a little bit of a boost, to make him feel at least a little more like it's alright.
 
-Damn. Writing it out like that... Maybe this doesn't need a comic. Maybe this needs a short story, and a picture to go with it. Wonder what I can do in a thousand words. Doesn't seem like enough.
+Damn. Writing it out like that... Maybe this doesn't need a comic. ~~Maybe this needs a short story, and a picture to go with it. Wonder what I can do in a thousand words. Doesn't seem like enough.~~ So I ended up writing out a short story of 1000 words, including articles, for it. May go back and update it to be 1000 words without articles, just to help it stand on its own better. [It's right here.](/files/Strings.pdf)
 
 Anywho, just a musing thinking about it. I'm excited to get back into this. I want to hear that sound again from my own fingers. I'm starting to take a bit of flight of my own in many ways, and this is just one of them.
