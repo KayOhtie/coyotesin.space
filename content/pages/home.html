@@ -19,10 +19,6 @@
       Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly.        
     </p>
     <p>
-      I'm starting to work on a very simple <a class="link" href="/blog_index.html">blog</a> on here, so take a peeky-peek.
-    </p>
-    <br>
-    <p>
       <br>
 		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}</time></a>
 		<div class="content">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
@@ -32,6 +28,9 @@
 
 
 <nav class="level">
+  <p class="level-item has-text-centered">
+    <a class="link" href="/blog_index.html">blog</a>
+  </p>
   <p class="level-item has-text-centered">
     <a class="link" href="https://t.me/ceralor">telegram</a>
   </p>
