@@ -2,6 +2,11 @@
 
 {% block title %}{{ SITENAME }}{% endblock %}
 
+{% block richmeta %}
+<meta property="og:title" content="{{ SITENAME }} - Blog Index" />
+<meta property="og:description" content="Blog posts from coyotesin.space" />
+{% endblock %}
+
 {% block content %}
 <div class="columns is-multiline">
 {% for article in articles_page.object_list %}
