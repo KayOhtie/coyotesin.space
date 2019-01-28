@@ -7,7 +7,7 @@ SITENAME = 'Coyotes in Space'
 SITEURL = ''
 
 PATH = 'content'
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images','files','.well-known']
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
