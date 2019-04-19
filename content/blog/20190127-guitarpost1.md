@@ -1,6 +1,6 @@
 Title:Returning to the guitar?
 Date:2019-01-27 22:47:00
-Tags:music,learning,hobby
+Tags:music,learning,hobby,writing
 Category:General
 Many years ago, I took up casual guitar lessons using my mom's classical guitar. At the time I was young and more comitted to going through motions of prep than the practice itself. I never really took the time to learn well, eventually stopped the lessons. But I always loved how the guitar sounded.
 
