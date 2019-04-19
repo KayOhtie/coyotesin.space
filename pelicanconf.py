@@ -12,7 +12,7 @@ ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 INDEX_SAVE_AS = 'blog_index.html'
-TEMPLATE_PAGES = { 'pages/home.html': 'index.html'}
+TEMPLATE_PAGES = { 'pages/home.html': 'index.html', 'pages/sundry.html': 'sundry.html'}
 DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
 PAGINATED_DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
 
