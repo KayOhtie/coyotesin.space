@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }}{% endblock %}
+{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
 
 {% block richmeta %}
 <meta property="og:title" content="{{ SITENAME }} - {{ article.title }}" />

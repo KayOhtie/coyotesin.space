@@ -27,6 +27,13 @@
       {% block precontent %}{% endblock %}
     </div>
   </section>
+  <nav class="level">
+    {% for page in pages %}
+    <p class="level-item has-text-centered">
+      <a class="link" href="/{{ page.url }}">{{ page.title }}</a>
+    </p>
+    {% endfor %}
+  </nav>
   <footer class="footer">
   <div class="content has-text-centered">
     <p class="is-size-6 ">
