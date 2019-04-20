@@ -7,6 +7,9 @@
   {% assets filters="libsass,cssmin", output="css/style.min.css", "../source/scss/style.scss", "../../content/emoji_map/emoji.css" %}
   <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}
+  {% assets filters="jsmin", output="js/packed.js", "../source/scss/bulma-accordion/dist/js/bulma-accordion.js" %}
+  <script src="{{ ASSET_URL }}" type="text/javascript"></script>
+  {% endassets %}
     <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
@@ -42,4 +45,16 @@
   </div>
 </footer>
 </body>
+<script type="text/javascript">
+  function onReady() {
+    var accordions = bulmaAccordion.attach();
+  }
+  if (document.readyState!='loading') onReady();
+  // modern browsers
+  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', onReady);
+  // IE <= 8
+  else document.attachEvent('onreadystatechange', function(){
+      if (document.readyState=='complete') onReady();
+  });
+</script>
 </html>
