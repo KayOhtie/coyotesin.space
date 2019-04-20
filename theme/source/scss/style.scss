@@ -15,7 +15,8 @@ $link-active: $grey-light;
 $title-color: $grey-lighter;
 $subtitle-color: $grey-light;
 $footer-background-color: $body-background-color;
-.link {
+
+.link, .content a {
 	background-color: $grey-darker;
 }
 .footer,.title,.subtitle,.card-header-title,.card-header-icon,.link,.tag,time {
