@@ -1,4 +1,4 @@
-Title:Fursona Errata
+Title:Fursona Sundries
 Date:2019-04-19 07:18:00
 Tags:furry,writing
 Category:General
