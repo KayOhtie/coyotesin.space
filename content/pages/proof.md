@@ -1,3 +1,5 @@
+Title: Supplemental Proofs
+Description: Supplemental PGP-signed ID proofs similar to a Keybase proof
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
