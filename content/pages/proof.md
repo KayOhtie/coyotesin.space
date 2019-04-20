@@ -1,4 +1,3 @@
-Title: Supplemental Proofs
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
@@ -14,13 +13,8 @@ I also declare ownership of the following accounts, which contain references to 
  - Telegram: [@Ceralor](https://t.me/ceralor)
  - Mastodon: [@ceralor@blimps.xyz](https://blimps.xyz/@ceralor)
  - Fur Affinity: [ceralor](https://furaffinity.net/user/ceralor)
- - BitBucket: [ceralor](https://bitbucket.org/ceralor)
+ - BitBucket: [ceralor](https://bitbucket.org/snippets/ceralor/AeBKrL)
  - Steam: [ceralor](https://steamcommunity.com/id/ceralor)
-
-These are also mine, but less common for me to use.
-
- - Weasyl: [ceralor](https://weasyl.com/~ceralor)
- - Furry Network: [ceralor](https://furrynetwork.com/ceralor)
 
 ## Unprovable Accounts
 
@@ -37,20 +31,19 @@ You may find other users operating as the username Ceralor, Kay Ohtie, or Toupat
 
 You may view a copy of this signed proof directly, unformatted, [by clicking here.](/proof.md.asc.txt)
 
-
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEqS+U7ny8SPt4i2Tl6I+11swfHqMFAly7PlwACgkQ6I+11swf
-HqNv2g/+Pp77KLSeymBjnvSHKVRL7KgmPNEkMNz226sMlbrn82+3CVwLu1M/cilR
-RxjIVr8QJ6Da6HypTOkwkYQOXzsxVwWsGsIKbMaEOlOY0J0jqA6YCbLrhX0qQewD
-O2n/TNA+8IFcQO7Hnclyb8iV1saDQhNaC8/XNGcSBoroYlYBO0z7bbDyUHbVdNce
-trE8cU2b9hyPylDXXrgMUcajvi/5NZlUbTMg4T6kazHTdqx/Ba5J+gBGMAY6D6y4
-EsXg9ejmuVzc1fRyUS/lkA60X+K72vAaBIf78X66fwnVYZ+HlkCv/d/lPxSZgcv7
-b3V9hhn5o8F/F9VK7AL11CP1UHhFZsbIhAm1VjhE6XvBZgg4BQSzAm7p0KVofme7
-SaqzzrA/FyFDnH9YixqYyGnZwne1V7chHm3fIyc5F7kK4LZTn6gzspDm7Q1ZRiQM
-iAB/1h0oG3gn3xL++QDs5VHV+BAg+s5QeSv/cee6YgUTa2t9NtBrL8PmO8i1qcEh
-QVyVeeWr64EdFeq00GpmDE7oFZDfTRPg2rkGysR7oGWHZ67F6uxZQZp3Iw1WDOEV
-HNZm53+wx3/zqc/amrCuzO8Ert4fwnVoBnT1uuJGZbemgZutqDvz7Ok25H/vgZAR
-58QWzpndV5mhUbRju7orO/UALil1AT82JET14l+AvI+afH9OWnc=
-=YDBX
+iQIzBAEBCAAdFiEEqS+U7ny8SPt4i2Tl6I+11swfHqMFAly7ZAQACgkQ6I+11swf
+HqPd9Q/6AqKrRT1e8gNDTf0G4+NjDeVY6Yj8mEKCTdzQZe+E47aVbMeRB4ifuGSC
+eEYGomaQjL7or7I33LhHYo/ls0nd/gEbiu+thGZEKZbqzu26QDxPKekGIJdnWLFg
+kpglVOrWV1OIpB3aeMGGLFjYSXQA96S/tIbVieOk6uqatVYFRd79VGVce42Vnez1
+Uy5VLYsZZ4hk4FST5gFlDpyzZQYkZBlBeVPAhY6AcGqwBiLrrTMcbWuPmz0gUnZP
+IxSuE46sPVd6wcyZjFaOxtkgV6FT84gynccAPXCZc/upcnPuNZsHzrGoZVCioshl
+X5Pu3YYS3fK6+4fHyjAUTN3jiwNeDxhEv/LQLcDwYDFZCXGCiuEAljz24p4s+IEX
+23yEUdx3qTY/ToIq6rjkJOaAMARGuWJCzzlLy3wEsH8khrACy4SiK1KaE9+/vaNC
+vIbAtylep1UPHa4VsPiAawjpdM9bTTm2qD7t0tPW8soWhTFvn3n8f0RP/Hv2MXsu
+RVjZ6gC03a97iXA5Yf9oWQNm1yTsHx4a72IwTiM52je91vy1UtWsExy2iIBu7Qp8
+6Ap2lglA06s07hCLdR7RVypW+LUezsfFQ1oGrYji/q7M1l170y73YshC6P6n7hNY
+kdnMtt9mED5DT5VF3ub1C5qIKVztvMtIR5MTi5ivx3VZ5vqa3mY=
+=f1QE
 -----END PGP SIGNATURE-----
