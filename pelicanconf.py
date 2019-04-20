@@ -35,6 +35,7 @@ PLUGINS=['assets','pelimoji']
 
 THEME="theme"
 THEME_STATIC_DIR = ''
+THEME_STATIC_PATHS = ['static','source/font-awesome/webfonts']
 CSS_FILE = 'main.css'
 
 # Blogroll

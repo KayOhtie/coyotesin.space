@@ -22,6 +22,9 @@
 		<div class="content article">
 		 {{ article.content }}
 		 {% include 'taglist.html' %}
+		 {% if article.modified is defined %}
+		 <p><time class="time" datetime="{{ article.modified|strftime('%Y-%m-%d %H:%M:%S') }}"><i class="far fa-clock"></i> {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}</time></p>
+		{% endif %}
 		</div>
 	</div>
 	<footer class="card-footer">

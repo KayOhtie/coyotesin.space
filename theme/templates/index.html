@@ -24,6 +24,9 @@
 				<time datetime="{{ article.date|strftime('%Y-%m-%d %H:%M:%S') }}">
 					{{ article.date|strftime('%a %d %b %Y @ %H:%M') }}
 				</time>
+				{% if article.modified is defined %}
+		 <i class="far fa-clock" title="last modified {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}"></i>
+		{% endif %}
 			</div>
 		</div>
 		<footer class="card-footer">
