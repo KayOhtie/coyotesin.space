@@ -1,6 +1,12 @@
 [submodule "theme/source/scss/bulma"]
-	path = theme/source/scss/bulma
-	url = https://github.com/jgthms/bulma.git
+    path = theme/source/scss/bulma
+    url = https://github.com/jgthms/bulma.git
 [submodule "plugins/pelimoji"]
-	path = plugins/pelimoji
-	url = git@coding.coyotesin.space:kay/pelimoji.git
+    path = plugins/pelimoji
+    url = git@coding.coyotesin.space:kay/pelimoji.git
+[submodule "theme/source/scss/bulma-accordion"]
+    path = theme/source/scss/bulma-accordion
+    url = https://github.com/Wikiki/bulma-accordion.git
+[submodule "theme/source/font-awesome"]
+    path = theme/source/font-awesome
+    url = https://github.com/FortAwesome/Font-Awesome.git
