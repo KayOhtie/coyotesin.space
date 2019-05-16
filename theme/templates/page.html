@@ -3,8 +3,8 @@
 {% block title %}{{ SITENAME }} - {{ page.title }}{% endblock %}
 
 {% block richmeta %}
-<meta property="og:title" content="{{ SITENAME }} - Blog Index" />
-<meta property="og:description" content="Blog posts from coyotesin.space" />
+<meta property="og:title" content="{{ SITENAME }} - {{ page.title }}" />
+<meta property="og:description" content="{{ page.summary|striptags }}" />
 {% endblock %}
 
 {% block precontent %}
