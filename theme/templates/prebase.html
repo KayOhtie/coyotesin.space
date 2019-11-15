@@ -30,12 +30,40 @@
       {% block precontent %}{% endblock %}
     </div>
   </section>
-  <nav class="level">
-    {% for page in pages %}
-    <p class="level-item has-text-centered">
-      <a class="link" href="/{{ page.url }}">{{ page.title }}</a>
-    </p>
-    {% endfor %}
+  <nav class="level has-text-centered is-transparent" role="navigation">
+    <div class="level-item navbar-item has-dropdown is-hoverable has-text-centered">
+      <span class="link">Pages</span>
+      <div class="navbar-dropdown level-item">
+        {% for page in pages %}
+        <p class="level-item has-text-centered">
+          <a class="link" href="/{{ page.url }}">{{ page.title }}</a>
+        </p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="level-item navbar-item has-dropdown is-hoverable has-text-centered">
+      <span class="link">Social</span>
+      <div class="navbar-dropdown level-item">
+        <p class="level-item has-text-centered">
+          <a class="link" href="/blog_index.html">blog</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link" href="https://t.me/ceralor"><i class="fab fa-telegram" title="telegram"></i> telegram</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a rel="me" href="https://blimps.xyz/@ceralor" class="link"><i class="fab fa-mastodon" title="mastodon"></i> mastodon</a>
+        </p>
+        <!--<p class="level-item has-text-centered">
+            <a class="link" href="https://furaffinity.net/user/ceralor">fur affinity</a>
+        </p>-->
+        <p class="level-item has-text-centered">
+          <a class="link" href="https://keybase.io/ceralor"><i class="fab fa-keybase" title="keybase"></i> keybase</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link" href="https://ko-fi.com/ceralor">ko-fi</a>
+        </p>
+      </div>
+    </div>
   </nav>
   <footer class="footer">
   <div class="content has-text-centered">
