@@ -3,7 +3,7 @@
     url = https://github.com/jgthms/bulma.git
 [submodule "plugins/pelimoji"]
     path = plugins/pelimoji
-    url = git@coding.coyotesin.space:kay/pelimoji.git
+	url = git@github.com:Ceralor/pelimoji.git
 [submodule "theme/source/scss/bulma-accordion"]
     path = theme/source/scss/bulma-accordion
     url = https://github.com/Wikiki/bulma-accordion.git
