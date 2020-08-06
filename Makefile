@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=coyotesin.space
+SSH_HOST=omgdragons.com
 SSH_PORT=22
 SSH_USER=ceralor
 SSH_TARGET_DIR=/home/ceralor/coyotesin.space/public
