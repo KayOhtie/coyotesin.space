@@ -61,6 +61,14 @@ footer.footer p a, div.content p a.tag {
 	text-decoration: none;
 }
 
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+	color: $light;
+}
+
+.content blockquote {
+	background-color: $grey-dark;
+	border-left: 5px solid $grey-light;
+}
 // .spoiler > input + label:after{
 //     content: "+";
 //     float: right;
