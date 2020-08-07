@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Kay'
+AUTHOR = 'Kay Ohtie'
 SITENAME = 'Coyotes in Space'
 SITEURL = ''
+TWITTER_CREATOR = '@ceralor'
 
 PATH = 'content'
 STATIC_PATHS = ['images','files','.well-known']
@@ -29,7 +30,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS=['assets','pelimoji']
+PLUGINS=['assets','pelimoji','simple-fa']
 #PELIMOJI_PATH = 'images/emoji'
 
 
