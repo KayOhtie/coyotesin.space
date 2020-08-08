@@ -22,6 +22,10 @@ $subtitle-color: $grey-light;
 $footer-background-color: transparent;
 @import "bulma/bulma.sass";
 
+.site-name {
+	text-transform: lowercase;
+}
+
 .link, .badges a {
 	padding: 3px 7px;
 	//border-radius: 12px;
