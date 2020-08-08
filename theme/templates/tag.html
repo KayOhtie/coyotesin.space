@@ -1,2 +1,2 @@
 {% extends "index.html" %}
-{% block title %}{{ SITENAME }} - {{ tag }}{% endblock %}
+{% block title %}{% block pagetitle %}{{ SITENAME }} - {{ tag }}{% endblock %}{% endblock %}

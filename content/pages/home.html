@@ -1,4 +1,4 @@
-<title>coyotes in space</title>
+<head><title>coyotes in space</title></head>
 {% extends "prebase.html" %}
 
 {% block title %}{{ SITENAME }}{% endblock %}
@@ -10,7 +10,7 @@
 <meta property="og:url" content="https://coyotesin.space" />
 <meta property="og:image" content="https://coyotesin.space/images/banner.png" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="{{ TWITTER_CREATOR }}" />
+<meta name="twitter:creator" content="{{ TWITTER_USERNAME }}" />
 {% endblock %}
 
 <head>
@@ -32,7 +32,8 @@
     </p>
     <p>
       <br>
-		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}</time> {% if articles[0].modified is defined %}
+		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- 
+      <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}</time> {% if articles[0].modified is defined %}
      <i class="far fa-clock" title="last modified {{ articles[0].modified|strftime('%a %d %b %Y @ %H:%M') }}"></i>
     {% endif %}</a>
 		<div class="content">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>

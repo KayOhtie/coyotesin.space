@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Kay Ohtie'
 SITENAME = 'Coyotes in Space'
 SITEURL = ''
-TWITTER_CREATOR = '@ceralor'
+TWITTER_USERNAME = '@ceralor'
 
 PATH = 'content'
 STATIC_PATHS = ['images','files','.well-known']
@@ -14,13 +14,13 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 INDEX_SAVE_AS = 'blog_index.html'
 TEMPLATE_PAGES = { 'pages/home.html': 'index.html', 'pages/sundry.html': 'sundry.html', 'pages/proof.md':'proof.md.asc.txt'}
-DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
-PAGINATED_DIRECT_TEMPLATES = ['index', 'categories', 'tags', 'archives']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
+PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
 
 
 TIMEZONE = 'US/Central'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 LOCALE="en_US.UTF-8"
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

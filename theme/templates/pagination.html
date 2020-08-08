@@ -1,4 +1,5 @@
 {% if DEFAULT_PAGINATION %}
+{% if articles_page is defined %}
 <nav class="level is-mobile">
   	<span class="level-left level-item">
     {% if articles_page.has_previous() %}
@@ -30,4 +31,5 @@
     {% endif %}
   </span>
 </nav>
+{% endif %}
 {% endif %}
