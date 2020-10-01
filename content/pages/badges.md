@@ -1,5 +1,5 @@
 Title: Badges
-Description: Updated page of my badges for convetions
+Description: Updated page of my badges for conventions
 ## Hello, hi!
 
 Hi there! My name's Kay Ohtie! I'm a coyote of the air-filled sort, and either you clicked your way to this page from my website, scanned your way here with a QR code on my e-paper badge, or tapped an NFC badge! Either way, thanks for dropping by!

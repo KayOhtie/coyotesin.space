@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" lang="en-US">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {% assets filters="libsass,cssmin", output="css/style.min.css", "../source/scss/style.scss", "../../content/emoji_map/emoji.css" %}
   <link rel="stylesheet" href="{{ ASSET_URL }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   {% endassets %}
   {% assets filters="jsmin", output="js/packed.js", "../source/scss/bulma-accordion/dist/js/bulma-accordion.js" %}
   <script src="{{ ASSET_URL }}" type="text/javascript"></script>
@@ -40,12 +42,11 @@
   <footer class="footer">
   <div class="content has-text-centered">
     <p class="is-size-6 ">
-      Banner image by <a href="https://twitter.com/fans_tastic">fans_tastic</a> on twitter. Emoji by <a href="https://noct.zone">Dzuk</a>, including some <a href='https://mutant.tech'>Mutant Standard emoji</a>, which are licensed under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Background from <a href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>. Site design and content by Kay Ohtie 2018, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. 
+      Banner image by <a href="https://twitter.com/fans_tastic">fans_tastic</a> on twitter. Emoji by <a href="https://noct.zone">Dzuk</a>, including some <a href='https://mutant.tech'>Mutant Standard emoji</a>, which are licensed under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Background from <a href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>. Site design and content by Kay Ohtie {{ CURRENT_YEAR }}, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. 
     </p>
   </div>
 </footer>
-</body>
-<script type="text/javascript">
+<script>
   function onReady() {
     var accordions = bulmaAccordion.attach();
   }
@@ -57,4 +58,5 @@
       if (document.readyState=='complete') onReady();
   });
 </script>
+</body>
 </html>

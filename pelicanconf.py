@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import date
 
 AUTHOR = 'Kay Ohtie'
 SITENAME = 'Coyotes in Space'
 SITEURL = ''
 TWITTER_USERNAME = '@ceralor'
+CURRENT_YEAR = date.today().year
 
 PATH = 'content'
 STATIC_PATHS = ['images','files','.well-known']
@@ -13,7 +15,7 @@ ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 INDEX_SAVE_AS = 'blog_index.html'
-TEMPLATE_PAGES = { 'pages/home.html': 'index.html', 'pages/sundry.html': 'sundry.html', 'pages/proof.md':'proof.md.asc.txt'}
+TEMPLATE_PAGES = { 'pages/proof.md':'proof.md.asc.txt' }
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
 PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
 
@@ -30,7 +32,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS=['assets','pelimoji','simple-fa']
+PLUGINS=['assets', 'pelimoji', 'simple-fa']
 #PELIMOJI_PATH = 'images/emoji'
 
 

@@ -7,9 +7,6 @@
 [submodule "theme/source/scss/bulma-accordion"]
     path = theme/source/scss/bulma-accordion
     url = https://github.com/Wikiki/bulma-accordion.git
-[submodule "theme/source/font-awesome"]
-    path = theme/source/font-awesome
-    url = https://github.com/FortAwesome/Font-Awesome.git
 [submodule "simple-fa"]
 	path = plugins/simple-fa
 	url = git@github.com:Ceralor/pelican-simple-fa.git

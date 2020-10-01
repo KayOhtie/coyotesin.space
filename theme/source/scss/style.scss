@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');*/
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto Sans');*/
 @import "bulma/sass/utilities/_all.sass";
 $body-background-color: #330033;
 body {
@@ -135,9 +135,3 @@ footer.footer p a, div.content p a.tag {
 // }
 @import 'bulma-accordion/dist/css/bulma-accordion.sass';
 
-$fa-font-path: '';
-@import '../font-awesome/scss/regular.scss';
-@import '../font-awesome/scss/solid.scss';
-@import '../font-awesome/scss/brands.scss';
-@import '../font-awesome/scss/v4-shims.scss';
-@import '../font-awesome/scss/fontawesome.scss';
