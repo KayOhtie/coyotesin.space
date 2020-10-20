@@ -14,4 +14,4 @@ virtualenv -p python3 venv
 pip install -r requirements.txt
 ```
 
-Now all set and can use `make devserver` to start the auto-updating dev server.
+~~Now all set and can use `make devserver` to start the auto-updating dev server.~~ Scratch, mid-upgrade to newest Pelican build.
