@@ -1,0 +1,3449 @@
+i.cemoji {
+    background-image: url('/emoji_map/emoji.png?2f898970e1');
+    background-size: 30.0em;
+    /*vertical-align: top;*/
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-family: 'object-fit: contain, inherit;' ! important;
+    -o-object-fit: contain ! important;
+    object-fit: contain ! important;
+    vertical-align: middle ! important;
+	margin: -.2ex .15em .2ex ! important;
+}
+i.cemoji span{
+	font-size: 0.1px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.cemoji-paw_hand_modifier {
+    background-position: 0.0em 0.0em;
+}
+
+.cemoji-color_modifier {
+    background-position: -1.0em 0.0em;
+}
+
+.cemoji-claw_hand_modifier {
+    background-position: 0.0em -1.0em;
+}
+
+.cemoji-tram_car {
+    background-position: -1.0em -1.0em;
+}
+
+.cemoji-tram {
+    background-position: -2.0em 0.0em;
+}
+
+.cemoji-train {
+    background-position: -2.0em -1.0em;
+}
+
+.cemoji-suspension_railway {
+    background-position: 0.0em -2.0em;
+}
+
+.cemoji-station {
+    background-position: -1.0em -2.0em;
+}
+
+.cemoji-railway_car {
+    background-position: -2.0em -2.0em;
+}
+
+.cemoji-mountain_tramway {
+    background-position: -3.0em 0.0em;
+}
+
+.cemoji-monorail {
+    background-position: -3.0em -1.0em;
+}
+
+.cemoji-metro {
+    background-position: -3.0em -2.0em;
+}
+
+.cemoji-light_rail {
+    background-position: 0.0em -3.0em;
+}
+
+.cemoji-high_speed_train {
+    background-position: -1.0em -3.0em;
+}
+
+.cemoji-bullet_train {
+    background-position: -2.0em -3.0em;
+}
+
+.cemoji-aerial_tramway {
+    background-position: -3.0em -3.0em;
+}
+
+.cemoji-sunset_city {
+    background-position: -4.0em 0.0em;
+}
+
+.cemoji-sparkler {
+    background-position: -4.0em -1.0em;
+}
+
+.cemoji-night_with_stars {
+    background-position: -4.0em -2.0em;
+}
+
+.cemoji-milky_way {
+    background-position: -4.0em -3.0em;
+}
+
+.cemoji-fireworks {
+    background-position: 0.0em -4.0em;
+}
+
+.cemoji-dusk_city {
+    background-position: -1.0em -4.0em;
+}
+
+.cemoji-cityscape {
+    background-position: -2.0em -4.0em;
+}
+
+.cemoji-bridge_at_night {
+    background-position: -3.0em -4.0em;
+}
+
+.cemoji-world_map {
+    background-position: -4.0em -4.0em;
+}
+
+.cemoji-volcano {
+    background-position: -5.0em 0.0em;
+}
+
+.cemoji-tokyo_tower {
+    background-position: -5.0em -1.0em;
+}
+
+.cemoji-statue_of_liberty {
+    background-position: -5.0em -2.0em;
+}
+
+.cemoji-snowy_mountain {
+    background-position: -5.0em -3.0em;
+}
+
+.cemoji-mountain {
+    background-position: -5.0em -4.0em;
+}
+
+.cemoji-mount_fuji {
+    background-position: 0.0em -5.0em;
+}
+
+.cemoji-desert_island {
+    background-position: -1.0em -5.0em;
+}
+
+.cemoji-beach_umbrella {
+    background-position: -2.0em -5.0em;
+}
+
+.cemoji-beach {
+    background-position: -3.0em -5.0em;
+}
+
+.cemoji-traffic_light_vertical {
+    background-position: -4.0em -5.0em;
+}
+
+.cemoji-traffic_light_horizontal {
+    background-position: -5.0em -5.0em;
+}
+
+.cemoji-virgo {
+    background-position: -6.0em 0.0em;
+}
+
+.cemoji-taurus {
+    background-position: -6.0em -1.0em;
+}
+
+.cemoji-scorpio {
+    background-position: -6.0em -2.0em;
+}
+
+.cemoji-sagittarius {
+    background-position: -6.0em -3.0em;
+}
+
+.cemoji-pisces {
+    background-position: -6.0em -4.0em;
+}
+
+.cemoji-libra {
+    background-position: -6.0em -5.0em;
+}
+
+.cemoji-leo {
+    background-position: 0.0em -6.0em;
+}
+
+.cemoji-gemini {
+    background-position: -1.0em -6.0em;
+}
+
+.cemoji-capricorn {
+    background-position: -2.0em -6.0em;
+}
+
+.cemoji-cancer {
+    background-position: -3.0em -6.0em;
+}
+
+.cemoji-aries {
+    background-position: -4.0em -6.0em;
+}
+
+.cemoji-aquarius {
+    background-position: -5.0em -6.0em;
+}
+
+.cemoji-qr_code {
+    background-position: -6.0em -6.0em;
+}
+
+.cemoji-wheelchair {
+    background-position: -7.0em 0.0em;
+}
+
+.cemoji-wc {
+    background-position: -7.0em -1.0em;
+}
+
+.cemoji-toilet {
+    background-position: -7.0em -2.0em;
+}
+
+.cemoji-sos {
+    background-position: -7.0em -3.0em;
+}
+
+.cemoji-potable_water {
+    background-position: -7.0em -4.0em;
+}
+
+.cemoji-parking {
+    background-position: -7.0em -5.0em;
+}
+
+.cemoji-metro_sign {
+    background-position: -7.0em -6.0em;
+}
+
+.cemoji-info {
+    background-position: 0.0em -7.0em;
+}
+
+.cemoji-cinema {
+    background-position: -1.0em -7.0em;
+}
+
+.cemoji-atm {
+    background-position: -2.0em -7.0em;
+}
+
+.cemoji-white_square_button {
+    background-position: -3.0em -7.0em;
+}
+
+.cemoji-white_small_square {
+    background-position: -4.0em -7.0em;
+}
+
+.cemoji-white_medium_square {
+    background-position: -5.0em -7.0em;
+}
+
+.cemoji-white_medium_small_square {
+    background-position: -6.0em -7.0em;
+}
+
+.cemoji-white_large_square {
+    background-position: -7.0em -7.0em;
+}
+
+.cemoji-white_circle {
+    background-position: -8.0em 0.0em;
+}
+
+.cemoji-small_orange_diamond {
+    background-position: -8.0em -1.0em;
+}
+
+.cemoji-small_blue_diamond {
+    background-position: -8.0em -2.0em;
+}
+
+.cemoji-red_upward_triangle {
+    background-position: -8.0em -3.0em;
+}
+
+.cemoji-red_downward_triangle {
+    background-position: -8.0em -4.0em;
+}
+
+.cemoji-red_circle {
+    background-position: -8.0em -5.0em;
+}
+
+.cemoji-large_orange_diamond {
+    background-position: -8.0em -6.0em;
+}
+
+.cemoji-large_blue_diamond {
+    background-position: -8.0em -7.0em;
+}
+
+.cemoji-blue_circle {
+    background-position: 0.0em -8.0em;
+}
+
+.cemoji-black_square_button {
+    background-position: -1.0em -8.0em;
+}
+
+.cemoji-black_small_square {
+    background-position: -2.0em -8.0em;
+}
+
+.cemoji-black_medium_square {
+    background-position: -3.0em -8.0em;
+}
+
+.cemoji-black_medium_small_square {
+    background-position: -4.0em -8.0em;
+}
+
+.cemoji-black_large_square {
+    background-position: -5.0em -8.0em;
+}
+
+.cemoji-black_circle {
+    background-position: -6.0em -8.0em;
+}
+
+.cemoji-xp {
+    background-position: -7.0em -8.0em;
+}
+
+.cemoji-pp {
+    background-position: -8.0em -8.0em;
+}
+
+.cemoji-mp {
+    background-position: -9.0em 0.0em;
+}
+
+.cemoji-hp {
+    background-position: -9.0em -1.0em;
+}
+
+.cemoji-stop_sign {
+    background-position: -9.0em -2.0em;
+}
+
+.cemoji-no_entry {
+    background-position: -9.0em -3.0em;
+}
+
+.cemoji-no {
+    background-position: -9.0em -4.0em;
+}
+
+.cemoji-cross {
+    background-position: -9.0em -5.0em;
+}
+
+.cemoji-18_plus {
+    background-position: -9.0em -6.0em;
+}
+
+.cemoji-special_characters {
+    background-position: -9.0em -7.0em;
+}
+
+.cemoji-signal {
+    background-position: -9.0em -8.0em;
+}
+
+.cemoji-numbers {
+    background-position: 0.0em -9.0em;
+}
+
+.cemoji-low_brightness {
+    background-position: -1.0em -9.0em;
+}
+
+.cemoji-latin_uppercase {
+    background-position: -2.0em -9.0em;
+}
+
+.cemoji-latin_lowercase {
+    background-position: -3.0em -9.0em;
+}
+
+.cemoji-high_brightness {
+    background-position: -4.0em -9.0em;
+}
+
+.cemoji-hash {
+    background-position: -5.0em -9.0em;
+}
+
+.cemoji-cl {
+    background-position: -6.0em -9.0em;
+}
+
+.cemoji-asterisk {
+    background-position: -7.0em -9.0em;
+}
+
+.cemoji-abc {
+    background-position: -8.0em -9.0em;
+}
+
+.cemoji-9 {
+    background-position: -9.0em -9.0em;
+}
+
+.cemoji-8 {
+    background-position: -10.0em 0.0em;
+}
+
+.cemoji-7 {
+    background-position: -10.0em -1.0em;
+}
+
+.cemoji-6 {
+    background-position: -10.0em -2.0em;
+}
+
+.cemoji-5 {
+    background-position: -10.0em -3.0em;
+}
+
+.cemoji-4 {
+    background-position: -10.0em -4.0em;
+}
+
+.cemoji-3 {
+    background-position: -10.0em -5.0em;
+}
+
+.cemoji-2 {
+    background-position: -10.0em -6.0em;
+}
+
+.cemoji-10 {
+    background-position: -10.0em -7.0em;
+}
+
+.cemoji-1 {
+    background-position: -10.0em -8.0em;
+}
+
+.cemoji-0 {
+    background-position: -10.0em -9.0em;
+}
+
+.cemoji-zzz {
+    background-position: 0.0em -10.0em;
+}
+
+.cemoji-tick {
+    background-position: -1.0em -10.0em;
+}
+
+.cemoji-spiral {
+    background-position: -2.0em -10.0em;
+}
+
+.cemoji-sparkle {
+    background-position: -3.0em -10.0em;
+}
+
+.cemoji-question_mark_red {
+    background-position: -4.0em -10.0em;
+}
+
+.cemoji-question_mark_gray {
+    background-position: -5.0em -10.0em;
+}
+
+.cemoji-name_badge {
+    background-position: -6.0em -10.0em;
+}
+
+.cemoji-green_cross {
+    background-position: -7.0em -10.0em;
+}
+
+.cemoji-globe {
+    background-position: -8.0em -10.0em;
+}
+
+.cemoji-exclamation_question {
+    background-position: -9.0em -10.0em;
+}
+
+.cemoji-exclamation_mark_red {
+    background-position: -10.0em -10.0em;
+}
+
+.cemoji-exclamation_mark_gray {
+    background-position: -11.0em 0.0em;
+}
+
+.cemoji-exclamation_exclamation {
+    background-position: -11.0em -1.0em;
+}
+
+.cemoji-diamond_with_dot {
+    background-position: -11.0em -2.0em;
+}
+
+.cemoji-circle {
+    background-position: -11.0em -3.0em;
+}
+
+.cemoji-chart {
+    background-position: -11.0em -4.0em;
+}
+
+.cemoji-anger_symbol {
+    background-position: -11.0em -5.0em;
+}
+
+.cemoji-8_star {
+    background-position: -11.0em -6.0em;
+}
+
+.cemoji-8_asterisk {
+    background-position: -11.0em -7.0em;
+}
+
+.cemoji-100 {
+    background-position: -11.0em -8.0em;
+}
+
+.cemoji-stop {
+    background-position: -11.0em -9.0em;
+}
+
+.cemoji-skip_forward {
+    background-position: -11.0em -10.0em;
+}
+
+.cemoji-skip_back {
+    background-position: 0.0em -11.0em;
+}
+
+.cemoji-shuffle {
+    background-position: -1.0em -11.0em;
+}
+
+.cemoji-rewind {
+    background-position: -2.0em -11.0em;
+}
+
+.cemoji-reverse {
+    background-position: -3.0em -11.0em;
+}
+
+.cemoji-repeat_once {
+    background-position: -4.0em -11.0em;
+}
+
+.cemoji-repeat {
+    background-position: -5.0em -11.0em;
+}
+
+.cemoji-record {
+    background-position: -6.0em -11.0em;
+}
+
+.cemoji-play_up {
+    background-position: -7.0em -11.0em;
+}
+
+.cemoji-play_pause {
+    background-position: -8.0em -11.0em;
+}
+
+.cemoji-play_down {
+    background-position: -9.0em -11.0em;
+}
+
+.cemoji-play {
+    background-position: -10.0em -11.0em;
+}
+
+.cemoji-pause {
+    background-position: -11.0em -11.0em;
+}
+
+.cemoji-fast_up {
+    background-position: -12.0em 0.0em;
+}
+
+.cemoji-fast_forward {
+    background-position: -12.0em -1.0em;
+}
+
+.cemoji-fast_down {
+    background-position: -12.0em -2.0em;
+}
+
+.cemoji-eject {
+    background-position: -12.0em -3.0em;
+}
+
+.cemoji-vs {
+    background-position: -12.0em -4.0em;
+}
+
+.cemoji-up {
+    background-position: -12.0em -5.0em;
+}
+
+.cemoji-ok {
+    background-position: -12.0em -6.0em;
+}
+
+.cemoji-ng {
+    background-position: -12.0em -7.0em;
+}
+
+.cemoji-new {
+    background-position: -12.0em -8.0em;
+}
+
+.cemoji-free {
+    background-position: -12.0em -9.0em;
+}
+
+.cemoji-cool {
+    background-position: -12.0em -10.0em;
+}
+
+.cemoji-vacancy {
+    background-position: -12.0em -11.0em;
+}
+
+.cemoji-secret {
+    background-position: 0.0em -12.0em;
+}
+
+.cemoji-sa {
+    background-position: -1.0em -12.0em;
+}
+
+.cemoji-reserved {
+    background-position: -2.0em -12.0em;
+}
+
+.cemoji-request {
+    background-position: -3.0em -12.0em;
+}
+
+.cemoji-prohibited {
+    background-position: -4.0em -12.0em;
+}
+
+.cemoji-passing_grade {
+    background-position: -5.0em -12.0em;
+}
+
+.cemoji-open_for_business {
+    background-position: -6.0em -12.0em;
+}
+
+.cemoji-not_free {
+    background-position: -7.0em -12.0em;
+}
+
+.cemoji-no_vacancy {
+    background-position: -8.0em -12.0em;
+}
+
+.cemoji-month {
+    background-position: -9.0em -12.0em;
+}
+
+.cemoji-koko {
+    background-position: -10.0em -12.0em;
+}
+
+.cemoji-free_of_charge {
+    background-position: -11.0em -12.0em;
+}
+
+.cemoji-discount {
+    background-position: -12.0em -12.0em;
+}
+
+.cemoji-congratulations {
+    background-position: -13.0em 0.0em;
+}
+
+.cemoji-blood_type_o {
+    background-position: -13.0em -1.0em;
+}
+
+.cemoji-blood_type_b {
+    background-position: -13.0em -2.0em;
+}
+
+.cemoji-blood_type_ab {
+    background-position: -13.0em -3.0em;
+}
+
+.cemoji-blood_type_a {
+    background-position: -13.0em -4.0em;
+}
+
+.cemoji-beginner {
+    background-position: -13.0em -5.0em;
+}
+
+.cemoji-bargain {
+    background-position: -13.0em -6.0em;
+}
+
+.cemoji-acceptable {
+    background-position: -13.0em -7.0em;
+}
+
+.cemoji-yellow_heart {
+    background-position: -13.0em -8.0em;
+}
+
+.cemoji-two_hearts_orbit {
+    background-position: -13.0em -9.0em;
+}
+
+.cemoji-two_hearts {
+    background-position: -13.0em -10.0em;
+}
+
+.cemoji-sparkling_heart {
+    background-position: -13.0em -11.0em;
+}
+
+.cemoji-red_heart {
+    background-position: -13.0em -12.0em;
+}
+
+.cemoji-purple_heart {
+    background-position: 0.0em -13.0em;
+}
+
+.cemoji-orange_heart {
+    background-position: -1.0em -13.0em;
+}
+
+.cemoji-heart_ribbon {
+    background-position: -2.0em -13.0em;
+}
+
+.cemoji-heart_growing {
+    background-position: -3.0em -13.0em;
+}
+
+.cemoji-heart_exclamation_mark {
+    background-position: -4.0em -13.0em;
+}
+
+.cemoji-heart_arrow {
+    background-position: -5.0em -13.0em;
+}
+
+.cemoji-half_heart {
+    background-position: -6.0em -13.0em;
+}
+
+.cemoji-green_heart {
+    background-position: -7.0em -13.0em;
+}
+
+.cemoji-empty_heart {
+    background-position: -8.0em -13.0em;
+}
+
+.cemoji-broken_heart {
+    background-position: -9.0em -13.0em;
+}
+
+.cemoji-blue_heart {
+    background-position: -10.0em -13.0em;
+}
+
+.cemoji-black_heart {
+    background-position: -11.0em -13.0em;
+}
+
+.cemoji-beating_heart {
+    background-position: -12.0em -13.0em;
+}
+
+.cemoji-white_flag {
+    background-position: -13.0em -13.0em;
+}
+
+.cemoji-triangular_flag {
+    background-position: -14.0em 0.0em;
+}
+
+.cemoji-pirate_flag {
+    background-position: -14.0em -1.0em;
+}
+
+.cemoji-finish_flag {
+    background-position: -14.0em -2.0em;
+}
+
+.cemoji-crossed_flags {
+    background-position: -14.0em -3.0em;
+}
+
+.cemoji-black_flag {
+    background-position: -14.0em -4.0em;
+}
+
+.cemoji-red_umbrella {
+    background-position: -14.0em -5.0em;
+}
+
+.cemoji-privacy {
+    background-position: -14.0em -6.0em;
+}
+
+.cemoji-dont_awoo {
+    background-position: -14.0em -7.0em;
+}
+
+.cemoji-dont_at_me {
+    background-position: -14.0em -8.0em;
+}
+
+.cemoji-battery_medium {
+    background-position: -14.0em -9.0em;
+}
+
+.cemoji-battery_low {
+    background-position: -14.0em -10.0em;
+}
+
+.cemoji-battery_full {
+    background-position: -14.0em -11.0em;
+}
+
+.cemoji-battery_empty {
+    background-position: -14.0em -12.0em;
+}
+
+.cemoji-awoo {
+    background-position: -14.0em -13.0em;
+}
+
+.cemoji-9_30 {
+    background-position: 0.0em -14.0em;
+}
+
+.cemoji-9_00 {
+    background-position: -1.0em -14.0em;
+}
+
+.cemoji-8_30 {
+    background-position: -2.0em -14.0em;
+}
+
+.cemoji-8_00 {
+    background-position: -3.0em -14.0em;
+}
+
+.cemoji-7_30 {
+    background-position: -4.0em -14.0em;
+}
+
+.cemoji-7_00 {
+    background-position: -5.0em -14.0em;
+}
+
+.cemoji-6_30 {
+    background-position: -6.0em -14.0em;
+}
+
+.cemoji-6_00 {
+    background-position: -7.0em -14.0em;
+}
+
+.cemoji-5_30 {
+    background-position: -8.0em -14.0em;
+}
+
+.cemoji-5_00 {
+    background-position: -9.0em -14.0em;
+}
+
+.cemoji-4_30 {
+    background-position: -10.0em -14.0em;
+}
+
+.cemoji-4_00 {
+    background-position: -11.0em -14.0em;
+}
+
+.cemoji-3_30 {
+    background-position: -12.0em -14.0em;
+}
+
+.cemoji-3_00 {
+    background-position: -13.0em -14.0em;
+}
+
+.cemoji-2_30 {
+    background-position: -14.0em -14.0em;
+}
+
+.cemoji-2_00 {
+    background-position: -15.0em 0.0em;
+}
+
+.cemoji-1_30 {
+    background-position: -15.0em -1.0em;
+}
+
+.cemoji-1_00 {
+    background-position: -15.0em -2.0em;
+}
+
+.cemoji-12_30 {
+    background-position: -15.0em -3.0em;
+}
+
+.cemoji-12_00 {
+    background-position: -15.0em -4.0em;
+}
+
+.cemoji-11_30 {
+    background-position: -15.0em -5.0em;
+}
+
+.cemoji-11_00 {
+    background-position: -15.0em -6.0em;
+}
+
+.cemoji-10_30 {
+    background-position: -15.0em -7.0em;
+}
+
+.cemoji-10_00 {
+    background-position: -15.0em -8.0em;
+}
+
+.cemoji-top {
+    background-position: -15.0em -9.0em;
+}
+
+.cemoji-soon {
+    background-position: -15.0em -10.0em;
+}
+
+.cemoji-on_arrow {
+    background-position: -15.0em -11.0em;
+}
+
+.cemoji-end {
+    background-position: -15.0em -12.0em;
+}
+
+.cemoji-back {
+    background-position: -15.0em -13.0em;
+}
+
+.cemoji-arrows_counterclockwise {
+    background-position: -15.0em -14.0em;
+}
+
+.cemoji-arrows_clockwise {
+    background-position: 0.0em -15.0em;
+}
+
+.cemoji-arrow_up_right {
+    background-position: -1.0em -15.0em;
+}
+
+.cemoji-arrow_up_left {
+    background-position: -2.0em -15.0em;
+}
+
+.cemoji-arrow_up_down {
+    background-position: -3.0em -15.0em;
+}
+
+.cemoji-arrow_up {
+    background-position: -4.0em -15.0em;
+}
+
+.cemoji-arrow_right {
+    background-position: -5.0em -15.0em;
+}
+
+.cemoji-arrow_left_right {
+    background-position: -6.0em -15.0em;
+}
+
+.cemoji-arrow_left {
+    background-position: -7.0em -15.0em;
+}
+
+.cemoji-arrow_down_right {
+    background-position: -8.0em -15.0em;
+}
+
+.cemoji-arrow_down_left {
+    background-position: -9.0em -15.0em;
+}
+
+.cemoji-arrow_down {
+    background-position: -10.0em -15.0em;
+}
+
+.cemoji-arrow_curve_up {
+    background-position: -11.0em -15.0em;
+}
+
+.cemoji-arrow_curve_right {
+    background-position: -12.0em -15.0em;
+}
+
+.cemoji-arrow_curve_left {
+    background-position: -13.0em -15.0em;
+}
+
+.cemoji-arrow_curve_down {
+    background-position: -14.0em -15.0em;
+}
+
+.cemoji-western_dragon {
+    background-position: -15.0em -15.0em;
+}
+
+.cemoji-snake {
+    background-position: -16.0em 0.0em;
+}
+
+.cemoji-eastern_dragon {
+    background-position: -16.0em -1.0em;
+}
+
+.cemoji-red_panda {
+    background-position: -16.0em -2.0em;
+}
+
+.cemoji-rat {
+    background-position: -16.0em -3.0em;
+}
+
+.cemoji-ram {
+    background-position: -16.0em -4.0em;
+}
+
+.cemoji-raccoon {
+    background-position: -16.0em -5.0em;
+}
+
+.cemoji-rabbit {
+    background-position: -16.0em -6.0em;
+}
+
+.cemoji-panda {
+    background-position: -16.0em -7.0em;
+}
+
+.cemoji-otter {
+    background-position: -16.0em -8.0em;
+}
+
+.cemoji-opossum {
+    background-position: -16.0em -9.0em;
+}
+
+.cemoji-mouse {
+    background-position: -16.0em -10.0em;
+}
+
+.cemoji-deer_without_antlers {
+    background-position: -16.0em -11.0em;
+}
+
+.cemoji-deer_with_antlers {
+    background-position: -16.0em -12.0em;
+}
+
+.cemoji-bear {
+    background-position: -16.0em -13.0em;
+}
+
+.cemoji-slime {
+    background-position: -16.0em -14.0em;
+}
+
+.cemoji-gryphon {
+    background-position: -16.0em -15.0em;
+}
+
+.cemoji-spider {
+    background-position: 0.0em -16.0em;
+}
+
+.cemoji-tiger {
+    background-position: -1.0em -16.0em;
+}
+
+.cemoji-snow_leopard {
+    background-position: -2.0em -16.0em;
+}
+
+.cemoji-lynx {
+    background-position: -3.0em -16.0em;
+}
+
+.cemoji-lion_without_mane {
+    background-position: -4.0em -16.0em;
+}
+
+.cemoji-lion_with_mane {
+    background-position: -5.0em -16.0em;
+}
+
+.cemoji-leopard {
+    background-position: -6.0em -16.0em;
+}
+
+.cemoji-jaguar {
+    background-position: -7.0em -16.0em;
+}
+
+.cemoji-hyena {
+    background-position: -8.0em -16.0em;
+}
+
+.cemoji-cheetah {
+    background-position: -9.0em -16.0em;
+}
+
+.cemoji-troll {
+    background-position: -10.0em -16.0em;
+}
+
+.cemoji-orc {
+    background-position: -11.0em -16.0em;
+}
+
+.cemoji-oni {
+    background-position: -12.0em -16.0em;
+}
+
+.cemoji-minotaur {
+    background-position: -13.0em -16.0em;
+}
+
+.cemoji-merperson {
+    background-position: -14.0em -16.0em;
+}
+
+.cemoji-kobold {
+    background-position: -15.0em -16.0em;
+}
+
+.cemoji-half_demon {
+    background-position: -16.0em -16.0em;
+}
+
+.cemoji-goblin {
+    background-position: -17.0em 0.0em;
+}
+
+.cemoji-fish_person {
+    background-position: -17.0em -1.0em;
+}
+
+.cemoji-elf {
+    background-position: -17.0em -2.0em;
+}
+
+.cemoji-demon {
+    background-position: -17.0em -3.0em;
+}
+
+.cemoji-dark_elf {
+    background-position: -17.0em -4.0em;
+}
+
+.cemoji-bugbear {
+    background-position: -17.0em -5.0em;
+}
+
+.cemoji-wolf {
+    background-position: -17.0em -6.0em;
+}
+
+.cemoji-jackal {
+    background-position: -17.0em -7.0em;
+}
+
+.cemoji-fox {
+    background-position: -17.0em -8.0em;
+}
+
+.cemoji-coyote {
+    background-position: -17.0em -9.0em;
+}
+
+.cemoji-toucan {
+    background-position: -17.0em -10.0em;
+}
+
+.cemoji-rooster {
+    background-position: -17.0em -11.0em;
+}
+
+.cemoji-pigeon {
+    background-position: -17.0em -12.0em;
+}
+
+.cemoji-penguin {
+    background-position: -17.0em -13.0em;
+}
+
+.cemoji-pelican {
+    background-position: -17.0em -14.0em;
+}
+
+.cemoji-peacock {
+    background-position: -17.0em -15.0em;
+}
+
+.cemoji-parrot {
+    background-position: -17.0em -16.0em;
+}
+
+.cemoji-owl {
+    background-position: 0.0em -17.0em;
+}
+
+.cemoji-eagle {
+    background-position: -1.0em -17.0em;
+}
+
+.cemoji-duck {
+    background-position: -2.0em -17.0em;
+}
+
+.cemoji-dove {
+    background-position: -3.0em -17.0em;
+}
+
+.cemoji-crow {
+    background-position: -4.0em -17.0em;
+}
+
+.cemoji-crane {
+    background-position: -5.0em -17.0em;
+}
+
+.cemoji-blue_jay {
+    background-position: -6.0em -17.0em;
+}
+
+.cemoji-turtle {
+    background-position: -7.0em -17.0em;
+}
+
+.cemoji-shark {
+    background-position: -8.0em -17.0em;
+}
+
+.cemoji-puffer_fish {
+    background-position: -9.0em -17.0em;
+}
+
+.cemoji-dolphin {
+    background-position: -10.0em -17.0em;
+}
+
+.cemoji-pointed_ear {
+    background-position: -11.0em -17.0em;
+}
+
+.cemoji-long_pointed_ear {
+    background-position: -12.0em -17.0em;
+}
+
+.cemoji-eye {
+    background-position: -13.0em -17.0em;
+}
+
+.cemoji-ear {
+    background-position: -14.0em -17.0em;
+}
+
+.cemoji-spider_web {
+    background-position: -15.0em -17.0em;
+}
+
+.cemoji-paws {
+    background-position: -16.0em -17.0em;
+}
+
+.cemoji-paw_print {
+    background-position: -17.0em -17.0em;
+}
+
+.cemoji-bust_in_silhouette {
+    background-position: -18.0em 0.0em;
+}
+
+.cemoji-2_busts_in_silhouette {
+    background-position: -18.0em -1.0em;
+}
+
+.cemoji-watch {
+    background-position: -18.0em -2.0em;
+}
+
+.cemoji-vr_headset {
+    background-position: -18.0em -3.0em;
+}
+
+.cemoji-vhs {
+    background-position: -18.0em -4.0em;
+}
+
+.cemoji-tv {
+    background-position: -18.0em -5.0em;
+}
+
+.cemoji-trackball {
+    background-position: -18.0em -6.0em;
+}
+
+.cemoji-stylus {
+    background-position: -18.0em -7.0em;
+}
+
+.cemoji-speaker {
+    background-position: -18.0em -8.0em;
+}
+
+.cemoji-radio {
+    background-position: -18.0em -9.0em;
+}
+
+.cemoji-printer {
+    background-position: -18.0em -10.0em;
+}
+
+.cemoji-phone_with_arrow {
+    background-position: -18.0em -11.0em;
+}
+
+.cemoji-phone_vibrate {
+    background-position: -18.0em -12.0em;
+}
+
+.cemoji-phone_receiver {
+    background-position: -18.0em -13.0em;
+}
+
+.cemoji-phone_off {
+    background-position: -18.0em -14.0em;
+}
+
+.cemoji-phone {
+    background-position: -18.0em -15.0em;
+}
+
+.cemoji-pager {
+    background-position: -18.0em -16.0em;
+}
+
+.cemoji-movie_camera {
+    background-position: -18.0em -17.0em;
+}
+
+.cemoji-minidisc {
+    background-position: 0.0em -18.0em;
+}
+
+.cemoji-microphone {
+    background-position: -1.0em -18.0em;
+}
+
+.cemoji-lp {
+    background-position: -2.0em -18.0em;
+}
+
+.cemoji-level_slider {
+    background-position: -3.0em -18.0em;
+}
+
+.cemoji-laptop {
+    background-position: -4.0em -18.0em;
+}
+
+.cemoji-landline_phone {
+    background-position: -5.0em -18.0em;
+}
+
+.cemoji-keyboard {
+    background-position: -6.0em -18.0em;
+}
+
+.cemoji-joystick {
+    background-position: -7.0em -18.0em;
+}
+
+.cemoji-gamepad {
+    background-position: -8.0em -18.0em;
+}
+
+.cemoji-floppy_disk {
+    background-position: -9.0em -18.0em;
+}
+
+.cemoji-film_projector {
+    background-position: -10.0em -18.0em;
+}
+
+.cemoji-film_frames {
+    background-position: -11.0em -18.0em;
+}
+
+.cemoji-fax_machine {
+    background-position: -12.0em -18.0em;
+}
+
+.cemoji-dvd {
+    background-position: -13.0em -18.0em;
+}
+
+.cemoji-crt_test_pattern {
+    background-position: -14.0em -18.0em;
+}
+
+.cemoji-crt_prompt {
+    background-position: -15.0em -18.0em;
+}
+
+.cemoji-crt_noise {
+    background-position: -16.0em -18.0em;
+}
+
+.cemoji-crt_green_lines {
+    background-position: -17.0em -18.0em;
+}
+
+.cemoji-crt_blue_screen {
+    background-position: -18.0em -18.0em;
+}
+
+.cemoji-crt {
+    background-position: -19.0em 0.0em;
+}
+
+.cemoji-control_knobs {
+    background-position: -19.0em -1.0em;
+}
+
+.cemoji-computer_mouse {
+    background-position: -19.0em -2.0em;
+}
+
+.cemoji-computer {
+    background-position: -19.0em -3.0em;
+}
+
+.cemoji-cd {
+    background-position: -19.0em -4.0em;
+}
+
+.cemoji-cassette {
+    background-position: -19.0em -5.0em;
+}
+
+.cemoji-camera_with_flash {
+    background-position: -19.0em -6.0em;
+}
+
+.cemoji-camera {
+    background-position: -19.0em -7.0em;
+}
+
+.cemoji-camcorder {
+    background-position: -19.0em -8.0em;
+}
+
+.cemoji-battery {
+    background-position: -19.0em -9.0em;
+}
+
+.cemoji-arcade_stick {
+    background-position: -19.0em -10.0em;
+}
+
+.cemoji-zweihander {
+    background-position: -19.0em -11.0em;
+}
+
+.cemoji-war_hammer {
+    background-position: -19.0em -12.0em;
+}
+
+.cemoji-tomahawk {
+    background-position: -19.0em -13.0em;
+}
+
+.cemoji-shuriken {
+    background-position: -19.0em -14.0em;
+}
+
+.cemoji-sabre {
+    background-position: -19.0em -15.0em;
+}
+
+.cemoji-rapier {
+    background-position: -19.0em -16.0em;
+}
+
+.cemoji-mace {
+    background-position: -19.0em -17.0em;
+}
+
+.cemoji-katana {
+    background-position: -19.0em -18.0em;
+}
+
+.cemoji-halberd {
+    background-position: 0.0em -19.0em;
+}
+
+.cemoji-great_axe {
+    background-position: -1.0em -19.0em;
+}
+
+.cemoji-glaive {
+    background-position: -2.0em -19.0em;
+}
+
+.cemoji-flail {
+    background-position: -3.0em -19.0em;
+}
+
+.cemoji-european_battle_axe {
+    background-position: -4.0em -19.0em;
+}
+
+.cemoji-crossbow {
+    background-position: -5.0em -19.0em;
+}
+
+.cemoji-broadsword {
+    background-position: -6.0em -19.0em;
+}
+
+.cemoji-bow_and_arrow {
+    background-position: -7.0em -19.0em;
+}
+
+.cemoji-arrow {
+    background-position: -8.0em -19.0em;
+}
+
+.cemoji-oil_lamp {
+    background-position: -9.0em -19.0em;
+}
+
+.cemoji-tarot_wand {
+    background-position: -10.0em -19.0em;
+}
+
+.cemoji-tarot_sword {
+    background-position: -11.0em -19.0em;
+}
+
+.cemoji-tarot_pentacle {
+    background-position: -12.0em -19.0em;
+}
+
+.cemoji-tarot_cup {
+    background-position: -13.0em -19.0em;
+}
+
+.cemoji-spellbook {
+    background-position: -14.0em -19.0em;
+}
+
+.cemoji-rune_stones {
+    background-position: -15.0em -19.0em;
+}
+
+.cemoji-pentacle {
+    background-position: -16.0em -19.0em;
+}
+
+.cemoji-crystal_ball {
+    background-position: -17.0em -19.0em;
+}
+
+.cemoji-magic_wand {
+    background-position: -18.0em -19.0em;
+}
+
+.cemoji-yellow_potion {
+    background-position: -19.0em -19.0em;
+}
+
+.cemoji-red_potion {
+    background-position: -20.0em 0.0em;
+}
+
+.cemoji-purple_potion {
+    background-position: -20.0em -1.0em;
+}
+
+.cemoji-pink_potion {
+    background-position: -20.0em -2.0em;
+}
+
+.cemoji-green_potion {
+    background-position: -20.0em -3.0em;
+}
+
+.cemoji-blue_potion {
+    background-position: -20.0em -4.0em;
+}
+
+.cemoji-tada {
+    background-position: -20.0em -5.0em;
+}
+
+.cemoji-confetti_ball {
+    background-position: -20.0em -6.0em;
+}
+
+.cemoji-balloon {
+    background-position: -20.0em -7.0em;
+}
+
+.cemoji-hole {
+    background-position: -20.0em -8.0em;
+}
+
+.cemoji-glowstick {
+    background-position: -20.0em -9.0em;
+}
+
+.cemoji-coffin {
+    background-position: -20.0em -10.0em;
+}
+
+.cemoji-bone {
+    background-position: -20.0em -11.0em;
+}
+
+.cemoji-yellow_book {
+    background-position: -20.0em -12.0em;
+}
+
+.cemoji-spiral_notebook {
+    background-position: -20.0em -13.0em;
+}
+
+.cemoji-red_book {
+    background-position: -20.0em -14.0em;
+}
+
+.cemoji-pencil {
+    background-position: -20.0em -15.0em;
+}
+
+.cemoji-pen {
+    background-position: -20.0em -16.0em;
+}
+
+.cemoji-paperclip {
+    background-position: -20.0em -17.0em;
+}
+
+.cemoji-page_with_pencil {
+    background-position: -20.0em -18.0em;
+}
+
+.cemoji-page {
+    background-position: -20.0em -19.0em;
+}
+
+.cemoji-outbox {
+    background-position: 0.0em -20.0em;
+}
+
+.cemoji-open_folder {
+    background-position: -1.0em -20.0em;
+}
+
+.cemoji-mailbox_with_no_mail {
+    background-position: -2.0em -20.0em;
+}
+
+.cemoji-mailbox {
+    background-position: -3.0em -20.0em;
+}
+
+.cemoji-magnifying_glass_right {
+    background-position: -4.0em -20.0em;
+}
+
+.cemoji-magnifying_glass_left {
+    background-position: -5.0em -20.0em;
+}
+
+.cemoji-love_letter {
+    background-position: -6.0em -20.0em;
+}
+
+.cemoji-increasing_graph {
+    background-position: -7.0em -20.0em;
+}
+
+.cemoji-incoming_envelope {
+    background-position: -8.0em -20.0em;
+}
+
+.cemoji-inbox {
+    background-position: -9.0em -20.0em;
+}
+
+.cemoji-green_book {
+    background-position: -10.0em -20.0em;
+}
+
+.cemoji-folder {
+    background-position: -11.0em -20.0em;
+}
+
+.cemoji-envelope_with_arrow {
+    background-position: -12.0em -20.0em;
+}
+
+.cemoji-envelope {
+    background-position: -13.0em -20.0em;
+}
+
+.cemoji-email {
+    background-position: -14.0em -20.0em;
+}
+
+.cemoji-decreasing_graph {
+    background-position: -15.0em -20.0em;
+}
+
+.cemoji-date {
+    background-position: -16.0em -20.0em;
+}
+
+.cemoji-closed_mailbox_with_no_mail {
+    background-position: -17.0em -20.0em;
+}
+
+.cemoji-closed_mailbox {
+    background-position: -18.0em -20.0em;
+}
+
+.cemoji-calendar_spiral {
+    background-position: -19.0em -20.0em;
+}
+
+.cemoji-calendar {
+    background-position: -20.0em -20.0em;
+}
+
+.cemoji-bookmark {
+    background-position: -21.0em 0.0em;
+}
+
+.cemoji-blue_book {
+    background-position: -21.0em -1.0em;
+}
+
+.cemoji-bar_chart {
+    background-position: -21.0em -2.0em;
+}
+
+.cemoji-yellow_money {
+    background-position: -21.0em -3.0em;
+}
+
+.cemoji-purple_money {
+    background-position: -21.0em -4.0em;
+}
+
+.cemoji-pink_money {
+    background-position: -21.0em -5.0em;
+}
+
+.cemoji-moneybag {
+    background-position: -21.0em -6.0em;
+}
+
+.cemoji-green_money {
+    background-position: -21.0em -7.0em;
+}
+
+.cemoji-credit_card {
+    background-position: -21.0em -8.0em;
+}
+
+.cemoji-firecracker {
+    background-position: -21.0em -9.0em;
+}
+
+.cemoji-brick {
+    background-position: -21.0em -10.0em;
+}
+
+.cemoji-toilet_paper {
+    background-position: -21.0em -11.0em;
+}
+
+.cemoji-candle {
+    background-position: -21.0em -12.0em;
+}
+
+.cemoji-bath_with_person {
+    background-position: -21.0em -13.0em;
+}
+
+.cemoji-bath {
+    background-position: -21.0em -14.0em;
+}
+
+.cemoji-hanafuda_card {
+    background-position: -21.0em -15.0em;
+}
+
+.cemoji-d8 {
+    background-position: -21.0em -16.0em;
+}
+
+.cemoji-d6 {
+    background-position: -21.0em -17.0em;
+}
+
+.cemoji-d4 {
+    background-position: -21.0em -18.0em;
+}
+
+.cemoji-d20 {
+    background-position: -21.0em -19.0em;
+}
+
+.cemoji-d12 {
+    background-position: -21.0em -20.0em;
+}
+
+.cemoji-d10 {
+    background-position: 0.0em -21.0em;
+}
+
+.cemoji-water_drop {
+    background-position: -1.0em -21.0em;
+}
+
+.cemoji-sweat_drops {
+    background-position: -2.0em -21.0em;
+}
+
+.cemoji-sun_face {
+    background-position: -3.0em -21.0em;
+}
+
+.cemoji-sun_cloud_rain {
+    background-position: -4.0em -21.0em;
+}
+
+.cemoji-sun_behind_small_cloud {
+    background-position: -5.0em -21.0em;
+}
+
+.cemoji-sun_behind_large_cloud {
+    background-position: -6.0em -21.0em;
+}
+
+.cemoji-sun_behind_cloud {
+    background-position: -7.0em -21.0em;
+}
+
+.cemoji-sun {
+    background-position: -8.0em -21.0em;
+}
+
+.cemoji-snowflake {
+    background-position: -9.0em -21.0em;
+}
+
+.cemoji-snow {
+    background-position: -10.0em -21.0em;
+}
+
+.cemoji-rain {
+    background-position: -11.0em -21.0em;
+}
+
+.cemoji-lightning_rain {
+    background-position: -12.0em -21.0em;
+}
+
+.cemoji-lightning_bolt {
+    background-position: -13.0em -21.0em;
+}
+
+.cemoji-lightning {
+    background-position: -14.0em -21.0em;
+}
+
+.cemoji-cloud {
+    background-position: -15.0em -21.0em;
+}
+
+.cemoji-palm_tree {
+    background-position: -16.0em -21.0em;
+}
+
+.cemoji-evergreen_tree {
+    background-position: -17.0em -21.0em;
+}
+
+.cemoji-christmas_tree {
+    background-position: -18.0em -21.0em;
+}
+
+.cemoji-cactus {
+    background-position: -19.0em -21.0em;
+}
+
+.cemoji-new_moon_face {
+    background-position: -20.0em -21.0em;
+}
+
+.cemoji-new_moon {
+    background-position: -21.0em -21.0em;
+}
+
+.cemoji-moon_crescent_face_right {
+    background-position: -22.0em 0.0em;
+}
+
+.cemoji-moon_crescent_face_left {
+    background-position: -22.0em -1.0em;
+}
+
+.cemoji-half_moon_2 {
+    background-position: -22.0em -2.0em;
+}
+
+.cemoji-half_moon_1 {
+    background-position: -22.0em -3.0em;
+}
+
+.cemoji-gibbous_moon_2 {
+    background-position: -22.0em -4.0em;
+}
+
+.cemoji-gibbous_moon_1 {
+    background-position: -22.0em -5.0em;
+}
+
+.cemoji-full_moon_face {
+    background-position: -22.0em -6.0em;
+}
+
+.cemoji-full_moon {
+    background-position: -22.0em -7.0em;
+}
+
+.cemoji-crescent_moon_2 {
+    background-position: -22.0em -8.0em;
+}
+
+.cemoji-crescent_moon_1 {
+    background-position: -22.0em -9.0em;
+}
+
+.cemoji-crescent {
+    background-position: -22.0em -10.0em;
+}
+
+.cemoji-star {
+    background-position: -22.0em -11.0em;
+}
+
+.cemoji-sparkles {
+    background-position: -22.0em -12.0em;
+}
+
+.cemoji-shooting_star {
+    background-position: -22.0em -13.0em;
+}
+
+.cemoji-shining_star {
+    background-position: -22.0em -14.0em;
+}
+
+.cemoji-half_star {
+    background-position: -22.0em -15.0em;
+}
+
+.cemoji-fire {
+    background-position: -22.0em -16.0em;
+}
+
+.cemoji-empty_star {
+    background-position: -22.0em -17.0em;
+}
+
+.cemoji-dizzy {
+    background-position: -22.0em -18.0em;
+}
+
+.cemoji-dash {
+    background-position: -22.0em -19.0em;
+}
+
+.cemoji-bang {
+    background-position: -22.0em -20.0em;
+}
+
+.cemoji-earth_pacific {
+    background-position: -22.0em -21.0em;
+}
+
+.cemoji-earth_emea {
+    background-position: 0.0em -22.0em;
+}
+
+.cemoji-earth_asia_oceania {
+    background-position: -1.0em -22.0em;
+}
+
+.cemoji-earth_arctic {
+    background-position: -2.0em -22.0em;
+}
+
+.cemoji-earth_antarctic {
+    background-position: -3.0em -22.0em;
+}
+
+.cemoji-earth_americas {
+    background-position: -4.0em -22.0em;
+}
+
+.cemoji-male_symbol {
+    background-position: -5.0em -22.0em;
+}
+
+.cemoji-male_and_female_symbol {
+    background-position: -6.0em -22.0em;
+}
+
+.cemoji-female_symbol {
+    background-position: -7.0em -22.0em;
+}
+
+.cemoji-two_male_symbols {
+    background-position: -8.0em -22.0em;
+}
+
+.cemoji-two_female_symbols {
+    background-position: -9.0em -22.0em;
+}
+
+.cemoji-transgender_symbol {
+    background-position: -10.0em -22.0em;
+}
+
+.cemoji-transgender_mercury_symbol {
+    background-position: -11.0em -22.0em;
+}
+
+.cemoji-pride_100 {
+    background-position: -12.0em -22.0em;
+}
+
+.cemoji-pink_triangle {
+    background-position: -13.0em -22.0em;
+}
+
+.cemoji-neuter_symbol {
+    background-position: -14.0em -22.0em;
+}
+
+.cemoji-male_female_symbol {
+    background-position: -15.0em -22.0em;
+}
+
+.cemoji-lambda {
+    background-position: -16.0em -22.0em;
+}
+
+.cemoji-labrys_symbol {
+    background-position: -17.0em -22.0em;
+}
+
+.cemoji-furry_pride {
+    background-position: -18.0em -22.0em;
+}
+
+.cemoji-black_triangle {
+    background-position: -19.0em -22.0em;
+}
+
+.cemoji-bisexual_triangles {
+    background-position: -20.0em -22.0em;
+}
+
+.cemoji-androgyne_symbol {
+    background-position: -21.0em -22.0em;
+}
+
+.cemoji-so_gay {
+    background-position: -22.0em -22.0em;
+}
+
+.cemoji-queer {
+    background-position: -23.0em 0.0em;
+}
+
+.cemoji-nb {
+    background-position: -23.0em -1.0em;
+}
+
+.cemoji-gay {
+    background-position: -23.0em -2.0em;
+}
+
+.cemoji-aro_sign {
+    background-position: -23.0em -3.0em;
+}
+
+.cemoji-ace_sign {
+    background-position: -23.0em -4.0em;
+}
+
+.cemoji-transgender_flag {
+    background-position: -23.0em -5.0em;
+}
+
+.cemoji-stellaric_flag {
+    background-position: -23.0em -6.0em;
+}
+
+.cemoji-solaric_flag {
+    background-position: -23.0em -7.0em;
+}
+
+.cemoji-rainbow_flag {
+    background-position: -23.0em -8.0em;
+}
+
+.cemoji-quoiromantic_flag {
+    background-position: -23.0em -9.0em;
+}
+
+.cemoji-polysexual_flag {
+    background-position: -23.0em -10.0em;
+}
+
+.cemoji-polyamory_flag {
+    background-position: -23.0em -11.0em;
+}
+
+.cemoji-pansexual_flag {
+    background-position: -23.0em -12.0em;
+}
+
+.cemoji-omnisexual_flag {
+    background-position: -23.0em -13.0em;
+}
+
+.cemoji-nonbinary_flag {
+    background-position: -23.0em -14.0em;
+}
+
+.cemoji-neutrois_flag {
+    background-position: -23.0em -15.0em;
+}
+
+.cemoji-mercuric_flag {
+    background-position: -23.0em -16.0em;
+}
+
+.cemoji-lunaric_flag {
+    background-position: -23.0em -17.0em;
+}
+
+.cemoji-lipstick_lesbian_flag {
+    background-position: -23.0em -18.0em;
+}
+
+.cemoji-lesbian_flag {
+    background-position: -23.0em -19.0em;
+}
+
+.cemoji-leather_flag {
+    background-position: -23.0em -20.0em;
+}
+
+.cemoji-intersex_flag {
+    background-position: -23.0em -21.0em;
+}
+
+.cemoji-genderqueer_flag {
+    background-position: -23.0em -22.0em;
+}
+
+.cemoji-genderfluid_flag {
+    background-position: 0.0em -23.0em;
+}
+
+.cemoji-enbian_flag {
+    background-position: -1.0em -23.0em;
+}
+
+.cemoji-demisexual_flag {
+    background-position: -2.0em -23.0em;
+}
+
+.cemoji-deminonbinary_flag {
+    background-position: -3.0em -23.0em;
+}
+
+.cemoji-demiguy_flag {
+    background-position: -4.0em -23.0em;
+}
+
+.cemoji-demigirl_flag {
+    background-position: -5.0em -23.0em;
+}
+
+.cemoji-bisexual_flag {
+    background-position: -6.0em -23.0em;
+}
+
+.cemoji-bigender_flag {
+    background-position: -7.0em -23.0em;
+}
+
+.cemoji-bear_flag {
+    background-position: -8.0em -23.0em;
+}
+
+.cemoji-asexual_flag {
+    background-position: -9.0em -23.0em;
+}
+
+.cemoji-aromantic_flag {
+    background-position: -10.0em -23.0em;
+}
+
+.cemoji-androgyne_flag {
+    background-position: -11.0em -23.0em;
+}
+
+.cemoji-agender_flag {
+    background-position: -12.0em -23.0em;
+}
+
+.cemoji-watermelon {
+    background-position: -13.0em -23.0em;
+}
+
+.cemoji-strawberry {
+    background-position: -14.0em -23.0em;
+}
+
+.cemoji-red_apple {
+    background-position: -15.0em -23.0em;
+}
+
+.cemoji-pineapple {
+    background-position: -16.0em -23.0em;
+}
+
+.cemoji-pear {
+    background-position: -17.0em -23.0em;
+}
+
+.cemoji-peach {
+    background-position: -18.0em -23.0em;
+}
+
+.cemoji-orange {
+    background-position: -19.0em -23.0em;
+}
+
+.cemoji-melon {
+    background-position: -20.0em -23.0em;
+}
+
+.cemoji-lemon {
+    background-position: -21.0em -23.0em;
+}
+
+.cemoji-green_apple {
+    background-position: -22.0em -23.0em;
+}
+
+.cemoji-eggplant {
+    background-position: -23.0em -23.0em;
+}
+
+.cemoji-cherry {
+    background-position: -24.0em 0.0em;
+}
+
+.cemoji-sushi {
+    background-position: -24.0em -1.0em;
+}
+
+.cemoji-shortcake {
+    background-position: -24.0em -2.0em;
+}
+
+.cemoji-shaved_ice {
+    background-position: -24.0em -3.0em;
+}
+
+.cemoji-senbei {
+    background-position: -24.0em -4.0em;
+}
+
+.cemoji-rice {
+    background-position: -24.0em -5.0em;
+}
+
+.cemoji-plate {
+    background-position: -24.0em -6.0em;
+}
+
+.cemoji-onigiri {
+    background-position: -24.0em -7.0em;
+}
+
+.cemoji-oden {
+    background-position: -24.0em -8.0em;
+}
+
+.cemoji-meat_on_bone {
+    background-position: -24.0em -9.0em;
+}
+
+.cemoji-meat_drumstick {
+    background-position: -24.0em -10.0em;
+}
+
+.cemoji-lollipop {
+    background-position: -24.0em -11.0em;
+}
+
+.cemoji-knife_and_fork {
+    background-position: -24.0em -12.0em;
+}
+
+.cemoji-ice_cream {
+    background-position: -24.0em -13.0em;
+}
+
+.cemoji-donut {
+    background-position: -24.0em -14.0em;
+}
+
+.cemoji-dango {
+    background-position: -24.0em -15.0em;
+}
+
+.cemoji-curry_rice {
+    background-position: -24.0em -16.0em;
+}
+
+.cemoji-candy {
+    background-position: -24.0em -17.0em;
+}
+
+.cemoji-birthday_cake {
+    background-position: -24.0em -18.0em;
+}
+
+.cemoji-bento {
+    background-position: -24.0em -19.0em;
+}
+
+.cemoji-milk {
+    background-position: -24.0em -20.0em;
+}
+
+.cemoji-matcha_tea {
+    background-position: -24.0em -21.0em;
+}
+
+.cemoji-coffee {
+    background-position: -24.0em -22.0em;
+}
+
+.cemoji-wine {
+    background-position: -24.0em -23.0em;
+}
+
+.cemoji-tropical_drink {
+    background-position: 0.0em -24.0em;
+}
+
+.cemoji-sake {
+    background-position: -1.0em -24.0em;
+}
+
+.cemoji-martini {
+    background-position: -2.0em -24.0em;
+}
+
+.cemoji-cannabis_leaf {
+    background-position: -3.0em -24.0em;
+}
+
+.cemoji-beers {
+    background-position: -4.0em -24.0em;
+}
+
+.cemoji-beer {
+    background-position: -5.0em -24.0em;
+}
+
+.cemoji-unsure {
+    background-position: -6.0em -24.0em;
+}
+
+.cemoji-unhappy {
+    background-position: -7.0em -24.0em;
+}
+
+.cemoji-sweat {
+    background-position: -8.0em -24.0em;
+}
+
+.cemoji-slight_frown {
+    background-position: -9.0em -24.0em;
+}
+
+.cemoji-persevering {
+    background-position: -10.0em -24.0em;
+}
+
+.cemoji-pensive {
+    background-position: -11.0em -24.0em;
+}
+
+.cemoji-loud_cry {
+    background-position: -12.0em -24.0em;
+}
+
+.cemoji-frown {
+    background-position: -13.0em -24.0em;
+}
+
+.cemoji-disappointed {
+    background-position: -14.0em -24.0em;
+}
+
+.cemoji-crying {
+    background-position: -15.0em -24.0em;
+}
+
+.cemoji-confounded {
+    background-position: -16.0em -24.0em;
+}
+
+.cemoji-vomiting {
+    background-position: -17.0em -24.0em;
+}
+
+.cemoji-very_angry {
+    background-position: -18.0em -24.0em;
+}
+
+.cemoji-swearing {
+    background-position: -19.0em -24.0em;
+}
+
+.cemoji-sneezing {
+    background-position: -20.0em -24.0em;
+}
+
+.cemoji-sick {
+    background-position: -21.0em -24.0em;
+}
+
+.cemoji-nauseous {
+    background-position: -22.0em -24.0em;
+}
+
+.cemoji-medical_mask {
+    background-position: -23.0em -24.0em;
+}
+
+.cemoji-bandaged {
+    background-position: -24.0em -24.0em;
+}
+
+.cemoji-angry_steam {
+    background-position: -25.0em 0.0em;
+}
+
+.cemoji-angry {
+    background-position: -25.0em -1.0em;
+}
+
+.cemoji-zippy_face {
+    background-position: -25.0em -2.0em;
+}
+
+.cemoji-worried {
+    background-position: -25.0em -3.0em;
+}
+
+.cemoji-woozy {
+    background-position: -25.0em -4.0em;
+}
+
+.cemoji-weary {
+    background-position: -25.0em -5.0em;
+}
+
+.cemoji-surprised {
+    background-position: -25.0em -6.0em;
+}
+
+.cemoji-starry_eyes {
+    background-position: -25.0em -7.0em;
+}
+
+.cemoji-sleepy {
+    background-position: -25.0em -8.0em;
+}
+
+.cemoji-shocked {
+    background-position: -25.0em -9.0em;
+}
+
+.cemoji-scream {
+    background-position: -25.0em -10.0em;
+}
+
+.cemoji-scared {
+    background-position: -25.0em -11.0em;
+}
+
+.cemoji-pleading {
+    background-position: -25.0em -12.0em;
+}
+
+.cemoji-open_mouth {
+    background-position: -25.0em -13.0em;
+}
+
+.cemoji-mind_blown {
+    background-position: -25.0em -14.0em;
+}
+
+.cemoji-hot {
+    background-position: -25.0em -15.0em;
+}
+
+.cemoji-exhausted {
+    background-position: -25.0em -16.0em;
+}
+
+.cemoji-drooling {
+    background-position: -25.0em -17.0em;
+}
+
+.cemoji-dead {
+    background-position: -25.0em -18.0em;
+}
+
+.cemoji-crazy {
+    background-position: -25.0em -19.0em;
+}
+
+.cemoji-confused {
+    background-position: -25.0em -20.0em;
+}
+
+.cemoji-cold_sweat {
+    background-position: -25.0em -21.0em;
+}
+
+.cemoji-cold {
+    background-position: -25.0em -22.0em;
+}
+
+.cemoji-astonished {
+    background-position: -25.0em -23.0em;
+}
+
+.cemoji-asleep {
+    background-position: -25.0em -24.0em;
+}
+
+.cemoji-unamused {
+    background-position: 0.0em -25.0em;
+}
+
+.cemoji-thinking {
+    background-position: -1.0em -25.0em;
+}
+
+.cemoji-straight_face {
+    background-position: -2.0em -25.0em;
+}
+
+.cemoji-smirk {
+    background-position: -3.0em -25.0em;
+}
+
+.cemoji-shush {
+    background-position: -4.0em -25.0em;
+}
+
+.cemoji-rolling_eyes {
+    background-position: -5.0em -25.0em;
+}
+
+.cemoji-raised_eyebrow {
+    background-position: -6.0em -25.0em;
+}
+
+.cemoji-monocle {
+    background-position: -7.0em -25.0em;
+}
+
+.cemoji-lying_face {
+    background-position: -8.0em -25.0em;
+}
+
+.cemoji-hand_over_mouth {
+    background-position: -9.0em -25.0em;
+}
+
+.cemoji-grimace {
+    background-position: -10.0em -25.0em;
+}
+
+.cemoji-face_without_mouth {
+    background-position: -11.0em -25.0em;
+}
+
+.cemoji-expressionless {
+    background-position: -12.0em -25.0em;
+}
+
+.cemoji-disappointed_but_relieved {
+    background-position: -13.0em -25.0em;
+}
+
+.cemoji-concern {
+    background-position: -14.0em -25.0em;
+}
+
+.cemoji-tengu_mask {
+    background-position: -15.0em -25.0em;
+}
+
+.cemoji-shit {
+    background-position: -16.0em -25.0em;
+}
+
+.cemoji-robot {
+    background-position: -17.0em -25.0em;
+}
+
+.cemoji-nerd_face {
+    background-position: -18.0em -25.0em;
+}
+
+.cemoji-imp_devious {
+    background-position: -19.0em -25.0em;
+}
+
+.cemoji-imp_angry {
+    background-position: -20.0em -25.0em;
+}
+
+.cemoji-hot_shit {
+    background-position: -21.0em -25.0em;
+}
+
+.cemoji-grumpy_block {
+    background-position: -22.0em -25.0em;
+}
+
+.cemoji-cowhand {
+    background-position: -23.0em -25.0em;
+}
+
+.cemoji-cool_face {
+    background-position: -24.0em -25.0em;
+}
+
+.cemoji-clown {
+    background-position: -25.0em -25.0em;
+}
+
+.cemoji-alien_monster {
+    background-position: -26.0em 0.0em;
+}
+
+.cemoji-alien {
+    background-position: -26.0em -1.0em;
+}
+
+.cemoji-yum {
+    background-position: -26.0em -2.0em;
+}
+
+.cemoji-xd_tongue {
+    background-position: -26.0em -3.0em;
+}
+
+.cemoji-wink_tongue {
+    background-position: -26.0em -4.0em;
+}
+
+.cemoji-wink {
+    background-position: -26.0em -5.0em;
+}
+
+.cemoji-upside_down_smile {
+    background-position: -26.0em -6.0em;
+}
+
+.cemoji-sweat_smile {
+    background-position: -26.0em -7.0em;
+}
+
+.cemoji-stick_out_tongue {
+    background-position: -26.0em -8.0em;
+}
+
+.cemoji-smile {
+    background-position: -26.0em -9.0em;
+}
+
+.cemoji-rofl {
+    background-position: -26.0em -10.0em;
+}
+
+.cemoji-party_face {
+    background-position: -26.0em -11.0em;
+}
+
+.cemoji-money_face {
+    background-position: -26.0em -12.0em;
+}
+
+.cemoji-laughing {
+    background-position: -26.0em -13.0em;
+}
+
+.cemoji-joy {
+    background-position: -26.0em -14.0em;
+}
+
+.cemoji-happy {
+    background-position: -26.0em -15.0em;
+}
+
+.cemoji-halo {
+    background-position: -26.0em -16.0em;
+}
+
+.cemoji-grinning {
+    background-position: -26.0em -17.0em;
+}
+
+.cemoji-grin {
+    background-position: -26.0em -18.0em;
+}
+
+.cemoji-content {
+    background-position: -26.0em -19.0em;
+}
+
+.cemoji-big_smile {
+    background-position: -26.0em -20.0em;
+}
+
+.cemoji-wink_kiss {
+    background-position: -26.0em -21.0em;
+}
+
+.cemoji-soft {
+    background-position: -26.0em -22.0em;
+}
+
+.cemoji-smile_hearts {
+    background-position: -26.0em -23.0em;
+}
+
+.cemoji-relaxed {
+    background-position: -26.0em -24.0em;
+}
+
+.cemoji-kiss {
+    background-position: -26.0em -25.0em;
+}
+
+.cemoji-hug {
+    background-position: 0.0em -26.0em;
+}
+
+.cemoji-heart_eyes {
+    background-position: -1.0em -26.0em;
+}
+
+.cemoji-headpats {
+    background-position: -2.0em -26.0em;
+}
+
+.cemoji-happy_kiss {
+    background-position: -3.0em -26.0em;
+}
+
+.cemoji-embarrassed {
+    background-position: -4.0em -26.0em;
+}
+
+.cemoji-blushing {
+    background-position: -5.0em -26.0em;
+}
+
+.cemoji-blush_kiss {
+    background-position: -6.0em -26.0em;
+}
+
+.cemoji-cat_smile {
+    background-position: -7.0em -26.0em;
+}
+
+.cemoji-cat_scream {
+    background-position: -8.0em -26.0em;
+}
+
+.cemoji-cat_pouting {
+    background-position: -9.0em -26.0em;
+}
+
+.cemoji-cat_kiss {
+    background-position: -10.0em -26.0em;
+}
+
+.cemoji-cat_joy {
+    background-position: -11.0em -26.0em;
+}
+
+.cemoji-cat_heart_eyes {
+    background-position: -12.0em -26.0em;
+}
+
+.cemoji-cat_grin {
+    background-position: -13.0em -26.0em;
+}
+
+.cemoji-cat_devious {
+    background-position: -14.0em -26.0em;
+}
+
+.cemoji-cat_crying {
+    background-position: -15.0em -26.0em;
+}
+
+.cemoji-tipping_hand {
+    background-position: -16.0em -26.0em;
+}
+
+.cemoji-shrug {
+    background-position: -17.0em -26.0em;
+}
+
+.cemoji-raising_hand {
+    background-position: -18.0em -26.0em;
+}
+
+.cemoji-person_pouting {
+    background-position: -19.0em -26.0em;
+}
+
+.cemoji-person_frowning {
+    background-position: -20.0em -26.0em;
+}
+
+.cemoji-ok_gesture {
+    background-position: -21.0em -26.0em;
+}
+
+.cemoji-no_good {
+    background-position: -22.0em -26.0em;
+}
+
+.cemoji-massage {
+    background-position: -23.0em -26.0em;
+}
+
+.cemoji-facepalm {
+    background-position: -24.0em -26.0em;
+}
+
+.cemoji-bow {
+    background-position: -25.0em -26.0em;
+}
+
+.cemoji-arms_in_the_air {
+    background-position: -26.0em -26.0em;
+}
+
+.cemoji-skull_and_crossbones {
+    background-position: -27.0em 0.0em;
+}
+
+.cemoji-skull {
+    background-position: -27.0em -1.0em;
+}
+
+.cemoji-jack_o_lantern {
+    background-position: -27.0em -2.0em;
+}
+
+.cemoji-ghost {
+    background-position: -27.0em -3.0em;
+}
+
+.cemoji-eyes {
+    background-position: -27.0em -4.0em;
+}
+
+.cemoji-haircut {
+    background-position: -27.0em -5.0em;
+}
+
+.cemoji-writing_hand_paw {
+    background-position: -27.0em -6.0em;
+}
+
+.cemoji-wave_paw {
+    background-position: -27.0em -7.0em;
+}
+
+.cemoji-vulcan_paw {
+    background-position: -27.0em -8.0em;
+}
+
+.cemoji-v_paw {
+    background-position: -27.0em -9.0em;
+}
+
+.cemoji-thumbs_up_paw {
+    background-position: -27.0em -10.0em;
+}
+
+.cemoji-thumbs_down_paw {
+    background-position: -27.0em -11.0em;
+}
+
+.cemoji-selfie_paw {
+    background-position: -27.0em -12.0em;
+}
+
+.cemoji-raised_hands_paw {
+    background-position: -27.0em -13.0em;
+}
+
+.cemoji-punch_paw {
+    background-position: -27.0em -14.0em;
+}
+
+.cemoji-pray_paw {
+    background-position: -27.0em -15.0em;
+}
+
+.cemoji-point_up_paw {
+    background-position: -27.0em -16.0em;
+}
+
+.cemoji-point_right_paw {
+    background-position: -27.0em -17.0em;
+}
+
+.cemoji-point_left_paw {
+    background-position: -27.0em -18.0em;
+}
+
+.cemoji-point_down_paw {
+    background-position: -27.0em -19.0em;
+}
+
+.cemoji-open_hands_paw {
+    background-position: -27.0em -20.0em;
+}
+
+.cemoji-ok_hand_paw {
+    background-position: -27.0em -21.0em;
+}
+
+.cemoji-nail_varnish_paw {
+    background-position: -27.0em -22.0em;
+}
+
+.cemoji-muscle_paw {
+    background-position: -27.0em -23.0em;
+}
+
+.cemoji-middle_finger_paw {
+    background-position: -27.0em -24.0em;
+}
+
+.cemoji-metal_paw {
+    background-position: -27.0em -25.0em;
+}
+
+.cemoji-index_finger_paw {
+    background-position: -27.0em -26.0em;
+}
+
+.cemoji-handshake_paw {
+    background-position: 0.0em -27.0em;
+}
+
+.cemoji-hand_paw {
+    background-position: -1.0em -27.0em;
+}
+
+.cemoji-fist_paw {
+    background-position: -2.0em -27.0em;
+}
+
+.cemoji-fist_facing_right_paw {
+    background-position: -3.0em -27.0em;
+}
+
+.cemoji-fist_facing_left_paw {
+    background-position: -4.0em -27.0em;
+}
+
+.cemoji-crossed_fingers_paw {
+    background-position: -5.0em -27.0em;
+}
+
+.cemoji-clap_paw {
+    background-position: -6.0em -27.0em;
+}
+
+.cemoji-call_me_paw {
+    background-position: -7.0em -27.0em;
+}
+
+.cemoji-back_of_hand_paw {
+    background-position: -8.0em -27.0em;
+}
+
+.cemoji-writing_hand_hmn {
+    background-position: -9.0em -27.0em;
+}
+
+.cemoji-wave_hmn {
+    background-position: -10.0em -27.0em;
+}
+
+.cemoji-vulcan_hmn {
+    background-position: -11.0em -27.0em;
+}
+
+.cemoji-v_hmn {
+    background-position: -12.0em -27.0em;
+}
+
+.cemoji-thumbs_up_hmn {
+    background-position: -13.0em -27.0em;
+}
+
+.cemoji-thumbs_down_hmn {
+    background-position: -14.0em -27.0em;
+}
+
+.cemoji-selfie_hmn {
+    background-position: -15.0em -27.0em;
+}
+
+.cemoji-raised_hands_hmn {
+    background-position: -16.0em -27.0em;
+}
+
+.cemoji-punch_hmn {
+    background-position: -17.0em -27.0em;
+}
+
+.cemoji-pray_hmn {
+    background-position: -18.0em -27.0em;
+}
+
+.cemoji-point_up_hmn {
+    background-position: -19.0em -27.0em;
+}
+
+.cemoji-point_right_hmn {
+    background-position: -20.0em -27.0em;
+}
+
+.cemoji-point_left_hmn {
+    background-position: -21.0em -27.0em;
+}
+
+.cemoji-point_down_hmn {
+    background-position: -22.0em -27.0em;
+}
+
+.cemoji-open_hands_hmn {
+    background-position: -23.0em -27.0em;
+}
+
+.cemoji-ok_hand_hmn {
+    background-position: -24.0em -27.0em;
+}
+
+.cemoji-nail_varnish_hmn {
+    background-position: -25.0em -27.0em;
+}
+
+.cemoji-muscle_hmn {
+    background-position: -26.0em -27.0em;
+}
+
+.cemoji-middle_finger_hmn {
+    background-position: -27.0em -27.0em;
+}
+
+.cemoji-metal_hmn {
+    background-position: -28.0em 0.0em;
+}
+
+.cemoji-index_finger_hmn {
+    background-position: -28.0em -1.0em;
+}
+
+.cemoji-handshake_hmn {
+    background-position: -28.0em -2.0em;
+}
+
+.cemoji-hand_splayed_hmn {
+    background-position: -28.0em -3.0em;
+}
+
+.cemoji-hand_hmn {
+    background-position: -28.0em -4.0em;
+}
+
+.cemoji-fist_hmn {
+    background-position: -28.0em -5.0em;
+}
+
+.cemoji-fist_facing_right_hmn {
+    background-position: -28.0em -6.0em;
+}
+
+.cemoji-fist_facing_left_hmn {
+    background-position: -28.0em -7.0em;
+}
+
+.cemoji-crossed_fingers_hmn {
+    background-position: -28.0em -8.0em;
+}
+
+.cemoji-clap_hmn {
+    background-position: -28.0em -9.0em;
+}
+
+.cemoji-call_me_hmn {
+    background-position: -28.0em -10.0em;
+}
+
+.cemoji-back_of_hand_hmn {
+    background-position: -28.0em -11.0em;
+}
+
+.cemoji-writing_hand_clw {
+    background-position: -28.0em -12.0em;
+}
+
+.cemoji-wave_clw {
+    background-position: -28.0em -13.0em;
+}
+
+.cemoji-vulcan_clw {
+    background-position: -28.0em -14.0em;
+}
+
+.cemoji-v_clw {
+    background-position: -28.0em -15.0em;
+}
+
+.cemoji-thumbs_up_clw {
+    background-position: -28.0em -16.0em;
+}
+
+.cemoji-thumbs_down_clw {
+    background-position: -28.0em -17.0em;
+}
+
+.cemoji-selfie_clw {
+    background-position: -28.0em -18.0em;
+}
+
+.cemoji-raised_hands_clw {
+    background-position: -28.0em -19.0em;
+}
+
+.cemoji-punch_clw {
+    background-position: -28.0em -20.0em;
+}
+
+.cemoji-pray_clw {
+    background-position: -28.0em -21.0em;
+}
+
+.cemoji-point_up_clw {
+    background-position: -28.0em -22.0em;
+}
+
+.cemoji-point_right_clw {
+    background-position: -28.0em -23.0em;
+}
+
+.cemoji-point_left_clw {
+    background-position: -28.0em -24.0em;
+}
+
+.cemoji-point_down_clw {
+    background-position: -28.0em -25.0em;
+}
+
+.cemoji-open_hands_clw {
+    background-position: -28.0em -26.0em;
+}
+
+.cemoji-ok_hand_clw {
+    background-position: -28.0em -27.0em;
+}
+
+.cemoji-nail_varnish_clw {
+    background-position: 0.0em -28.0em;
+}
+
+.cemoji-muscle_clw {
+    background-position: -1.0em -28.0em;
+}
+
+.cemoji-middle_finger_clw {
+    background-position: -2.0em -28.0em;
+}
+
+.cemoji-metal_clw {
+    background-position: -3.0em -28.0em;
+}
+
+.cemoji-index_finger_clw {
+    background-position: -4.0em -28.0em;
+}
+
+.cemoji-handshake_clw {
+    background-position: -5.0em -28.0em;
+}
+
+.cemoji-hand_splayed_clw {
+    background-position: -6.0em -28.0em;
+}
+
+.cemoji-hand_clw {
+    background-position: -7.0em -28.0em;
+}
+
+.cemoji-fist_facing_right_clw {
+    background-position: -8.0em -28.0em;
+}
+
+.cemoji-fist_facing_left_clw {
+    background-position: -9.0em -28.0em;
+}
+
+.cemoji-fist_clw {
+    background-position: -10.0em -28.0em;
+}
+
+.cemoji-crossed_fingers_clw {
+    background-position: -11.0em -28.0em;
+}
+
+.cemoji-clap_clw {
+    background-position: -12.0em -28.0em;
+}
+
+.cemoji-call_me_clw {
+    background-position: -13.0em -28.0em;
+}
+
+.cemoji-back_of_hand_clw {
+    background-position: -14.0em -28.0em;
+}
+
+.cemoji-technologist {
+    background-position: -15.0em -28.0em;
+}
+
+.cemoji-teacher {
+    background-position: -16.0em -28.0em;
+}
+
+.cemoji-student {
+    background-position: -17.0em -28.0em;
+}
+
+.cemoji-singer {
+    background-position: -18.0em -28.0em;
+}
+
+.cemoji-scientist {
+    background-position: -19.0em -28.0em;
+}
+
+.cemoji-pilot {
+    background-position: -20.0em -28.0em;
+}
+
+.cemoji-office_worker {
+    background-position: -21.0em -28.0em;
+}
+
+.cemoji-mechanic {
+    background-position: -22.0em -28.0em;
+}
+
+.cemoji-judge {
+    background-position: -23.0em -28.0em;
+}
+
+.cemoji-health_worker {
+    background-position: -24.0em -28.0em;
+}
+
+.cemoji-guard {
+    background-position: -25.0em -28.0em;
+}
+
+.cemoji-firefighter {
+    background-position: -26.0em -28.0em;
+}
+
+.cemoji-farmer {
+    background-position: -27.0em -28.0em;
+}
+
+.cemoji-factory_worker {
+    background-position: -28.0em -28.0em;
+}
+
+.cemoji-detective {
+    background-position: -29.0em 0.0em;
+}
+
+.cemoji-construction_worker {
+    background-position: -29.0em -1.0em;
+}
+
+.cemoji-chef {
+    background-position: -29.0em -2.0em;
+}
+
+.cemoji-astronaut {
+    background-position: -29.0em -3.0em;
+}
+
+.cemoji-artist {
+    background-position: -29.0em -4.0em;
+}
+
+.cemoji-pool_toy_valve_open {
+    background-position: -29.0em -5.0em;
+}
+
+.cemoji-pool_toy_valve {
+    background-position: -29.0em -6.0em;
+}
+
+.cemoji-kay_thinking {
+    background-position: -29.0em -7.0em;
+}
+
+.cemoji-kay_teased {
+    background-position: -29.0em -8.0em;
+}
+
+.cemoji-kay_mischievous {
+    background-position: -29.0em -9.0em;
+}
+
+.cemoji-kay_grinning {
+    background-position: -29.0em -10.0em;
+}
+
+.cemoji-kay_frustrated {
+    background-position: -29.0em -11.0em;
+}
+
+.cemoji-kay_excited {
+    background-position: -29.0em -12.0em;
+}
+
+.cemoji-ceralor_tail {
+    background-position: -29.0em -13.0em;
+}
+
+.cemoji-ceralor_smile {
+    background-position: -29.0em -14.0em;
+}
+
+.cemoji-bike_pump {
+    background-position: -29.0em -15.0em;
+}
+
+.cemoji-air_tank {
+    background-position: -29.0em -16.0em;
+}
