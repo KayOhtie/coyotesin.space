@@ -42,7 +42,7 @@ THEME_STATIC_PATHS = ['static','source/font-awesome/webfonts']
 CSS_FILE = 'main.css'
 
 # Blogroll
-LINKS = (('Keybase', 'https://keybase.io/ceralor'),
+LINKS = (('Keyoxide', 'https://keyoxide.org/EF9328927969D342939BBB2718817244ED315340'),
 	('Github', 'https://github.com/ceralor'),
 	('BitBucket', 'https://bitbucket.com/ceralor'))
 
