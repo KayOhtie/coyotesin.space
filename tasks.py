@@ -31,6 +31,8 @@ CONFIG = {
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,
+    # Publish data
+    'site_domain': SETTINGS['SITE_DOMAIN']
 }
 
 @task
@@ -141,6 +143,7 @@ def gh_pages(c):
     preview(c)
     c.run('ghp-import -b {github_pages_branch} '
           '-m {commit_message} '
+          '-c {site_domain} '
           '{deploy_path} -p'.format(**CONFIG))
 
 def pelican_run(cmd):
