@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+
+{% block richmeta %}
+<meta property="og:type" content="article" />
+<meta property="og:article:published_time" content="{{ article.date }}" />
+{% if article.modified is defined %}
+<meta property="og:article:modified_time" content="{{ article.modified }}" />
+{% endif %}
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% if article.tags is defined -%}
+	{%- for tag in article.tags %}
+		<meta property="og:article:tag" content="{{ tag | escape }}" />
+	{% endfor -%}
+{%- endif %}
+<meta property="og:title" content="{{ SITENAME }} - {{ article.title }}" />
+<meta property="og:description" content="{{ article.summary|striptags }}" />
+<meta property="og:url" content="https://coyotesin.space/{{ article.url }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="{{ TWITTER_USERNAME }}" />
+{% endblock %}
+
+{% block content %}
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title is-size-3">
+			{{ article.title }}
+		</p>
+		<time class="card-header-icon" datetime="{{ article.date|strftime('%Y-%m-%d %H:%M:%S') }}">
+				{{ article.date|strftime('%a %d %b %Y @ %H:%M') }}
+		</time>
+	</header>
+	<div class="card-content">
+		<div class="content article">
+		 {{ article.content }}
+		 {% if article.twitter_comment_url is defined %}
+		 <p><a href="{{ article.twitter_comment_url }}" class="link">Leave a comment <i class="fab fa-twitter"></i></a></p>
+		 {% endif %}
+		 {% if article.fedi_comment_url is defined %}
+		 <p><a href="{{ article.fedi_comment_url }}" class="link">Leave a comment <i class="fab fa-mastodon"></i></a></p>
+		 {% endif %}
+		 {% include 'taglist.html' %}
+		 {% if article.modified is defined %}
+		 <p><time class="time" datetime="{{ article.modified|strftime('%Y-%m-%d %H:%M:%S') }}"><i class="far fa-clock" title="last modified"></i> {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}</time></p>
+		{% endif %}
+		</div>
+	</div>
+	<footer class="card-footer">
+		<a class="card-footer-item link" href="/blog_index.html">Back to index of articles</a>
+	</footer>
+</div>
+{% endblock %}

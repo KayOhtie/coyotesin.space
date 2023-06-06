@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block richmeta %}
+<meta property="og:title" content="{{ SITENAME }} - Blog Index" />
+<meta property="og:description" content="Blog posts from coyotesin.space" />
+{% endblock %}
+
+{% block content %}
+<div class="columns is-multiline">
+{% if articles_page is defined %}
+{% for article in articles_page.object_list %}
+<div class="column is-one-third is-half-tablet is-full-mobile">
+	<div class="card">
+		<header class="card-header">
+			<p class="card-header-title">
+				{{ article.title }}
+			</p>
+		</header>
+		<div class="card-content">
+			<div class="content">
+				{{ article.summary }}
+				<br>
+				<time datetime="{{ article.date|strftime('%Y-%m-%d %H:%M:%S') }}">
+					{{ article.date|strftime('%a %d %b %Y @ %H:%M') }}
+				</time>
+				{% if article.modified is defined %}
+		 <i class="far fa-clock" title="last modified {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}"></i>
+		{% endif %}
+			</div>
+		</div>
+		<footer class="card-footer">
+			<a class="link card-footer-item" href="/{{ article.url }}">Read more...</a>
+		</footer>
+	</div>
+</div>
+{% endfor %}
+{% endif %}
+</div>
+{% include 'pagination.html' %}
+
+{% endblock %}

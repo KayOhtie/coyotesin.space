@@ -1,0 +1,35 @@
+{% if DEFAULT_PAGINATION %}
+{% if articles_page is defined %}
+<nav class="level is-mobile">
+  	<span class="level-left level-item">
+    {% if articles_page.has_previous() %}
+        <a class="link " href="/{{ articles_previous_page.url }}">
+    	&lt;-- prev
+  	</a>
+  	{% else %}
+  	&lt;-- prev
+  	{% endif %}
+    </span>
+    {% for page in articles_paginator.page_range %}
+		<span class="level-item">
+			{% if page != articles_page.number %}
+			<a class="link" href="/{{ articles_paginator.page(page).url }}">
+				{{ page }}
+			</a>
+			{% else %}
+			{{ page }}
+			{% endif %}
+		</span>
+	{% endfor %}
+	<span class="level-right level-item">
+    {% if articles_page.has_next() %}
+    <a class="link" href="/{{ articles_next_page.url }}">
+    	next --&gt;
+  	</a>
+  	{% else %}
+  	next --&gt;
+    {% endif %}
+  </span>
+</nav>
+{% endif %}
+{% endif %}
