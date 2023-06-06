@@ -3,6 +3,7 @@ from datetime import date
 AUTHOR = 'Kay Ohtie'
 SITENAME = 'Coyotes in Space'
 SITEURL = ''
+SITE_DOMAIN = 'coyotesin.space'
 CURRENT_YEAR = date.today().year
 
 PATH = 'content'

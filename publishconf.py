@@ -7,7 +7,6 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITE_DOMAIN = 'coyotesin.space'
 SITEURL = f'https://{SITE_DOMAIN}'
 RELATIVE_URLS = False
 
