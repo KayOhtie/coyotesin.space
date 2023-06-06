@@ -10,3 +10,9 @@
 [submodule "simple-fa"]
 	path = plugins/simple-fa
 	url = git@github.com:Ceralor/pelican-simple-fa.git
+[submodule "themes/yotespace/source/scss/bulma"]
+	path = themes/yotespace/source/scss/bulma
+	url = https://github.com/jgthms/bulma.git
+[submodule "themes/yotespace/source/scss/bulma-accordion"]
+	path = themes/yotespace/source/scss/bulma-accordion
+	url = https://github.com/Wikiki/bulma-accordion.git
