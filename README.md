@@ -15,3 +15,5 @@ pip install -r requirements.txt
 ```
 
 ~~Now all set and can use `make devserver` to start the auto-updating dev server.~~ Scratch, mid-upgrade to newest Pelican build.
+
+Also a lot of this is now out of date.
