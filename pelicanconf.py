@@ -9,16 +9,16 @@ CURRENT_YEAR = date.today().year
 PATH = 'content'
 STATIC_PATHS = ['images','files','.well-known','_config.yml']
 ARTICLE_PATHS = ['blog']
-#ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-#ARTICLE_URL = '{date:%Y}/{slug}.html'
-INDEX_SAVE_AS = 'blog_index.html'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{slug}.html'
+ARTICLE_URL = 'articles/{date:%Y}/{slug}.html'
+INDEX_SAVE_AS = 'articles/index.html'
 #TEMPLATE_PAGES = { 'pages/proof.md':'proof.md.asc.txt' }
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
 PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
 
 TIMEZONE = 'US/Central'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 LOCALE="en_US.UTF-8"
 
 # Feed generation is usually not desired when developing
