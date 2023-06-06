@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" lang="en-US">
-  <title>Coyotes in Space - Sundry Details</title>
+  <title>Coyotes in Space - Templates fuget</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css?b35a77a2">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -19,52 +19,45 @@
   <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
   <meta name="msapplication-TileColor" content="#4b2fdf">
   <meta name="theme-color" content="#4b2fdf">
-<meta property="og:type" content="profile" />
-<meta property="og:profile:first_name" content="Kay" />
-<meta property="og:profile:last_name" content="Ohtie" />
-<meta property="og:profile:username" content="ceralor" />
-<meta property="og:profile:gender" content="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" />
-<meta property="og:title" content="Coyotes in Space - Sundry Details" />
-<meta property="og:description" content="Extra details about Kay as both a fursona and character" />
-<meta property="og:url" content="https://coyotesin.space/sundry.html" />
+<meta property="og:type" content="article" />
+<meta property="og:article:published_time" content="2018-10-22 16:43:00-05:00" />
+<meta property="og:article:author" content="Kay Ohtie" />
+		<meta property="og:article:tag" content="website" />
+		<meta property="og:article:tag" content="tech" />
+		<meta property="og:article:tag" content="google" />
+<meta property="og:title" content="Coyotes in Space - Templates fuget" />
+<meta property="og:description" content="Been meaning to make this site really look a lot nicer, so I've been faffing around with things and I think I've finally got the beginnings of something! I still need to theme the tags page to look nicer, but the indexes look OK so far. I think I could …" />
+<meta property="og:url" content="https://coyotesin.space/templates-fuget.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="" />
   <!-- END favicon content -->
 </head>
 <body>
   <section class="section">
     <div class="container">
 <h1 class="title site-name">
-  <a href="/">Coyotes in Space - Sundry Details</a>
+  <a href="/">Coyotes in Space - Templates fuget</a>
 </h1>
 <div class="card">
 	<header class="card-header">
-		<p class="card-header-title">
-			Sundry Details
+		<p class="card-header-title is-size-3">
+			Templates fuget
 		</p>
+		<time class="card-header-icon" datetime="2018-10-22 16:43:00">
+				Mon 22 Oct 2018 @ 16:43
+		</time>
 	</header>
 	<div class="card-content">
 		<div class="content article">
-		 <p>Lots of neat ideas I kinda have had kicking around for a while, so, er, here goes on some!</p>
-		 <ul>
-		 	<li>Kay's body is warm, and generates heat, though the mechanism for this is completely unknown. As a result, he's never got that cold feeling when hugged, better giving a sense for the fact he's alive.</li>
-		 	<li>A side effect of this heat generation is that he feels most comfortable at regular body temperature. Higher heats do not bother him very much, and he enjoys the thermal expansion that comes along with it, but cold temperatures definitely bother him. Without fur anymore, he loses body heat more easily. This explains why he wears winter clothes during winter months and continues to wear clothes typically in general, even if he goes with a looser, more-relaxed wardrobe.</li>
-		 	<li>Kay's material is pretty puncture-resistant, despite being as thin as it is. He wouldn't be able to hike if it wasn't!</li>
-		 	<li>His material also isn't electrically conductive, of course, being some kind of latexy compound. An unexpected effect from this is in the use of touch screens and touchpads, or any other capacitive surface for control of electronics! He must use either a capacitive-compatible stylus or coat his clawtips and fingerpads with a thin layer of a dark-clear compound with a similar feel to his material, but bearing just enough metallic content to restore that capacitive touch. If he's inflated, the material can peel off his handpaws easily, though it's not mentioned in RP situations unless explicitly called for.</li>
-		 </ul>
-		 <section class="accordions">
-		  <article class="accordion">
-		    <div class="accordion-header toggle">
-		      <p>More Adult-sided things...</p>
-		    </div>
-		    <div class="accordion-body">
-		      <div class="accordion-content">
-		        <ul>
-					<li>The material applied to grant capacitance can also be peeled off by someone else as a bit of a kink thing. Kay's into light restraint/restriction stuff, and being told "Nope, you're not allowed to use the phone right now" by taking away his ability to use the touch screen is a fun use, provided the restrictor is also having fun with the coyote in other ways.</li>
-				</ul>
-		      </div>
-		    </div>
-		  </article>
-		</section>
+		 <p>Been meaning to make this site really look a lot nicer, so I've been faffing around with things and I think I've finally got the beginnings of something! I still need to theme <a href="/tags.html" class="link">the tags page</a> to look nicer, but the indexes look OK so far. </p>
+<p>I think I could do with having a visible sub-title for each type of index which will require fucking around with indexes a little more, and mapping specific templates to each index. Pelican does have some really neat flexibility, but the documentation is kind of poor. For instance, I had to explore to realize, hey, I can make a baseline no-content template that any fully-root pages can use (such as the home/index) and then make the actual <code>base.html</code> (which it uses for all the other themes typically) extend this <code>prebase.html</code> instead. </p>
+<p>Technicalities aside I really like what Pelican can do, and I want to see what I can do to push it further. I'd love to try and extend their documentation with better understanding, though their 'contributing' guide doesn't actually state anything about contributing to their somewhat lacking docs so...I guess I should just PR and find out how it goes? I guess @ me somewhere on input there! I've never really PR'd before to a public project.</p>
+<p>Which...brings me to another question -- is it really worth it for me to host my own gitea instance at <a class="link" href="https://coding.coyotesin.space">coding.coyotesin.space</a> for my projects instead of github? I mean it's at least trivial to move something to Github -- make blank repo, add remote, <code>git push -u github</code>, done. Dunno! Anywho, that's all I was thinking right now.</p>
+<p>tags: <a class="tag" href="/tag/website.html">website</a> <a class="tag" href="/tag/tech.html">tech</a> <a class="tag" href="/tag/google.html">google</a> </p>		</div>
 	</div>
+	<footer class="card-footer">
+		<a class="card-footer-item link" href="/blog_index.html">Back to index of articles</a>
+	</footer>
 </div>
     </div>
   </section>
