@@ -27,7 +27,7 @@ CONFIG = {
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     # Github Pages configuration
     'github_pages_branch': 'gh-pages',
-    'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
+    'commit_message': f'"Publishing site on {datetime.date.today().isoformat()}"',
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,
