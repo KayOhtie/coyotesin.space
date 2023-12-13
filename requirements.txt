@@ -4,5 +4,5 @@ jsmin
 cssmin
 libsass
 Markdown
-pelican-pelimoji
+pelimoji
 pelican-webassets
