@@ -24,14 +24,14 @@
                 let commentSection = document.getElementById('comments-container');
                 data['descendants'].forEach((comment) => {
                     comment['is_op'] = (comment.account.acct == "{{ fedi_username }}");
-                    comment['is_reply'] = (comment.in_reply_to_id == '{{ fedi_id }}');
+                    comment['is_reply'] = (comment.in_reply_to_id !== '{{ fedi_id }}');
                     comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
                         {dateStyle:"long",timeStyle:"short"});
                     if (!comment.account.acct.includes("@")) {
                         comment.account['acct'] = `${comment.account.acct}@{{ fedi_host }}`;
                     }
                     var renderedComment = Sqrl.render(templComment, comment);
-                    if (comment.is_reply) {
+                    if (!comment.is_reply) {
                         commentSection.innerHTML += renderedComment;
                     } else {
                         try {
