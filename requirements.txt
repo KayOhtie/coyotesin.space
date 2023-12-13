@@ -1,4 +1,4 @@
-pelican>=6.0
+pelican>=4.9.1
 webassets
 jsmin
 cssmin
