@@ -1,22 +1,26 @@
-Use below for cloning
+# Coyotes In Space website
+
+## Cloning
 
 ```
 git clone git@github.com:Ceralor/coyotesin.space.git --depth=1 --shallow-submodules --recursive
 cd coyotesin.space
-poetry install
-npm install
-./pull_bulma.sh
+python -m virtualenv .venv
 ```
 
-~~~
-Still need to also create the py3 virtualenv
+Then:
+ - on Linux: `. .venv/bin/activate`
+ - on Windows: `. .venv\scripts\activate.ps1`
+
 ```
-virtualenv -p python3 venv
-. venv/bin/activate
 pip install -r requirements.txt
+npm install
 ```
-~~~
 
-~~Now all set and can use `make devserver` to start the auto-updating dev server.~~ Scratch, mid-upgrade to newest Pelican build.
+## Dev
 
-Also a lot of this is now out of date.
+For working on previewing updates, `invoke clean livereload`
+
+## Publish
+
+To publish updated site, `invoke clean gh-pages`
