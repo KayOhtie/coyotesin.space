@@ -4,6 +4,7 @@ import shutil
 import sys
 import datetime
 
+from livereload import Server as LiveServer
 from invoke import task
 from invoke.main import program
 from invoke.util import cd
@@ -97,14 +98,13 @@ def preview(c):
 @task
 def livereload(c):
     """Automatically reload browser tab upon file modification."""
-    from livereload import Server
 
     def cached_build():
         cmd = "-s {settings_base} -e CACHE_CONTENT=true LOAD_CONTENT_CACHE=true"
         pelican_run(cmd.format(**CONFIG))
 
     cached_build()
-    server = Server()
+    server = LiveServer()
     theme_path = SETTINGS["THEME"]
     watched_globs = [
         CONFIG["settings_base"],
