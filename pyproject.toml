@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "coyotesin-space"
+version = "0.1.0"
+description = "Personal website"
+authors = ["Kay Ohtie <kay@coyotesin.space>"]
+readme = "README.md"
+packages = [{include = "coyotesin"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pelican = "4.9.1"
+pelican-webassets = "^2.0.0"
+pelimoji = "^1.0.0"
+jsmin = "^3.0.1"
+cssmin = "^0.2.0"
+libsass = "^0.22.0"
+Markdown = "^3.5.1"
+webassets-libsass = "^0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -7,3 +7,4 @@ __pycache__
 *.pid
 .sass-cache/
 content/emoji_map
+node_modules/
