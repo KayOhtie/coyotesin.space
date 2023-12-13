@@ -1,7 +1,6 @@
 {% if article.fedi_comment_url is defined %}
 {% set fedi_host, fedi_username, fedi_id = article.fedi_comment_url.split('/')[-3:] %}
 {% set fedi_username = fedi_username.replace('@','') %}
-<script src="https://unpkg.com/squirrelly"></script>
 <script>
     function renderComments() {
         let templComment = "";
