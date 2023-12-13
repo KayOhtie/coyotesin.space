@@ -4,7 +4,7 @@
   <meta charset="utf-8" lang="en-US">
   <title>Coyotes in Space - What Prompts Fursona Changes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.min.css?33342627">
+  <link rel="stylesheet" href="/css/style.min.css?f8a67ae2">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   <script src="/js/packed.js?f23306aa" type="text/javascript"></script>
@@ -60,9 +60,68 @@
 <p>In keeping though, Ceralor stopped feeling representative of me, of "my best self", and he had been for some time, I realized, once I did decide to change. Canine had felt more accurate for some time, and the bouncy, wiggly, goofy nature felt far more at home for me upon picking it up more, it felt like me, actually me. I felt like I was free to really make Kay who I wanted him to be, to be my best self, instead of feeling constrained by expectations on a by-then-13-years-since-creation fursona.</p>
 <p>I got a lot of those negative reactions, a lot of people who felt like I wasn't the same person. In truth, I really wasn't perhaps the same how they expected, but at the same time I realized I really was the same person and just understood myself better now. And the compliments I got on Kay outweighed it, comments about how much better he fit me, how cute he was, silly, "real", it's hard to say, but it made me so happy and warm feeling! <i class="cemoji cemoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> </p>
 <p>Anyway this was just a quick write-up thing because this was gonna be WAY too much text for Twitter. I'll try to keep this up-to-date more with posts!</p>
-		 <p><a href="https://twitter.com/ceralor/status/1291501282721779715" class="link">Leave a comment <i class="fab fa-twitter"></i></a></p>
-		 <p><a href="https://blimps.xyz/@ceralor/104644817987354174" class="link">Leave a comment <i class="fab fa-mastodon"></i></a></p>
-<p>tags: <a class="tag" href="/tag/furry.html">furry</a> <a class="tag" href="/tag/fursona.html">fursona</a> </p>		</div>
+		 <!-- <p><a href="https://twitter.com/ceralor/status/1291501282721779715" class="link">Leave a comment <i class="fab fa-twitter"></i></a></p> -->
+
+<p>tags: <a class="tag" href="/tag/furry.html">furry</a> <a class="tag" href="/tag/fursona.html">fursona</a> </p><script src="https://unpkg.com/squirrelly"></script>
+<script>
+    function renderComments() {
+        let templComment = "";
+        fetch('/templates/comment.sqrl')
+            .then((resp) => {return resp.text();})
+            .then((resptext) => { templComment = resptext; });
+        fetch('/templates/emoji.sqrl')
+            .then((resp) => {return resp.text();})
+            .then((resptext) => { Sqrl.templates.define('emoji',Sqrl.compile(resptext)); });
+        Sqrl.helpers.define('emojify', (content, blocks) => {
+            let output = content.params[0];
+            content.params[1].forEach((emoji) => {
+                output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+            });
+            return output;
+        });
+        fetch('https://blimps.xyz/api/v1/statuses/104644817987354174/context')
+            .then((resp) => {return resp.json();})
+            .then((data) => { if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "ceralor");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '104644817987354174');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['acct'] = `${comment.account.acct}@blimps.xyz`;
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+        }); } });
+    }
+</script>
+<section id="comments" class="section comments">
+  <h2>Comments</h2>
+<noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@ceralor/104644817987354174">the original post</a> on Mastodon.</p></noscript>
+<noscript>You need JavaScript to view the comments.</noscript>
+  <div id="comments-container" class="mastodon-comment-content">
+
+  </div>
+  <p class="mt-5">
+    <a href="https://blimps.xyz/@ceralor/104644817987354174" class="button is-black">
+        <span class="icon-text">
+            <span class="icon"><i class="fab fa-mastodon"></i></span>
+            <span>Leave a comment</span>
+        </span>
+    </a>
+    </p>
+</section>
+<script>renderComments();</script>
+		</div>
 	</div>
 	<footer class="card-footer">
 		<a class="card-footer-item link" href="/blog_index.html">Back to index of articles</a>

@@ -1,0 +1,6 @@
+<picture>
+    <source srcset="{{it.url}}" media="(prefers-reduced-motion: no-preference)">
+    <span class="icon">
+        <img class="emoji" src="{{it.static_url}}" alt="{{it.shortcode}}" title=":{{it.shortcode}}:">
+    </span>
+</picture>
