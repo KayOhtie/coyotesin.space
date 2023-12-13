@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "coyotesin"}]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">3.9,<4.0"
 pelican = "4.9.1"
 pelican-webassets = "^2.0.0"
 pelimoji = "^1.0.0"
