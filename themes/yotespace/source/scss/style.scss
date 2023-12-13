@@ -36,8 +36,22 @@ $footer-background-color: transparent;
 .link, .content a {
 	background-color: $grey-darker;
 }
+.comment { 
+	background-color: $grey-dark; 
+	color: $light; 
+	padding: 1.5rem 0.75rem 0.25rem 0.75rem; 
+	border: solid 1px $dark; 
+	box-shadow: 2px 2px 2px rgba(0,0,0,1);
+}
+.comment-avatar {
+	border: solid 1px $dark; 
+	box-shadow: 2px 2px 2px rgba(0,0,0,1);
+}
 
-.card { background-color: $dark; } 
+.comment .comment {
+	margin: 1.0rem 0.5rem 0.25rem 0.5rem;
+}
+.card { background-color: $dark; color: $light; } 
 .card .card-header,.card-header-title,.card-content,.content {
 	background-color: $dark;
 	color: $light;
@@ -55,13 +69,13 @@ $footer-background-color: transparent;
 .banner {
     max-height: 60vh; 
   }
-div.content  p a {
-	color: $grey-light;
+div.content  p>a {
+	// color: $grey-light;
 	background-color: $black-ter;
 	text-decoration: underline;
 }
 footer.footer p a, div.content p a.tag {
-	color: $grey;
+	// color: $grey;
 	text-decoration: none;
 }
 
@@ -73,6 +87,69 @@ footer.footer p a, div.content p a.tag {
 	background-color: $grey-dark;
 	border-left: 5px solid $grey-light;
 }
+
+// //// Imported from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
+// .mastodon-comment {
+//     background-color: var(--body-background);
+//     border-radius: var(--card-border-radius);
+//     padding: var(--card-padding);
+//     margin-bottom: 1rem;
+//     display: flex;
+//     gap: 1rem;
+//     flex-direction: column;
+//     flex-grow: 2;
+
+
+//     .disabled {
+//         color: var(--accent-color)
+//     }
+// }
+
+// .comment {
+// 	display: flex;
+// 	flex-direction: row;
+// 	gap: 1rem;
+// 	flex-wrap: true;
+// }
+
+.comment-avatar,.avatar-link {
+	width: 6rem;
+}
+
+// #comments-wrapper {
+// 	flex-grow: 2;
+// }
+
+// .comment-author {
+// 	display: flex;
+// 	flex-direction: column;
+
+// 	&-name {
+// 		font-weight: bold;
+// 		a {
+// 			display: flex;
+// 			align-items: center;
+// 		}
+// 	}
+
+// 	&-date {
+// 		margin-left: auto;
+// 	}
+// }
+
+// #comments-wrapper article:first-child {
+//     margin-top: 0;
+// }
+
+// .mastodon {
+//   --dlg-bg: #282c37;
+//   --dlg-w: 600px;
+//   --dlg-color: #9baec8;
+//   --dlg-button-p: 0.75em 2em;
+//   --dlg-outline-c: #00D9F5;
+// }
+// //// End Import
+
 // .spoiler > input + label:after{
 //     content: "+";
 //     float: right;
