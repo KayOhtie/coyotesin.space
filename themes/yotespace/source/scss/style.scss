@@ -26,6 +26,10 @@ $footer-background-color: transparent;
 	text-transform: lowercase;
 }
 
+a.link i.pelimoji {
+	vertical-align: text-bottom;
+}
+
 .link, .badges a {
 	padding: 3px 7px;
 	//border-radius: 12px;

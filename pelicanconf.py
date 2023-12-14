@@ -46,9 +46,9 @@ LINKS = ()
 SOCIAL = (
     ('Mastodon', 'https://blimps.xyz/@KayOhtie'),
     ('GitHub', 'https://github.com/Ceralor'),
-    ('Keyoxide', 'https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340'),
+    # ('Keyoxide', 'https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340'),
 	#('FurAffinity','https://furaffinity.net/user/ceralor'),
-    ('KoFi','https://ko-fi.com/kayohtie')
+    # ('KoFi','https://ko-fi.com/kayohtie')
 )
 
 DEFAULT_PAGINATION = 9
