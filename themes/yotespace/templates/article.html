@@ -23,22 +23,29 @@
 
 {% block content %}
 <div class="card">
-	<header class="card-header">
-		<p class="card-header-title is-size-3">
+	<div class="header p-3">
+		<p class="title is-3">
 			{{ article.title }}
 		</p>
-		<time class="card-header-icon" datetime="{{ article.date|strftime('%Y-%m-%d %H:%M:%S') }}">
-				{{ article.date|strftime('%a %d %b %Y @ %H:%M') }}
-		</time>
-	</header>
-	<div class="card-content">
-		<div class="content article">
-			{{ article.content }}
-			{% include 'taglist.html' %}
+		<p class="title subtitle is-5">
+			<time datetime="{{ article.date.isoformat() }}">
+					{{ article.date|strftime('%a %d %b %Y @ %-I:%M %p') }}
+			</time>
+		</p>
 			{% if article.modified is defined %}
-			<p><time class="time" datetime="{{ article.modified|strftime('%Y-%m-%d %H:%M:%S') }}"><i class="far fa-clock" title="last modified"></i> {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}</time></p>
+			<p class="subtitle is-6">
+				<em>
+					<time class="time" datetime="{{ article.modified.isoformat() }}">
+						{{ article.modified|strftime('%a %d %b %Y @ %-I:%M %p') }}
+					</time>
+					<i class="far fa-clock" title="last modified"></i>*
+				</em>
+			</p>
 			{% endif %}
-		</div>
+	</div>
+	<div class="content article p-3">
+		{{ article.content }}
+		{% include 'taglist.html' %}
 	</div>
 	{% include 'comments.html' %}
 	<footer class="article-footer">

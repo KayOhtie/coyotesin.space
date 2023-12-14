@@ -32,9 +32,11 @@
     <p>
       <br>
 		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- 
-      <time datetime="{{ articles[0].date|strftime('%Y-%m-%d %H:%M:%S') }}">{{ articles[0].date|strftime('%a %d %b %Y @ %H:%M') }}</time> {% if articles[0].modified is defined %}
-     <i class="far fa-clock" title="last modified {{ articles[0].modified|strftime('%a %d %b %Y @ %H:%M') }}"></i>
-    {% endif %}</a>
+      {% if articles[0].modified is defined %}
+        <i class="far fa-clock" title="last modified {{ articles[0].modified|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}"></i>*
+      {% endif %}
+      <time datetime="{{ articles[0].date.isoformat() }}">{{ articles[0].date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
+    </a>
 		<div class="content">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
     </p>
   </div>
