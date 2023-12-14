@@ -8,3 +8,5 @@ __pycache__
 .sass-cache/
 content/emoji_map
 node_modules/
+cache/
+plugins/
