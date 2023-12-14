@@ -1,3 +1,4 @@
+<!-- emoji -->
 <picture>
     <source srcset="{{it.url}}" media="(prefers-reduced-motion: no-preference)">
     <span class="icon">

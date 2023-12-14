@@ -32,6 +32,7 @@ THEME="themes/yotespace"
 THEME_STATIC_DIR = ''
 THEME_STATIC_PATHS = ['static','source/font-awesome/webfonts']
 CSS_FILE = 'main.css'
+WEBASSETS_SOURCE_PATHS = ['node_modules','../../node_modules']
 
 #PLUGIN_PATHS = ["plugins"]
 PLUGINS=['pelican.plugins.webassets', 'pelican.plugins.pelimoji']

@@ -33,20 +33,16 @@
 	</header>
 	<div class="card-content">
 		<div class="content article">
-		 {{ article.content }}
-		 {% if article.twitter_comment_url is defined %}
-		 <!-- <p><a href="{{ article.twitter_comment_url }}" class="link">Leave a comment <i class="fab fa-twitter"></i></a></p> -->
-		 {% endif %}
-
-		 {% include 'taglist.html' %}
-		 {% if article.modified is defined %}
-		 <p><time class="time" datetime="{{ article.modified|strftime('%Y-%m-%d %H:%M:%S') }}"><i class="far fa-clock" title="last modified"></i> {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}</time></p>
-		 {% endif %}
-		 {% include 'comments.html' %}
+			{{ article.content }}
+			{% include 'taglist.html' %}
+			{% if article.modified is defined %}
+			<p><time class="time" datetime="{{ article.modified|strftime('%Y-%m-%d %H:%M:%S') }}"><i class="far fa-clock" title="last modified"></i> {{ article.modified|strftime('%a %d %b %Y @ %H:%M') }}</time></p>
+			{% endif %}
 		</div>
 	</div>
-	<footer class="card-footer">
-		<a class="card-footer-item link" href="/blog_index.html">Back to index of articles</a>
+	{% include 'comments.html' %}
+	<footer class="article-footer">
+		<a class="card-footer-item link" href="/articles/index.html">Back to index of articles</a>
 	</footer>
 </div>
 {% endblock %}

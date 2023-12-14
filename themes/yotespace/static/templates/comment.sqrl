@@ -1,43 +1,42 @@
-<article class="comment box {{@if(it.is_reply)}}comment-reply{{/if}} {{@if(it.is_op)}}post-op{{/if}}" 
-    id="comment-{{ it.id }}" temprop="comment" itemtype="http://schema.org/Comment">
+<!-- comment -->
+<article class="comment box {{@if(it.is_reply)}}comment-reply{{/if}} {{@if(it.is_op)}}post-op{{/if}}" id="comment-{{ it.id }}">
     <nav class="level">
         <div class="level-left">
             <div class="level-item">
-                <a title="{{@if(it.is_op)}}Blog post author; {{/if}}View profile at @{{it.account.acct}}"
+                <a title="{{@if(it.is_op)}}Blog post author; {{/if}}View profile at @{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}}"
                     rel="external nofollow" 
                     href="{{it.account.url}}" 
                     class="avatar-link{{@if(it.is_op)}} op{{/if}}">
                     <picture>
                         <source media="(prefers-reduced-motion: no-preference)" srcset="{{it.account.avatar}}">
-                        <img alt="@{{it.account.acct}} avatar" src="{{it.account.avatar_static}}" class="comment-avatar">
+                        <img alt="@{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}} avatar" src="{{it.account.avatar_static}}" class="comment-avatar">
                     </picture>
                 </a>
             </div>
             <div class="level-item">
                 <header>
                     <p class="is-size-4 author">
-                        <span itemprop="author" itemtype="http://schema.org/Person">
-                            {{@if(it.account.display_name.length > 0)}}
-                                {{@emojify(it.account.display_name,it.account.emojis) /}}
-                            {{#else}}
-                                {{it.account.username}}
-                            {{/if}}
-                        </span>
+                        {{@if(it.account.display_name.length > 0)}}
+                            {{@emojify(it.account.display_name,it.account.emojis) /}}
+                        {{#else}}
+                            {{it.account.username}}
+                        {{/if}}
                     </p>
                     <p class="is-size-5">
+                        <div class="link">
                         <a rel="external nofollow"
-                            title="{{@if(it.is_op)}}Blog post author; {{/if}}@{{it.account.acct}}" 
+                            title="{{@if(it.is_op)}}Blog post author; {{/if}}@{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}}" 
                             href="{{it.account.url}}"
-                            class="instance link{{@if(it.is_op)}} op{{/if}}">
-                                @{{it.account.acct}}
-                        </a>
+                            class="instance {{@if(it.is_op)}} op{{/if}}">
+                                @{{it.account.dispuser[0]}}&ZeroWidthSpace;@{{it.account.dispuser[1]}}
+                        </a></div>
                     </p>
                 </header>
             </div>
         </div>
         <div class="level-right">
             <div class="level-item">
-                <a rel="external nofollow" class="link" title="View comment at {{it.account.acct.split('@')[1]}}"
+                <a rel="external nofollow" class="link" title="View comment at {{it.account.dispuser[1]}}"
                     href="{{it.url}}">
                     <span class="icon-text">
                     <span class="icon"><i class="far fa-clock"></i></span>

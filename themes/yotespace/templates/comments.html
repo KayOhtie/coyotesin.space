@@ -2,24 +2,26 @@
 {% set fedi_host, fedi_username, fedi_id = article.fedi_comment_url.split('/')[-3:] %}
 {% set fedi_username = fedi_username.replace('@','') %}
 <script>
-    function renderComments() {
-        let templComment = "";
-        fetch('/templates/comment.sqrl')
-            .then((resp) => {return resp.text();})
-            .then((resptext) => { templComment = resptext; });
-        fetch('/templates/emoji.sqrl')
-            .then((resp) => {return resp.text();})
-            .then((resptext) => { Sqrl.templates.define('emoji',Sqrl.compile(resptext)); });
-        Sqrl.helpers.define('emojify', (content, blocks) => {
-            let output = content.params[0];
-            content.params[1].forEach((emoji) => {
-                output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{ "{{@include('emoji',it) /}}" }}",emoji));
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{ "{{@include('emoji',it) /}}" }}",emoji));
+                });
+                return output;
             });
-            return output;
-        });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
         fetch('https://{{ fedi_host }}/api/v1/statuses/{{ fedi_id }}/context')
-            .then((resp) => {return resp.json();})
-            .then((data) => { if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
                 let commentSection = document.getElementById('comments-container');
                 data['descendants'].forEach((comment) => {
                     comment['is_op'] = (comment.account.acct == "{{ fedi_username }}");
@@ -27,7 +29,9 @@
                     comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
                         {dateStyle:"long",timeStyle:"short"});
                     if (!comment.account.acct.includes("@")) {
-                        comment.account['acct'] = `${comment.account.acct}@{{ fedi_host }}`;
+                        comment.account['dispuser'] = [comment.account.acct, '{{ fedi_host }}'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
                     }
                     var renderedComment = Sqrl.render(templComment, comment);
                     if (!comment.is_reply) {
@@ -39,24 +43,35 @@
                             commentSection.innerHTML += renderedComment;
                         }
                     }
-        }); } });
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
     }
 </script>
-<section id="comments" class="section comments">
-  <h2>Comments</h2>
-<noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ fedi_host }}/@{{ fedi_username }}/{{ fedi_id }}">the original post</a> on Mastodon.</p></noscript>
-<noscript>You need JavaScript to view the comments.</noscript>
-  <div id="comments-container" class="mastodon-comment-content">
-
-  </div>
-  <p class="mt-5">
-    <a href="{{ article.fedi_comment_url }}" class="button is-black">
-        <span class="icon-text">
-            <span class="icon"><i class="fab fa-mastodon"></i></span>
-            <span>Leave a comment</span>
-        </span>
-    </a>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ fedi_host }}/@{{ fedi_username }}/{{ fedi_id }}">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a href="{{ article.fedi_comment_url }}" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
     </p>
-</section>
-<script>renderComments();</script>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 {% endif %}
