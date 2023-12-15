@@ -37,7 +37,7 @@
       {% endif %}
       <time datetime="{{ articles[0].date.isoformat() }}">{{ articles[0].date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
     </a>
-		<div class="content">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
+		<div class="content p-3">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
     </p>
   </div>
 </div>
