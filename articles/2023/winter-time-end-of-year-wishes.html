@@ -54,6 +54,79 @@
 <p>I just want everyone to have a wonderful winter time, especially if spent with family, and if they're in need of some form of cheer, that they can find it, whether through born family, chosen family, friends, or even strangers. Take time for you during these darker Northern months, or warmer Southern months, wherever you can.</p>
 <p>Big squeaky hugs from a puffy coyote who just wants to spread a few smiles if he can. 🧡🎈</p>
 <p>tags: <a class="tag" href="/tag/christmas.html">christmas</a> <a class="tag" href="/tag/holidays.html">holidays</a> <a class="tag" href="/tag/winter.html">winter</a> </p>	</div>
+<script>
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+                });
+                return output;
+            });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
+        fetch('https://blimps.xyz/api/v1/statuses/111637789527251124/context')
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "KayOhtie");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '111637789527251124');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['dispuser'] = [comment.account.acct, 'blimps.xyz'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
+    }
+</script>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@KayOhtie/111637789527251124">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a href="https://blimps.xyz/@KayOhtie/111637789527251124" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
+    </p>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 	<footer class="article-footer">
 		<p class="card-footer-item">
 			<a class="link" href="/articles/index.html">Back to index of articles</a>
