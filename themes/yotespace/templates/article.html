@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+{% block title %}
+{% if article.series %}
+{{ article.series.name }}
+{% else %}
+{{ SITENAME }}
+{% endif %} - {{ article.title }}{% endblock %}
 
 {% block richmeta %}
 <meta property="og:type" content="article" />
@@ -25,6 +30,9 @@
 <div class="card">
 	<div class="header p-5">
 		<p class="title is-3">
+			{% if article.series %}
+				{{ article.series.name }} - {{ article.series.index }}.
+			{% endif %}
 			{{ article.title }}
 		</p>
 		<p class="title subtitle is-5">
@@ -32,26 +40,62 @@
 					{{ article.date|strftime('%a %d %b %Y @ %-I:%M %p') }}
 			</time>
 		</p>
-			{% if article.modified is defined %}
-			<p class="subtitle is-6">
-				<em>
-					<time class="time" datetime="{{ article.modified.isoformat() }}">
-						{{ article.modified|strftime('%a %d %b %Y @ %-I:%M %p') }}
-					</time>
-					<i class="far fa-clock" title="last modified"></i>*
-				</em>
+		{% if article.modified is defined %}
+		<p class="subtitle is-6">
+			<em>
+				<time class="time" datetime="{{ article.modified.isoformat() }}">
+					{{ article.modified|strftime('%a %d %b %Y @ %-I:%M %p') }}
+				</time>
+				<i class="far fa-clock" title="last modified"></i>*
+			</em>
+		</p>
+		{% endif %}
+		{% if article.series %}
+		<nav class="level">
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.series.previous.url }}"><-- {{ article.series.previous.title }}</a>
 			</p>
-			{% endif %}
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.category.url }}">Chapter Listing</a>
+			</p>
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.series.next.url }}">{{ article.series.next.title }} --></a>
+			</p>
+		</nav>
+		{% endif %}
 	</div>
 	<div class="content article p-5">
 		{{ article.content }}
+		{% if not article.series %}
 		{% include 'taglist.html' %}
+		{% endif %}
 	</div>
 	{% include 'comments.html' %}
 	<footer class="article-footer">
+		{% if article.series %}
+		<nav class="level">
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.series.previous.url }}"><-- {{ article.series.previous.title }}</a>
+			</p>
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.category.url }}">Chapter Listing</a>
+			</p>
+			<p class="level-item has-text-centered">
+				<a class="link" href="/{{ article.series.next.url }}">{{ article.series.next.title }} --></a>
+			</p>
+		</nav>
+		<nav class="level">
+			<p class="level-item has-text-centered">
+				<a class="link" href="/category/story.html">
+					<i class="pelimoji pelimoji-spellbook" aria-label="spellbook" title="spellbook"></i> More Stories
+				</a>
+			</p>
+		</nav>
+		{% else %}
 		<p class="card-footer-item">
 			<a class="link" href="/articles/index.html">Back to index of articles</a>
 		</p>
+		{% endif %}
 	</footer>
 </div>
 {% endblock %}

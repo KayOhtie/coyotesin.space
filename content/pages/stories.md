@@ -1,0 +1,2 @@
+Title: Stories
+Template: stories

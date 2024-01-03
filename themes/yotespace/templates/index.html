@@ -10,6 +10,9 @@
 {% block content %}
 <div class="columns is-multiline">
 {% if articles_page is defined %}
+{% if 'story' in articles_page.object_list[0].tags %}
+{% set ARTICLE_ORDER_BY = 'date'%}
+{% endif %}
 {% for article in articles_page.object_list %}
 <div class="column is-one-third is-half-tablet is-full-mobile">
 	<div class="card">

@@ -38,6 +38,16 @@
       <a class="link" href="/{{ page.url }}">{{ page.title }}</a>
     </p>
     {% endfor %}
+    {# {% for series_name, series_articles in series.items() %}
+      {% if 'story' in series_articles[0].tags %}
+        {% set story = series_articles[0] %}
+        <p class="level-item has-text-centered">
+          <a class="link" href="/{{ story.url }}">
+            <i class="pelimoji pelimoji-spellbook" aria-label="spellbook" title="spellbook"></i> {{ series_name }}
+          </a>
+        </p>
+      {% endif %}
+    {% endfor %} #}
   </nav>
   <footer class="footer">
   <div class="content has-text-centered">

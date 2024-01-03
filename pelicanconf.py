@@ -8,13 +8,13 @@ CURRENT_YEAR = date.today().year
 
 PATH = 'content'
 STATIC_PATHS = ['images','files','.well-known','_config.yml']
-ARTICLE_PATHS = ['blog']
+ARTICLE_PATHS = ['blog', 'stories','gallery']
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{slug}.html'
 ARTICLE_URL = 'articles/{date:%Y}/{slug}.html'
 INDEX_SAVE_AS = 'articles/index.html'
 #TEMPLATE_PAGES = { 'pages/proof.md':'proof.md.asc.txt' }
-DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
-PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
+#DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
+#PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
 
 TIMEZONE = 'US/Central'
 
@@ -33,9 +33,10 @@ THEME_STATIC_DIR = ''
 THEME_STATIC_PATHS = ['static','source/font-awesome/webfonts']
 CSS_FILE = 'main.css'
 WEBASSETS_SOURCE_PATHS = ['../../node_modules','../../content/emoji_map/','source']
-
+PATH_METADATA = "(?P<category>.*)/.*"
+#PATH_METADATA = "articles/(?P<category>.*)/.*"
 #PLUGIN_PATHS = ["plugins"]
-PLUGINS=['pelican.plugins.webassets', 'pelican.plugins.pelimoji']
+#PLUGINS=['pelican.plugins.webassets', 'pelican.plugins.pelimoji']
 #PLUGINS=['pelican.plugins.webassets']
 
 

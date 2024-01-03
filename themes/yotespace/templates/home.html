@@ -31,20 +31,23 @@
     </p>
     <p>
       <br>
-		<a href="/{{ articles[0].url }}"><span class="subtitle">{{ articles[0].title }}</span> -- 
-      {% if articles[0].modified is defined %}
-        <i class="far fa-clock" title="last modified {{ articles[0].modified|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}"></i>*
+    {% set category, cat_articles = (categories | selectattr(0, 'equalto', 'blog') |  first) %}
+    {% set home_article = cat_articles[0] %}
+		<a href="/{{ home_article.url }}"><span class="subtitle">{{ home_article.title }}</span> -- 
+      {% if home_article.modified is defined %}
+        <i class="far fa-clock" title="last modified {{ home_article.modified|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}"></i>*
       {% endif %}
-      <time datetime="{{ articles[0].date.isoformat() }}">{{ articles[0].date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
+      <time datetime="{{ home_article.date.isoformat() }}">{{ home_article.date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
     </a>
-		<div class="content p-3">{{ articles[0].summary }}<a href="/{{ articles[0].url }}" class="link">Read more...</a> </div>
+		<div class="content p-3">{{ home_article.summary }}<a href="/{{ home_article.url }}" class="link">Read more...</a> </div>
+    </p>
+    
+    <p>
+      <a class="link" href="/category/blog.html"><i class="fas fa-rss-square" title="rss-square"></i> blog index</a>
     </p>
   </div>
 </div>
 <nav class="level">
-  <p class="level-item has-text-centered">
-    <a class="link" href="/articles/index.html"><i class="fas fa-rss-square" title="rss-square"></i> blog</a>
-  </p>
   {% for name, link in SOCIAL %}
   <p class="level-item has-text-centered">
     <a class="link" href="{{ link }}"><i class="fab fa-{{ name|lower }}" title="{{ name }}"></i> {{ name }}</a>

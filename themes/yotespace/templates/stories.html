@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - Stories{% endblock %}
+
+{% block richmeta %}
+<meta property="og:title" content="{{ SITENAME }} - Story Index" />
+<meta property="og:description" content="Stories" />
+{% endblock %}
+
+{% block content %}
+<div class="columns is-multiline">
+{% for series_name, series_articles in series.items() %}
+{% if 'story' in series_articles[0].tags %}
+<div class="column is-one-third is-half-tablet is-full-mobile">
+	<div class="card">
+		<header class="card-header">
+			<span class="card-header-title is-size-4">
+				{{ series_name }}
+            </span>
+            <br>
+		</header>
+		<div class="card-content">
+			<div class="content">
+				{{ series_articles[0].series_summary }}
+			</div>
+		</div>
+		<footer class="card-footer">
+			<a class="link card-footer-item" href="/{{ series_articles[0].url }}">Read</a>
+		</footer>
+	</div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+{% endblock %}
