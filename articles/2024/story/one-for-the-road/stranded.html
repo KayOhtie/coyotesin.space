@@ -93,6 +93,79 @@
 <p>Thomas squirmed and wiggled in true noodle fashion with a chitter, followed by a giggle. “This? Cuddling a cutie like you? I’m hoping I get to again some night,” he replied sweetly.</p>
 <p>The coyote rested a paw on the ferret’s rubbery-coated flank, gently squeezing, clearly more to explore the material than outright grope his new friend. “Me too.”</p>
 	</div>
+<script>
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+                });
+                return output;
+            });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
+        fetch('https://blimps.xyz/api/v1/statuses/111690877038864204/context')
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "KayOhtie");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '111690877038864204');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['dispuser'] = [comment.account.acct, 'blimps.xyz'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
+    }
+</script>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@KayOhtie/111690877038864204">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a href="https://blimps.xyz/@KayOhtie/111690877038864204" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
+    </p>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 	<footer class="article-footer">
 		<nav class="level">
 			<p class="level-item has-text-centered">
