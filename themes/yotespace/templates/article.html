@@ -50,19 +50,7 @@
 			</em>
 		</p>
 		{% endif %}
-		{% if article.series %}
-		<nav class="level">
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.series.previous.url }}"><-- {{ article.series.previous.title }}</a>
-			</p>
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.category.url }}">Chapter Listing</a>
-			</p>
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.series.next.url }}">{{ article.series.next.title }} --></a>
-			</p>
-		</nav>
-		{% endif %}
+		{% include 'series_paginator.html' %}
 	</div>
 	<div class="content article p-5">
 		{{ article.content }}
@@ -73,17 +61,7 @@
 	{% include 'comments.html' %}
 	<footer class="article-footer">
 		{% if article.series %}
-		<nav class="level">
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.series.previous.url }}"><-- {{ article.series.previous.title }}</a>
-			</p>
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.category.url }}">Chapter Listing</a>
-			</p>
-			<p class="level-item has-text-centered">
-				<a class="link" href="/{{ article.series.next.url }}">{{ article.series.next.title }} --></a>
-			</p>
-		</nav>
+		{% include 'series_paginator.html' %}
 		<nav class="level">
 			<p class="level-item has-text-centered">
 				<a class="link" href="/pages/stories.html">

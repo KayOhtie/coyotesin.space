@@ -1,0 +1,21 @@
+{% if article.series %}
+<nav class="level">
+    <p class="level-item has-text-centered">
+        {% if article.series.previous %}
+        <a class="link" href="/{{ article.series.previous.url }}">&lt;-- {{ article.series.previous.title }}</a>
+        {% else %}
+        <span class="link has-background-grey has-text-dark" disabled>&lt;--</span>
+        {% endif%}
+    </p>
+    <p class="level-item has-text-centered">
+        <a class="link" href="/{{ article.category.url }}">Chapter Listing</a>
+    </p>
+    <p class="level-item has-text-centered">
+        {% if article.series.next %}
+        <a class="link" href="/{{ article.series.next.url }}">{{ article.series.next.title }} --&gt;</a>
+        {% else %}
+        <span class="link has-background-grey has-text-dark" disabled>--&gt;</span>
+        {% endif%}
+    </p>
+</nav>
+{% endif %}

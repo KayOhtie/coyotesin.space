@@ -11,13 +11,22 @@
 <div class="columns is-multiline">
 {% if articles_page is defined %}
 {% if 'story' in articles_page.object_list[0].tags %}
-{% set ARTICLE_ORDER_BY = 'date'%}
+{% set ns = namespace(x=[]) %}
+{% for category, cat_articles in (categories | selectattr(0,'equalto',articles_page.object_list[0].category)) %}
+{% for article in cat_articles %}
+{% set ns.x = [article] + ns.x %}
+{% endfor %}
+{% endfor %}
+{% set article_list = ns.x %}
+{% else %}
+{% set article_list = articles_page.object_list %}
 {% endif %}
-{% for article in articles_page.object_list %}
+{% for article in article_list %}
 <div class="column is-one-third is-half-tablet is-full-mobile">
 	<div class="card">
 		<header class="card-header">
 			<p class="card-header-title is-size-4">
+				{% if ns is defined %}{{ article.series.index }}. {% endif %}
 				{{ article.title }}
 			</p>
 		</header>
@@ -41,6 +50,7 @@
 {% endfor %}
 {% endif %}
 </div>
+{% if ns is not defined %}
 {% include 'pagination.html' %}
-
+{% endif %}
 {% endblock %}
