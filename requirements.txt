@@ -8,3 +8,6 @@ pelimoji
 pelican-webassets
 invoke
 livereload
+minchin.pelican.plugins.nojekyll
+pelican-series
+pelican-more-categories
