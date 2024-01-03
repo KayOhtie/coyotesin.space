@@ -1,6 +1,5 @@
 Title:Camping dreams are weird
 Date:2019-05-23 07:51
-Category:General
 Tags:camping,dreams,cons
 Dreams are so weird sometimes. And fun! I had a dream last night that somehow evolved into hearing that it was too late for hikers to start on the northbound (NOBO) hike of the Appalachian Trail. And I was hiking it apparently, along with some friends. I remember looking around for stuff on the trail, but as it got later, I ended up stopping for the night at a shelter.
 

@@ -1,6 +1,5 @@
 Title:Templates fuget
 Date: 2018-10-22 16:43
-Category: General
 Tags: website, tech, google
 Been meaning to make this site really look a lot nicer, so I've been faffing around with things and I think I've finally got the beginnings of something! I still need to theme <a href="/tags.html" class="link">the tags page</a> to look nicer, but the indexes look OK so far. 
 

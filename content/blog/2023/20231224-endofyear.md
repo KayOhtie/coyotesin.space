@@ -1,6 +1,5 @@
 Title:Winter-time End-of-year wishes
 Date:2023-12-24 4:25 PM
-Category:General
 Tags:christmas,holidays,winter
 fedi_comment_url:https://blimps.xyz/@KayOhtie/111637789527251124
 With many friends of many faiths, and especially myself not being religious, I don't quite feel right wishing anyone a "Merry Christmas", nor a "happy holidays", as I don't want to seem like I'm co-opting a holy month of the year for many. But I still want to share _something._

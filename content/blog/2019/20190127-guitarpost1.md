@@ -1,7 +1,6 @@
 Title:Returning to the guitar?
 Date:2019-01-27 22:47:00
 Tags:music,learning,hobby,writing
-Category:General
 Many years ago, I took up casual guitar lessons using my mom's classical guitar. At the time I was young and more comitted to going through motions of prep than the practice itself. I never really took the time to learn well, eventually stopped the lessons. But I always loved how the guitar sounded.
 
 Recently, I've been thinking about it again. I'd first thought of snagging an electric guitar to learn on, but now I'm not certain I want to go that route. I miss the tone of an acoustic guitar, and I want to go that route. I decided to ask a friend who has been working on guitars for decades about it, and he's helping me out with picking out a starter, and encouraging it. And that's really helpful for me.

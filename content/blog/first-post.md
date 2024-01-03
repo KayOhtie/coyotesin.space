@@ -1,6 +1,5 @@
 Title: Starting Blog
 Date: 2018-10-07 14:30
-Category: General
 Tags: furry
 Oh, hey.
 

@@ -1,6 +1,5 @@
 Title:What Prompts Fursona Changes
 Date:2020-08-06 16:40
-Category:General
 twitter_comment_url:https://twitter.com/ceralor/status/1291501282721779715
 fedi_comment_url:https://blimps.xyz/@ceralor/104644817987354174
 Tags:furry,fursona

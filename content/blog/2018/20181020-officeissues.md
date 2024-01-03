@@ -1,6 +1,5 @@
 Title:Which office suite am I using?
 Date: 2018-10-20 16:30
-Category: General
 Tags: parents, support, tech, msoffice, microsoft, google
 I've been handling computer support for my dad for the better part of the last 15 years, give and take some times when he's had someone else working on it. I've helped him grow from using a local ISP's email, to using self-hosted email with his own domain on some Windows 2000 server, to using Exchange Server on a 2008 Small Biz server, and finally to using Google Apps for Biz. And this, my friends, is where the story begins.
 
