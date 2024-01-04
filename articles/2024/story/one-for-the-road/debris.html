@@ -5,7 +5,7 @@
   <title>One for the Road
  - Debris</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.min.css?cdc7e905">
+  <link rel="stylesheet" href="/css/style.min.css?76783e1a">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   <script src="/js/packed.js?1143e2c8" type="text/javascript"></script>
     <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
@@ -20,7 +20,7 @@
   <meta name="msapplication-TileColor" content="#4b2fdf">
   <meta name="theme-color" content="#4b2fdf">
 <meta property="og:type" content="article" />
-<meta property="og:article:published_time" content="2024-01-03 00:00:00-06:00" />
+<meta property="og:article:published_time" content="2024-01-02 23:56:00-06:00" />
 <meta property="og:article:author" content="Kay Ohtie" />
 		<meta property="og:article:tag" content="one_for_the_road" />
 		<meta property="og:article:tag" content="story" />
@@ -41,8 +41,8 @@
 			Debris
 		</p>
 		<p class="title subtitle is-5">
-			<time datetime="2024-01-03T00:00:00-06:00">
-					Wed 03 Jan 2024 @ 12:00 AM
+			<time datetime="2024-01-02T23:56:00-06:00">
+					Tue 02 Jan 2024 @ 11:56 PM
 			</time>
 		</p>
 <nav class="level">
@@ -103,6 +103,79 @@
 <p>Brandon nodded as the truck barreled down the road, the heavy, studded tires finding their tread with every inch. “Yeah, an hour or so. Plan is to stop at a truck stop in Burla that has plenty of stuff. Get breakfast, stock up, shower up, n’ hit the road.”</p>
 <p>The coyote perked his ears up halfway through. “...Breakfast?”</p>
 	</div>
+<script>
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+                });
+                return output;
+            });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
+        fetch('https://blimps.xyz/api/v1/statuses/111695234641110016/context')
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "KayOhtie");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '111695234641110016');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['dispuser'] = [comment.account.acct, 'blimps.xyz'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
+    }
+</script>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@KayOhtie/111695234641110016">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a href="https://blimps.xyz/@KayOhtie/111695234641110016" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
+    </p>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 	<footer class="article-footer">
 <nav class="level">
     <p class="level-item has-text-centered">
