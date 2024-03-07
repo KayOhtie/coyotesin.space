@@ -62,6 +62,79 @@ Content Warnings: surgery, pain, medical, gross</p>
 <p>But, I worked through it, nurse helped me with walking some more, good advice, and I was given medication to drop my blood pressure from being so high and then released. Also at this point I had a LOT of gas discomfort and bubbling and I was trying badly to fart, so bad that the first time I did I almost moaned with relief. It felt like the best fart ever because holy hell, you don't realize what it feels like when that whole system just STOPS and then needs to start again.</p>
 <p>I'm writing this while at my desk, while Mathias is in the living room working at my work desk, staying with me. Immensely grateful for him being here. I told my boss I'll be out this week and be back WFH on Monday, though may be WFH that week. I'll recover. It'll take some time, but I'll be back to normal again soon I hope.</p>
 	</div>
+<script>
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+                });
+                return output;
+            });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
+        fetch('https://blimps.xyz/api/v1/statuses/112056145344974270/context')
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "KayOhtie");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '112056145344974270');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['dispuser'] = [comment.account.acct, 'blimps.xyz'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
+    }
+</script>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@KayOhtie/112056145344974270">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a href="https://blimps.xyz/@KayOhtie/112056145344974270" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
+    </p>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 	<footer class="article-footer">
 		<p class="card-footer-item">
 			<a class="link" href="/articles/index.html">Back to index of articles</a>
