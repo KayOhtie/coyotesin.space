@@ -18,14 +18,14 @@ $family-primary: 'Atkinson Hyperlegible', $family-sans-serif;
 // $family-dys: 'Open-Dyslexic';
 // $family-primary: 'Open-Dyslexic', 'Noto Sans', $family-sans-serif;
 /*$body-family: 'Inconsolata', $family-monospace;*/
-$body-color: $light;
-$strong-color: $grey-lighter;
-$link: $grey-lighter;
+$body-color: $white;
+$strong-color: $white;
+$link: $white;
 $link-hover: $grey-light;
 $link-focus: $grey-light;
 $link-active: $grey-light;
-$title-color: $grey-lighter;
-$subtitle-color: $grey-light;
+$title-color: $white;
+$subtitle-color: $grey-lighter;
 $footer-background-color: transparent;
 
 @import "../../../../node_modules/bulma/bulma.sass";
@@ -49,7 +49,7 @@ a.link i.pelimoji {
 }
 .comment { 
 	background-color: $grey-dark; 
-	color: $light; 
+	color: $white; 
 	// padding: 0.25rem 0.25rem 0.25rem 0.25rem; 
 	padding: 0.15rem; 
 	border: solid 1px $dark; 
@@ -67,10 +67,10 @@ a.link i.pelimoji {
 // .comment .comment {
 // 	// margin: 1.0rem 0.1rem 0.1rem 0.1rem;
 // }
-.card { background-color: $dark; color: $light; } 
+.card { background-color: $dark; color: $white; } 
 .card .card-header,.card-header-title,.card-content,.content {
 	background-color: $dark;
-	color: $light;
+	color: $white;
 }
 .article-footer {
 	border-top: none;
@@ -99,7 +99,7 @@ footer.footer p a, div.content p a.tag {
 }
 
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-	color: $light;
+	color: $white;
 }
 
 .content blockquote {
