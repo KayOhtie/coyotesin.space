@@ -12,8 +12,7 @@
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b2fdf">
   <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
@@ -36,21 +35,27 @@
 <body>
   <section class="section">
     <div class="container">
-<div class="card">
+<div class="card h-entry">
 	<div class="header p-5">
-		<p class="title is-3">
+		<p class="title is-3 p-name">
 			Custom Emoji, Activate!
 		</p>
 		<p class="title subtitle is-5">
-			<time datetime="2018-10-25T23:14:00-05:00">
+			<time class="dt-published" datetime="2018-10-25T23:14:00-05:00">
 					Thu 25 Oct 2018 @ 11:14 PM
 			</time>
 		</p>
+		<span style="display: none;">
+		<data class="p-summary" hidden="for-humans"><p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
+<p>This is based roughly off of Mastodon's CSS implementation using emojione. The script implementing this scours a setting directory for …</p></data>
+		<data class="p-author" hidden="for-humans">Kay Ohtie</data>
+		<data class="u-url" hidden="for-humans">https://coyotesin.space/articles/2018/custom-emoji-activate.html</data>
+		</span>
 	</div>
 	<div class="content article p-5">
-		<p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
+		<span class="e-content"><p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
 <p>This is based roughly off of Mastodon's CSS implementation using emojione. The script implementing this scours a setting directory for <code>.png</code> files, and then builds a list of those based on filename, so replacements are done using the filename minus the png, such as &#58;kay_grinning&#58; for the emoji in the opening! I'll try not to<i class="pelimoji pelimoji-bike_pump" aria-label="bike_pump" title="bike_pump"></i>this too much but it's very fun to have this working and usable.</p>
-<p>This is based roughly off of the old replacer plugin for Pelican, functioning the same way but completely rewritten to make use of settings and building its own list for replacements to search for. The messy part is this requires scouring EVERY HTML file on write, but it works in the end. I'll have to find a nicer way to hook into this pre-write during the actual HTML-ization.</p>
+<p>This is based roughly off of the old replacer plugin for Pelican, functioning the same way but completely rewritten to make use of settings and building its own list for replacements to search for. The messy part is this requires scouring EVERY HTML file on write, but it works in the end. I'll have to find a nicer way to hook into this pre-write during the actual HTML-ization.</p></span>
 <p>tags: <a class="tag" href="/tag/website.html">website</a> <a class="tag" href="/tag/tech.html">tech</a> <a class="tag" href="/tag/emoji.html">emoji</a> <a class="tag" href="/tag/mastodon.html">mastodon</a> </p>	</div>
 	<footer class="article-footer">
 		<p class="card-footer-item">

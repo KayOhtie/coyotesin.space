@@ -11,18 +11,18 @@
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b2fdf">
   <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
   <meta name="msapplication-TileColor" content="#4b2fdf">
   <meta name="theme-color" content="#4b2fdf">
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Coyotes in Space" />
-<meta property="og:description" content="Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly. " />
+<meta name="title" property="og:title" content="Coyotes in Space" />
+<meta name="description" property="og:description" content="Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly." />
 <meta property="og:url" content="https://coyotesin.space" />
-<meta property="og:image" content="https://coyotesin.space/images/banner.png" />
+<meta name="image" property="og:image" content="https://coyotesin.space/images/banner.png" />
+<meta name="author" property="og:author" content="Kay Ohtie" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="" />
   <!-- END favicon content -->
@@ -30,9 +30,10 @@
 <body>
   <section class="section">
     <div class="container">
+<div class="h-card">
 <div class="level">
   <div class="has-text-centered level-left">
-    <img class="banner" src="https://coyotesin.space/images/banner_new.png" alt="Kay Ohtie floating in space happily">
+    <img class="banner u-featured" src="https://coyotesin.space/images/banner_new.png" alt="Kay Ohtie floating in space happily">
     <!-- Artwork credit to https://twitter.com/fans_tastic as a really amazing birthday present <3 -->
   </div>
 
@@ -40,7 +41,7 @@
     <h1 class="title">
       coyotes in space
     </h1>
-    <p>
+    <p class="p-note">
       Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly.
     </p>
     <p>
@@ -60,22 +61,23 @@ Content Warnings: surgery, pain, medical, gross</p>
 </div>
 <nav class="level">
   <p class="level-item has-text-centered">
-    <a class="link" href="https://blimps.xyz/@KayOhtie"><i class="fab fa-mastodon" title="Mastodon"></i> Mastodon</a>
+    <a class="link u-url" href="https://blimps.xyz/@KayOhtie" rel="me"><i class="fab fa-mastodon" title="Mastodon"></i> Mastodon</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link" href="https://github.com/Ceralor"><i class="fab fa-github" title="GitHub"></i> GitHub</a>
+    <a class="link u-url" href="https://github.com/Ceralor" rel="me"><i class="fab fa-github" title="GitHub"></i> GitHub</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link" href="https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340">
+    <a class="link u-url" rel="me" href="https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340">
       <i class="pelimoji pelimoji-keyoxide_shape" aria-label="keyoxide_shape" title="keyoxide_shape"></i> Keyoxide
     </a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link" href="https://ko-fi.com/kayohtie">
+    <a class="link u-url" href="https://ko-fi.com/kayohtie">
       <i class="pelimoji pelimoji-kofi_shape" aria-label="kofi_shape" title="kofi_shape"></i> Ko-fi
     </a>
   </p>
 </nav>
+</div>
     </div>
   </section>
   <nav class="level">

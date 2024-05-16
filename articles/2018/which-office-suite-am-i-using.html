@@ -12,8 +12,7 @@
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b2fdf">
   <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
@@ -38,19 +37,24 @@
 <body>
   <section class="section">
     <div class="container">
-<div class="card">
+<div class="card h-entry">
 	<div class="header p-5">
-		<p class="title is-3">
+		<p class="title is-3 p-name">
 			Which office suite am I using?
 		</p>
 		<p class="title subtitle is-5">
-			<time datetime="2018-10-20T16:30:00-05:00">
+			<time class="dt-published" datetime="2018-10-20T16:30:00-05:00">
 					Sat 20 Oct 2018 @ 4:30 PM
 			</time>
 		</p>
+		<span style="display: none;">
+		<data class="p-summary" hidden="for-humans"><p>I've been handling computer support for my dad for the better part of the last 15 years, give and take some times when he's had someone else working on it. I've helped him grow from using a local ISP's email, to using self-hosted email with his own domain on some …</p></data>
+		<data class="p-author" hidden="for-humans">Kay Ohtie</data>
+		<data class="u-url" hidden="for-humans">https://coyotesin.space/articles/2018/which-office-suite-am-i-using.html</data>
+		</span>
 	</div>
 	<div class="content article p-5">
-		<p>I've been handling computer support for my dad for the better part of the last 15 years, give and take some times when he's had someone else working on it. I've helped him grow from using a local ISP's email, to using self-hosted email with his own domain on some Windows 2000 server, to using Exchange Server on a 2008 Small Biz server, and finally to using Google Apps for Biz. And this, my friends, is where the story begins.</p>
+		<span class="e-content"><p>I've been handling computer support for my dad for the better part of the last 15 years, give and take some times when he's had someone else working on it. I've helped him grow from using a local ISP's email, to using self-hosted email with his own domain on some Windows 2000 server, to using Exchange Server on a 2008 Small Biz server, and finally to using Google Apps for Biz. And this, my friends, is where the story begins.</p>
 <p>Now, I have to preface this story with something. Throughout using Google, the debit card he had attached frequently wouldn't have money in the specific account for it and couldn't pay the monthly bill. He'd ignore the billing messages until it was too late and service was suspended. Sometimes he'd put money on that card, sometimes he changed to a different card. But without fail, this issue would occur, regardless of the card. Seriously why do some boomers have so many debit cards what the fuck. There were like, 6 or 7 different banks.</p>
 <p>Now, every time the billing failed, I'd have to remind my dad we were paying Google to host his email. I'd have to play the exact same round of "20 Questions" to answer him, "yes we switched because your ISP wasn't reliable enough for Exchange", "no it's not running out of your office", "no this isn't free just because Gmail is free", "yes you still get emails from everyone". Every time it was the same questions. But let's move on.</p>
 <p>Two years ago and change, I'm realizing Google is <em>not</em> the right solution for my dad. The Outlook sync client would always break and he hated using the web UI for both Gmail and Google Calendar. The support for opening Word files in the online one sucked, and you can't open Gdoc files in Microsoft Office (you can but it's finicky to do). It simply was not what he needed.</p>
@@ -60,7 +64,7 @@
 <p>...Now instead of thinking it's self-hosted mail, he thinks it's with Google. It's like he's one step behind, constantly, on where things are. Now, he asks why I'm paying Microsoft for his mail. He says "But I thought we paid Google for that". Every time I re-explain my logic for the change. He also acknowledges the billing concern with why I took over it and refuse to relinquish the billing control.</p>
 <p>During vacation last weekend, my dad had some issues getting his tablet to talk to email. He forgot his password (again), so I logged in under my admin account and reset it for him and we got him signed in to his phone and tablet again. Fast forward to Wednesday, he's at home now and tells me Outlook isn't syncing. Now, I made the mistake of thinking he remembered to update his password (you see where this is going).</p>
 <p>But, more than that...he now told me Google was holding everything for ransom for $100 and thought Google was still using it. Turns out, he signed into his Google apps account in Chrome, and completely disregarded the password prompt in Outlook after what he thought was the password didn't work. I freak out, and finally get a chance to remote in. Plugged in his new password and all was well in Outlook, and I just signed him out of the defunct account in Chrome.</p>
-<p>Moral of the story: Google sucks massively.</p>
+<p>Moral of the story: Google sucks massively.</p></span>
 <p>tags: <a class="tag" href="/tag/parents.html">parents</a> <a class="tag" href="/tag/support.html">support</a> <a class="tag" href="/tag/tech.html">tech</a> <a class="tag" href="/tag/msoffice.html">msoffice</a> <a class="tag" href="/tag/microsoft.html">microsoft</a> <a class="tag" href="/tag/google.html">google</a> </p>	</div>
 	<footer class="article-footer">
 		<p class="card-footer-item">
