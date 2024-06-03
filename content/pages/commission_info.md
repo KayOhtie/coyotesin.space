@@ -73,15 +73,15 @@ I will not upload your avatar for you under my own account for you to utilize if
         - A single avatar does not include the clothing for it as this is often a separate mesh
         - Quest variants of avatars may be available and may incur an additional complexity charge or be included in the add-on textures package
 
-# Payments and Refunds
+## Payments and Refunds
 
-    - Commissions will require discussion and partial payment up-front. After discussing the details of your commission, I will give you a total amount of the commission and send an invoice for either half of the total or the full amount, dependent upon your choice.
-    - Discussions will also include whether or not your commission can or will be live-streamed, both dependent on the content and on your choice. 
-        - If streamed, I may work on multiple commissioner's textures during the course of the stream without completing the avatar work on-stream. Much of the arrangement technicalities are fairly boring to watch, but it will be addressed during my next working session.
-    - A full refund on the amount paid is available up to beginning work. After work has begun, a partial refund can be issued dependent upon the amount of work performed. After at least one hour of work, the refund will be deducted 25% of the total cost of the commission. For example, a $100 commission refunded after beginning work would have a $25 refund if half of the commission was paid and $75 if the full amount was paid.
-    - All payments will be collected via invoices, whether in PayPal or another platform. No alternative payment methods will be accepted, eg gift cards, game codes, cryptocurrency, etc.
-    - If a partial payment is taken up-front, the project and package files will not be released to you until paid in full.
-    - In addition to receiving access to the source files, for most avatars I can supply a 'read me' file with steps to follow to upload the avatar, and support on the process should you run into any issues.
+- Commissions will require discussion and partial payment up-front. After discussing the details of your commission, I will give you a total amount of the commission and send an invoice for either half of the total or the full amount, dependent upon your choice.
+- Discussions will also include whether or not your commission can or will be live-streamed, both dependent on the content and on your choice. 
+    - If streamed, I may work on multiple commissioner's textures during the course of the stream without completing the avatar work on-stream. Much of the arrangement technicalities are fairly boring to watch, but it will be addressed during my next working session.
+- A full refund on the amount paid is available up to beginning work. After work has begun, a partial refund can be issued dependent upon the amount of work performed. After at least one hour of work, the refund will be deducted 25% of the total cost of the commission. For example, a $100 commission refunded after beginning work would have a $25 refund if half of the commission was paid and $75 if the full amount was paid.
+- All payments will be collected via invoices, whether in PayPal or another platform. No alternative payment methods will be accepted, eg gift cards, game codes, cryptocurrency, etc.
+- If a partial payment is taken up-front, the project and package files will not be released to you until paid in full.
+- In addition to receiving access to the source files, for most avatars I can supply a 'read me' file with steps to follow to upload the avatar, and support on the process should you run into any issues.
 
 # Available Avatar Bases
 
