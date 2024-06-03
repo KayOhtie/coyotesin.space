@@ -1,50 +1,42 @@
 Title: Commission Info
 Description: Avatar bases, pricing info, and terms of service
 Extensions: toc
-Hi! I specialize in retexturing models for plush or realistic latex, whether seamless or assembled! I haven't done any vinyl pooltoys yet but I'm willing to give it a try! 
+Hi! I specialize in retexturing models for plush or realistic latex, whether seamless or assembled! I haven't done any vinyl pooltoys yet but I'm willing to give it a try! At this time I can't offer detailed animations (eg., dances), most mesh edits or custom meshes, nor fully-custom avatars.
 
 [TOC]
 
 # Pricing
 
-| Option                                               | Price   |
-| ---------------------------------------------------- | ------- |
-| Avatar Color+Texture (inc. 2 clothing item recolors) | $75-125 |
-| 3+ clothing item recolors (total)                    | +$25    |
-| Additional Avatar Styles (same character design)     | +$50-75 |
+| Option                                                | Price   |
+| ----------------------------------------------------- | ------- |
+| Avatar Color+Texture (incl. 2 clothing item recolors) | $75-125 |
+| 3+ clothing item recolors (total)                     | +$25    |
+| Additional Avatar Styles (same character design)      | +$50-75 |
 
-Commissions start at $75 USD for the retexture, ranging up to $125 maximum depending upon the complexity of your character and the avatar I'm working on (eg, winged characters are automatically $100-125 due to the added work involved). This price also includes recoloring and retexturing (eg, fabric ➡️ latex) work of up to 2 garments. Arm and leg warmers are considered separate garments for this policy. Additional garment recoloring and retexturing can be included for a total additional cost of $25.
+Commissions start at $75 USD for the retexture, ranging up to $125 maximum depending upon the complexity of your character and the avatar I'm working on (eg, winged characters are automatically $100-125 due to the added work involved). The base price includes retexturing up to two garments. Arm and leg warmers are considered separate garments. Retexturing of additional garments can be added for $25 (total, not per garment).
 
-Garments added to the Unity project, but not recolored, or with very minor recoloring, are included free of charge.
+Garments added to the Unity project but not recolored, or with very minor recoloring, are free.
 
-Additional character styles (plush, latex, etc) may also be included but will add $50+ per style as much of the work involved has to be re-done to account for the style difference. These are not included in the all-in tier.
+Additional avatar styles (plush, latex, etc) may be added for $50-75 each, as each new style involves significant additional work.
 
-Additional graphic or animation options may also cost extra depending on the work involved. Some of these I can do quite simply and others require a fair bit more planning, such as adding AudioLink-reactive zones to your avatar or clothes.
+Additional graphic or animation requests may cost extra depending on the work involved. Some of these I can do quite simply and others require a fair bit more planning, such as adding AudioLink-reactive zones to your avatar or clothes.
 
-Alternate forms that significantly change coloration and appearances will cost as much as the base cost. Additional clothing costs won't be needed if using the same avatar base and clothing colors.
-
-# Terms of Service
+# Commission Terms
 
 In order to make things work out well between us, I want to set a few ground rules to protect me and protect you in case of disputes or issues.
 
-- Will/Won't Rules
-    - I greatly enjoy doing the following, as they are my specialties:
-        - realistic latex (glued/assembled creatures)
-        - toony latex (usually seamless, simpler)
-        - plush (fabric and fluff with stitching)
-    - I cannot offering the following at this time:
-        - Detailed animations, eg dances
-        - Most mesh edits or custom mesh
-        - fully-custom avatars
-    - I will not draw, create, or depict the following:
-        - Sexual activities of minors
-        - Scat/Bathroom Play
-        - Destructive shaders that impact other players' experiences
-        - A character outside your own
-            - With exception for gifts, in which case I will request the recipient's contact details as well to send a link to the assets *when* you are ready for me to send them.
-        - Gore or death
-    - I will not upload your avatar for you under my own account for you to utilize if you cannot presently upload one, but I may be able to help you rank up to allow uploads.
-    The above are non-exhaustive lists of each and may be ammended as I find additional entries for each.
+## Acceptable Content
+
+I will not draw, create, or depict the following:
+
+- Sexual or suggestive depictions involving minor characters
+- Scat, urine, or gas
+- Gore or death
+- Destructive shaders that impact other players' experiences
+- A character that is not your own, except for gifts, in which case I will request the recipient's contact details as well to send a link to the assets *when* you are ready for me to send them.
+
+I will not upload your avatar for you under my own account for you to utilize if you cannot presently upload one, but I may be able to help you rank up to allow uploads.
+
 - Commission Definition
    Unless otherwise discussed, a commission from me for a retexture of a model consists of the following:
     - Complete recoloring of all associated body material slots of the specified 3D model including:
@@ -57,7 +49,7 @@ In order to make things work out well between us, I want to set a few ground rul
             - raised surfaces such as glued-on or stitched-on markings
         - Metallic/gloss maps for shiny surfaces, metallic surfaces, and specular that covers the texture behavior such as polish or semi-gloss surfaces
         - in the format for the current version of Poiyomi Shader unless otherwise requested
-    - Recoloring and retexturing of up to 2 garments included, with more at an additional charge
+    - Recoloring/retexturing of up to 2 garments included, with more at an additional charge
         - Minor coloration adjustments of existing assets are included, eg. changing the arm color from grey to blue or red for glasses
         - Any number of unmodified assets may be included in the below-defined Unity scene
     - A Unity package containing any non-base required assets including:
@@ -80,7 +72,9 @@ In order to make things work out well between us, I want to set a few ground rul
         - Coloration designs are defined as significant changes in coloration and/or color patterns for additional appearances, eg alternate forms
         - A single avatar does not include the clothing for it as this is often a separate mesh
         - Quest variants of avatars may be available and may incur an additional complexity charge or be included in the add-on textures package
-- Payments and Refunds
+
+# Payments and Refunds
+
     - Commissions will require discussion and partial payment up-front. After discussing the details of your commission, I will give you a total amount of the commission and send an invoice for either half of the total or the full amount, dependent upon your choice.
     - Discussions will also include whether or not your commission can or will be live-streamed, both dependent on the content and on your choice. 
         - If streamed, I may work on multiple commissioner's textures during the course of the stream without completing the avatar work on-stream. Much of the arrangement technicalities are fairly boring to watch, but it will be addressed during my next working session.
@@ -104,7 +98,7 @@ Currently, I can texture the following avatars without an added fee for base acq
  - ### Julia Winterpaw 
    ([Gumroad](https://juliawinterpaw.gumroad.com))
 	 - [Mini Canine](https://juliawinterpaw.gumroad.com/l/minicanine)
-		 - Can include recoloring of base clothing as well (Arm-warmers, leg-warmers, t-shirt, hoodie, sweat pants, or )
+		 - Can include recoloring of base clothing as well (arm-warmers, leg-warmers, t-shirt, hoodie, sweat pants, or )
 		 - Extra Clothes:
 			 - [Falkor's Onesie for Mini Canine](https://agneyhero.gumroad.com/l/minionesie)
 				 - Currently have Bluey and Pokemon expansion packs for additional texture bases
