@@ -88,12 +88,64 @@ a.link i.pelimoji {
 .banner {
     max-height: 60vh; 
   }
-div.content  p>a {
+.content  p>a, .content ul a:not(.toc a) {
 	// color: $grey-light;
 	background-color: $black-ter;
 	text-decoration: underline;
+	&:not(.tag)::after {
+		content: " 🔗";
+	}
 }
-footer.footer p a, div.content p a.tag {
+
+.content table {
+	background-color: $black-ter;
+	max-width: fit-content;
+	padding: 2rem;
+	margin: 2rem;
+	box-shadow: 2px 2px 2px rgba(0,0,0,1);
+	tr th {
+		color: $grey-lighter;
+	}
+}
+
+.toc, .content table {
+	background-color: $black-ter;
+	max-width: fit-content;
+	padding: 2rem;
+	margin: 2rem;
+	box-shadow: 2px 2px 2px rgba(0,0,0,1);
+	.toctitle {
+		font-weight: bold;
+		font-size: larger;
+	}
+	li a {
+		font-family: $family-monospace;
+		// text-decoration: underline;
+		font-weight: bold;
+		padding: 0.25rem;
+		// margin: 0.5rem;
+	}
+	ul { list-style: upper-roman; }
+	ul ul { list-style: decimal; }
+	ul ul ul { list-style: lower-roman; }
+	ul ul ul ul { list-style: circle; }
+	li {
+		padding: 0.25rem;
+		border-bottom: 1px solid $grey-lighter;
+		// border-width: 100%;
+	}
+	
+	li > ul {
+		border-top: 1px solid $grey-lighter;
+		// border-width: 100%;
+	}
+	
+	li > ul > li:last-child, li:last-child {
+		border: none;
+	}
+}
+
+footer.footer p a, .content p a.tag {
 	// color: $grey;
 	text-decoration: none;
 }
@@ -105,6 +157,14 @@ footer.footer p a, div.content p a.tag {
 .content blockquote {
 	background-color: $grey-dark;
 	border-left: 5px solid $grey-light;
+}
+
+#terms-of-service + p + ul {
+	line-height: 2rem;
+	// list-style: upper-roman;
+	// ul ul ul { list-style: lower-alpha; }
+	// ul ul { list-style: lower-roman; }
+	// ul { list-style: decimal; }
 }
 
 // //// Imported from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
