@@ -8,6 +8,7 @@ docopt==0.6.2
 docutils==0.20.1
 exceptiongroup==1.2.0
 feedgenerator==2.1.0
+ghp-import==2.1.0
 idna==3.6
 importlib-metadata==7.0.1
 invoke==2.2.0
@@ -15,8 +16,9 @@ Jinja2==3.1.2
 jsmin==3.0.1
 libsass==0.22.0
 livereload==2.6.3
-Markdown==3.5.1
+Markdown==3.6
 markdown-it-py==3.0.0
+markdown-toc==1.2.6
 MarkupSafe==2.1.3
 mdurl==0.1.2
 minchin.pelican.plugins.autoloader==1.2.1
@@ -24,7 +26,7 @@ minchin.pelican.plugins.nojekyll==1.2.0
 ordered-set==4.1.0
 pelican==4.9.1
 pelican-more-categories==0.1.0
-pelican-series==2.1.0
+pelican-series==3.0.0
 pelican-webassets==2.0.0
 pelimoji==1.1.1
 pillow==10.2.0
