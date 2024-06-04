@@ -14,7 +14,7 @@ from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 from pelican.contents import Article
 from pelican.readers import MarkdownReader
 from webmentiontools.send import WebmentionSend
-from time import sleep
+# from time import sleep
 
 OPEN_BROWSER_ON_SERVE = True
 SETTINGS_FILE_BASE = "pelicanconf.py"
@@ -32,7 +32,7 @@ CONFIG = {
     "github_pages_branch": "gh-pages",
     "commit_message": f"\"Publish site on {datetime.date.today().isoformat()}\"",
     # Host and port for `serve`
-    "host": "localhost",
+    "host": "0.0.0.0",
     "port": 8000,
     "site_domain": SETTINGS["SITE_DOMAIN"]
 }
@@ -155,7 +155,7 @@ def gh_pages(c):
     preview(c)
     c.run(
         "ghp-import -b {github_pages_branch} "
-        "-m {commit_message}' "
+        "-m {commit_message} "
         "{deploy_path} -p".format(**CONFIG)
     )
 

@@ -1,4 +1,5 @@
 from datetime import date
+from pelican.settings import DEFAULT_CONFIG
 
 AUTHOR = 'Kay Ohtie'
 SITENAME = 'Coyotes in Space'
@@ -15,6 +16,9 @@ INDEX_SAVE_AS = 'articles/index.html'
 #TEMPLATE_PAGES = { 'pages/proof.md':'proof.md.asc.txt' }
 #DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'tag']
 #PAGINATED_TEMPLATES = {'index':None, 'tags': None, 'categories': None, 'archives': None, 'tag': None}
+
+MARKDOWN = DEFAULT_CONFIG['MARKDOWN']
+MARKDOWN['extension_configs']['toc'] = {'title':'Table of Contents'}
 
 TIMEZONE = 'US/Central'
 
