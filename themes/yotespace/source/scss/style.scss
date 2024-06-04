@@ -90,7 +90,7 @@ a.link i.pelimoji {
   }
 .content  p>a, .content ul a:not(.toc a) {
 	// color: $grey-light;
-	background-color: $black-ter;
+	// background-color: $black-ter;
 	text-decoration: underline;
 	&:not(.tag)::after {
 		content: " 🔗";
@@ -159,7 +159,7 @@ footer.footer p a, .content p a.tag {
 	border-left: 5px solid $grey-light;
 }
 
-#terms-of-service + p + ul {
+#commission-terms ul {
 	line-height: 2rem;
 	// list-style: upper-roman;
 	// ul ul ul { list-style: lower-alpha; }
