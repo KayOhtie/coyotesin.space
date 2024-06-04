@@ -4,14 +4,19 @@
   <meta charset="utf-8" lang="en-US">
   <title>Coyotes in Space - Badges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.min.css?81f24699">
+  <link rel="stylesheet" href="/css/style.css?9bd0763b">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   <script src="/js/packed.js?1143e2c8" type="text/javascript"></script>
-  <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
+    <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="related" type="application/atom+xml" href="/feeds/blog.atom.xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b2fdf">
+  <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
+  <meta name="msapplication-TileColor" content="#4b2fdf">
   <meta name="theme-color" content="#4b2fdf">
   <!-- END favicon content -->
 </head>
@@ -19,7 +24,7 @@
   <section class="section">
     <div class="container">
 <h1 class="title">
-  <a href="/">coyotes in space - Badges</a>
+  <a href="/">coyotes in space</a>
 </h1>
 <div class="card">
 	<header class="card-header">
@@ -29,17 +34,17 @@
 	</header>
 	<div class="card-content">
 		<div class="content article">
-<h2>Hello, hi!</h2>
+<h2 id="hello-hi">Hello, hi!</h2>
 <p>Hi there! My name's Kay Ohtie! I'm a coyote of the air-filled sort, and either you clicked your way to this page from my website, scanned your way here with a QR code on my e-paper badge, or tapped an NFC badge! Either way, thanks for dropping by!</p>
 <p>This page is here to document the badges I'm wearing, especially the signatureless e-paper ones, for artists who created them and perhaps a little information about them. </p>
 <p>But first...</p>
-<h2>What's that box thing you're wearing??</h2>
+<h2 id="whats-that-box-thing-youre-wearing">What's that box thing you're wearing??</h2>
 <p>That is an e-paper badge I built! I came up with the design and had a proof-of-concept (read: just the display with an image) at MFF 2018, and had the badge working and live for FWA2019! </p>
 <p>The badge is comprised of the following components:</p>
 <ul>
-<li><a href="https://www.waveshare.com/product/modules/oleds-lcds/e-paper/2.9inch-e-paper-module-c.htm">Waveshare 2.9" 3-color e-Paper display 🔗</a></li>
-<li><a href="https://www.adafruit.com/product/2796">Adafruit Feather M0 Adalogger 🔗</a></li>
-<li><a href="https://www.adafruit.com/product/1317">150 mAh battery 🔗</a></li>
+<li><a href="https://www.waveshare.com/product/modules/oleds-lcds/e-paper/2.9inch-e-paper-module-c.htm">Waveshare 2.9" 3-color e-Paper display</a></li>
+<li><a href="https://www.adafruit.com/product/2796">Adafruit Feather M0 Adalogger</a></li>
+<li><a href="https://www.adafruit.com/product/1317">150 mAh battery</a></li>
 <li>3D-printed backing</li>
 <li>Button</li>
 <li>1GB microSD card</li>
@@ -48,25 +53,25 @@
 <p>All these are connected up, with images loaded onto the SD card. Every few minutes, the microcontroller wakes up and sends a new image to the display from the SD card. The battery lasts up to 48 hours in ideal conditions, but I tend to recharge it daily.</p>
 <p>The display itself is capable of displaying three colors: white, black, and yellow. There's another variant that does red instead of yellow, and so red is commonly used in the images pushed to these displays to make sure it renders in the 'color'. Images below are recolored from what they are on the SD card, red, to be similar to the golden on the display.</p>
 <p>Speaking of images...</p>
-<h2>e-Paper Image Credits</h2>
+<h2 id="e-paper-image-credits">e-Paper Image Credits</h2>
 <hr>
 
-<h3><a href="https://www.furaffinity.net/user/barnem">Barnem 🔗</a></h3>
+<h3 id="barnem"><a href="https://www.furaffinity.net/user/barnem">Barnem</a></h3>
 <p>These were really my first e-paper badges, done as a proof of concept for me by my wonderful friend Barnem, and they're very cute! The blushy first one was designed around a smaller display I started to use with a Raspberry Pi Zero, but opted for the larger display powered by a Cortex M0 instead.</p>
 <p><img alt="Barnem Blushy" src="/images/badges/barnem_eink_bellyblush.png"> <img alt="Barnem D.A.B" src="/images/badges/barnem_eink_d.a.b.png"></p>
 <hr>
 
-<h3><a href="https://furaffinity.net/user/kitsovereign">Kit Sovereign 🔗</a></h3>
+<h3 id="kit-sovereign"><a href="https://furaffinity.net/user/kitsovereign">Kit Sovereign</a></h3>
 <p>Kit did the first full-display image last year, taking advantage of every pixel for a fun effect!</p>
 <p><img alt="Kit Sovereign Waving" src="/images/badges/kitsov_pixelwave.png"></p>
 <hr>
 
-<h3><a href="https://www.furaffinity.net/user/frengers">Frengers 🔗</a></h3>
+<h3 id="frengers"><a href="https://www.furaffinity.net/user/frengers">Frengers</a></h3>
 <p>One of my new badges this year! Frengers has done some pixel work in the past, and did an incredible job on this limited-palette image! The dithering to get the hair color as almost a 4th color is great! Much thanks for their work!</p>
 <p><img alt="Frengers Cute Sprawl" src="/images/badges/frengers_epaper-badge.png"></p>
 <hr>
 
-<h3><a href="https://www.furaffinity.net/user/reluctantdraggin/">Reluctant Draggin 🔗</a></h3>
+<h3 id="reluctant-draggin"><a href="https://www.furaffinity.net/user/reluctantdraggin/">Reluctant Draggin</a></h3>
 <p>I reached out to Reluctant to see if he'd be down for doing a badge, and he wasn't remotely reluctant to do it! Is this false advertising? Cute blimpiness either way!</p>
 <p><img alt="Reluctant Draggin Blimp" src="/images/badges/reluctantdraggin_epaper-badge.png">
 </div></p>
@@ -75,19 +80,18 @@
   </section>
   <nav class="level">
     <p class="level-item has-text-centered">
-      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/badges.html">Badges</a>
     </p>
     <p class="level-item has-text-centered">
-      <a rel="webmention" href="https://fed.brid.gy"></a>
+      <a class="link" href="/pages/avatar-retexture-commissions.html">Avatar Retexture Commissions</a>
+    </p>
+    <p class="level-item has-text-centered">
       <a class="link" href="/index.html">Home</a>
     </p>
     <p class="level-item has-text-centered">
-      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/stories.html">Stories</a>
     </p>
     <p class="level-item has-text-centered">
-      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/sundry-details.html">Sundry Details</a>
     </p>
   </nav>

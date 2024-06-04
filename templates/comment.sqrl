@@ -1,21 +1,21 @@
 <!-- comment -->
-<article class="comment box p-comment h-cite {{@if(it.is_reply)}}comment-reply{{/if}} {{@if(it.is_op)}}post-op{{/if}}" id="comment-{{ it.id }}">
+<article class="comment box {{@if(it.is_reply)}}comment-reply{{/if}} {{@if(it.is_op)}}post-op{{/if}}" id="comment-{{ it.id }}">
     <nav class="level">
-        <div class="level-left h-card p-author">
+        <div class="level-left">
             <div class="level-item">
-                <a title="{{@if(it.is_op)}}Blog post author; {{/if}}View profile at @{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}} "
+                <a title="{{@if(it.is_op)}}Blog post author; {{/if}}View profile at @{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}}"
                     rel="external nofollow" 
                     href="{{it.account.url}}" 
                     class="avatar-link{{@if(it.is_op)}} op{{/if}}">
                     <picture>
                         <source media="(prefers-reduced-motion: no-preference)" srcset="{{it.account.avatar}}">
-                        <img alt="@{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}} avatar" src="{{it.account.avatar_static}}" class="comment-avatar u-photo">
+                        <img alt="@{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}} avatar" src="{{it.account.avatar_static}}" class="comment-avatar">
                     </picture>
                 </a>
             </div>
             <div class="level-item">
                 <header>
-                    <p class="is-size-4 author p-name">
+                    <p class="is-size-4 author">
                         {{@if(it.account.display_name.length > 0)}}
                             {{@emojify(it.account.display_name,it.account.emojis) /}}
                         {{#else}}
@@ -27,7 +27,7 @@
                         <a rel="external nofollow"
                             title="{{@if(it.is_op)}}Blog post author; {{/if}}@{{it.account.dispuser[0]}}@{{it.account.dispuser[1]}}" 
                             href="{{it.account.url}}"
-                            class="instance u-url {{@if(it.is_op)}} op{{/if}}">
+                            class="instance {{@if(it.is_op)}} op{{/if}}">
                                 @{{it.account.dispuser[0]}}&ZeroWidthSpace;@{{it.account.dispuser[1]}}
                         </a></div>
                     </p>
@@ -36,18 +36,17 @@
         </div>
         <div class="level-right">
             <div class="level-item">
-                <a rel="external nofollow" class="link u-url" title="View comment at {{it.account.dispuser[1]}}"
+                <a rel="external nofollow" class="link" title="View comment at {{it.account.dispuser[1]}}"
                     href="{{it.url}}">
                     <span class="icon-text">
                     <span class="icon"><i class="far fa-clock"></i></span>
                     <span><time datetime="{{it.created_at}}">{{it.fmtdate}}</time></span>
                     </span>
                 </a>
-                {{@if(it.is_reply)}}<a class="u-in-reply-to" style="display: none;" href="{{it.in_reply_to_url}}"></a>{{/if}}
             </div>
         </div>
     </nav>
-    <main class="p-content">
+    <main>
         {{@emojify(it.content,it.emojis) /}}
     </main>
     <footer id="replies-{{it.id}}"></footer>
