@@ -1,1 +1,1 @@
-{% if article.tags %}<p>tags: {% for tag in article.tags %}<a class="tag" href="/{{ tag.url }}">{{ tag | escape }}</a> {% endfor %}</p>{% endif %}
+{% if article.tags %}<p>tags: {% for tag in article.tags %}<a class="tag p-category" href="/{{ tag.url }}">{{ tag | escape }}</a> {% endfor %}</p>{% endif %}

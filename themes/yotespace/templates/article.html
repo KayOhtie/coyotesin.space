@@ -27,23 +27,23 @@
 {% endblock %}
 
 {% block content %}
-<div class="card">
+<div class="card h-entry">
 	<div class="header p-5">
-		<p class="title is-3">
+		<p class="title is-3 p-name">
 			{% if article.series %}
 				{{ article.series.name }} - {{ article.series.index }}.
 			{% endif %}
 			{{ article.title }}
 		</p>
 		<p class="title subtitle is-5">
-			<time datetime="{{ article.date.isoformat() }}">
+			<time class="dt-published" datetime="{{ article.date.isoformat() }}">
 					{{ article.date|strftime('%a %d %b %Y @ %-I:%M %p') }}
 			</time>
 		</p>
 		{% if article.modified is defined %}
 		<p class="subtitle is-6">
 			<em>
-				<time class="time" datetime="{{ article.modified.isoformat() }}">
+				<time class="time dt-updated" datetime="{{ article.modified.isoformat() }}">
 					{{ article.modified|strftime('%a %d %b %Y @ %-I:%M %p') }}
 				</time>
 				<i class="far fa-clock" title="last modified"></i>*
@@ -51,9 +51,15 @@
 		</p>
 		{% endif %}
 		{% include 'series_paginator.html' %}
+		<span style="display: none;" hidden="from-humans">
+		<span class="p-summary" hidden="from-humans">{{ article.summary }}</span>
+		<span class="p-author h-card" hidden="from-humans">{% include "hcard.html" %}</span>
+		<span class="u-url" hidden="from-humans">https://coyotesin.space/{{ article.url }}</span>
+		<a class="u-bridgy-fed" rel="webmention" href="https://fed.brid.gy/" hidden="from-humans"></a>
+		</span>
 	</div>
 	<div class="content article p-5">
-		{{ article.content }}
+		<span class="e-content">{{ article.content }}</span>
 		{% if not article.series %}
 		{% include 'taglist.html' %}
 		{% endif %}

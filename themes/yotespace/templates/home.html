@@ -4,10 +4,11 @@
 
 {% block richmeta %}
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{{ SITENAME }}" />
-<meta property="og:description" content="Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly. " />
+<meta name="title" property="og:title" content="{{ SITENAME }}" />
+<meta name="description" property="og:description" content="Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly." />
 <meta property="og:url" content="https://coyotesin.space" />
-<meta property="og:image" content="https://coyotesin.space/images/banner.png" />
+<meta name="image" property="og:image" content="https://coyotesin.space/images/banner.png" />
+<meta name="author" property="og:author" content="Kay Ohtie" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}" />
 {% endblock %}
@@ -16,52 +17,58 @@
   <meta name="url" content="" />
 </head>
 {% block precontent %}
-<div class="level">
-  <div class="has-text-centered level-left">
-    <img class="banner" src="{{ SITEURL }}/images/banner_new.png" alt="Kay Ohtie floating in space happily">
-    <!-- Artwork credit to https://twitter.com/fans_tastic as a really amazing birthday present <3 -->
-  </div>
+<div class="h-card">
+  <div class="level">
+    <div class="has-text-centered level-left">
+      <img class="banner u-featured" src="{{ SITEURL }}/images/banner_new.png" alt="Kay Ohtie floating in space happily">
+      <!-- Artwork credit to https://twitter.com/fans_tastic as a really amazing birthday present <3 -->
+    </div>
 
-  <div class="column level-right">
-    <h1 class="title">
-      coyotes in space
-    </h1>
-    <p>
-      Hello! I go by Kay, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly.
-    </p>
-    <p>
-      <br>
-    {% set category, cat_articles = (categories | selectattr(0, 'equalto', 'blog') |  first) %}
-    {% set home_article = cat_articles[0] %}
-		<a href="/{{ home_article.url }}"><span class="subtitle">{{ home_article.title }}</span> -- 
-      {% if home_article.modified is defined %}
-        <i class="far fa-clock" title="last modified {{ home_article.modified|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}"></i>*
-      {% endif %}
-      <time datetime="{{ home_article.date.isoformat() }}">{{ home_article.date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
-    </a>
-		<div class="content p-3">{{ home_article.summary }}<a href="/{{ home_article.url }}" class="link">Read more...</a> </div>
-    </p>
-    
-    <p>
-      <a class="link" href="/category/blog.html"><i class="fas fa-rss-square" title="rss-square"></i> blog index</a>
-    </p>
+    <div class="column level-right">
+      <h1 class="title">
+        coyotes in space
+      </h1>
+      <p class="p-note">
+        Hello! I go by <span class="p-given-name">Kay</span>, and I travel the interwebs with a balloon coyote as my avatar. I don't bite, hard at least, and try to be very friendly.
+      </p>
+      <p>
+        <br>
+      {% set category, cat_articles = (categories | selectattr(0, 'equalto', 'blog') |  first) %}
+      {% set home_article = cat_articles[0] %}
+      <a href="/{{ home_article.url }}"><span class="subtitle">{{ home_article.title }}</span> -- 
+        {% if home_article.modified is defined %}
+          <i class="far fa-clock" title="last modified {{ home_article.modified|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}"></i>*
+        {% endif %}
+        <time datetime="{{ home_article.date.isoformat() }}">{{ home_article.date|strftime('%a %d %b %Y @ %-I:%M %p %Z') }}</time> 
+      </a>
+      <div class="content p-3">{{ home_article.summary }}<a href="/{{ home_article.url }}" class="link">Read more...</a> </div>
+      </p>
+      
+      <p>
+        <a class="link" href="/category/blog.html"><i class="fas fa-rss-square" title="rss-square"></i> blog index</a>
+      </p>
+    </div>
   </div>
+  <nav class="level">
+    {% for name, link in SOCIAL %}
+    <p class="level-item has-text-centered">
+      <a class="link" href="{{ link }}" rel="me"><i class="fab fa-{{ name|lower }}" title="{{ name }}"></i> {{ name }}</a>
+    </p>  
+    {% endfor %}
+    <p class="level-item has-text-centered">
+      <a class="link" href="https://fursona.directory/@KayOhtie" rel="me"><i class="pelimoji pelimoji-paw_print" aria-label="paw_print" title="paw_print"></i> Fursona.Directory</a>
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link u-key" rel="me" href="https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340">
+        <i class="pelimoji pelimoji-keyoxide_shape" aria-label="keyoxide_shape" title="keyoxide_shape"></i> Keyoxide
+      </a>
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link" href="https://ko-fi.com/kayohtie" rel="me">
+        <i class="pelimoji pelimoji-kofi_shape" aria-label="kofi_shape" title="kofi_shape"></i> Ko-fi
+      </a>
+    </p>
+  </nav>
+{% include "hcard.html" %}
 </div>
-<nav class="level">
-  {% for name, link in SOCIAL %}
-  <p class="level-item has-text-centered">
-    <a class="link" href="{{ link }}"><i class="fab fa-{{ name|lower }}" title="{{ name }}"></i> {{ name }}</a>
-  </p>
-  {% endfor %}
-  <p class="level-item has-text-centered">
-    <a class="link" href="https://keyoxide.org/hkp/EF9328927969D342939BBB2718817244ED315340">
-      <i class="pelimoji pelimoji-keyoxide_shape" aria-label="keyoxide_shape" title="keyoxide_shape"></i> Keyoxide
-    </a>
-  </p>
-  <p class="level-item has-text-centered">
-    <a class="link" href="https://ko-fi.com/kayohtie">
-      <i class="pelimoji pelimoji-kofi_shape" aria-label="kofi_shape" title="kofi_shape"></i> Ko-fi
-    </a>
-  </p>
-</nav>
 {% endblock %}

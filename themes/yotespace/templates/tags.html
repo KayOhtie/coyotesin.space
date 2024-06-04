@@ -5,6 +5,6 @@
 {% block content %}
 <h1 class="subtitle">Tags for {{ SITENAME }}</h1>
 {% for tag, articles in tags|sort %}
-    <span class="tag has-text-grey"><a class="has-text-dark" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li></span><br>
+    <span class="tag has-text-grey"><a class="has-text-dark p-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li></span><br>
 {% endfor %}
 {% endblock %}

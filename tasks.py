@@ -7,10 +7,14 @@ import datetime
 from livereload import Server as LiveServer
 from invoke import task
 from invoke.main import program
-from invoke.util import cd
+# from invoke.util import cd
 from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
+from pelican.contents import Article
+from pelican.readers import MarkdownReader
+from webmentiontools.send import WebmentionSend
+from time import sleep
 
 OPEN_BROWSER_ON_SERVE = True
 SETTINGS_FILE_BASE = "pelicanconf.py"
@@ -154,6 +158,23 @@ def gh_pages(c):
         "-m {commit_message}' "
         "{deploy_path} -p".format(**CONFIG)
     )
+
+@task(optional=['log'])
+def wm_notify(c, path = None):
+    """Send webmention to configured URL"""
+    assert path is not None, "Path required."
+    SETTINGS.update(get_settings_from_file(CONFIG['settings_publish']))
+    r = MarkdownReader(settings=SETTINGS)
+    c,m = r.read(path)
+    a = Article(content=c, metadata=m, settings=SETTINGS, source_path=path)
+    source = f"{SETTINGS['SITEURL']}/{a.url}"
+    target = SETTINGS['WEBMENTION_NOTIFY']
+    mention = WebmentionSend(source,target)
+    res = mention.send()
+    if res:
+        print(f"Successfully notified {target} of update to {source}.")
+    else:
+        print(f"Could not notify of update to {source}")
 
 def pelican_run(cmd):
     cmd += " " + program.core.remainder  # allows to pass-through args to pelican

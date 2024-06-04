@@ -16,6 +16,6 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
-
+WEBMENTION_NOTIFY = 'https://fed.brid.gy'
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
