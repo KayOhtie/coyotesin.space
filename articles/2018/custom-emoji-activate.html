@@ -5,20 +5,16 @@
   <title>Coyotes in Space
  - Custom Emoji, Activate!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.min.css?bd809d1a">
+  <link rel="stylesheet" href="/css/style.min.css?d72e8bcf">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   <script src="/js/packed.js?1143e2c8" type="text/javascript"></script>
-    <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
+  <!-- Favicon content generated from realfavicongenerator.net and was stupid easy for real use them, this stuff is hard to generate! -->
   <!-- Credit for the favicon goes to Dzuk at https://noct.zone -->
   <!-- BEGIN favicon content -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b2fdf">
-  <link rel="alternate" type="application/atom+xml" title="ATOM feed for coyotesin.space" href="/feeds/atom.xml" />
-  <meta name="msapplication-TileColor" content="#4b2fdf">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="related" type="application/atom+xml" href="/feeds/blog.atom.xml" />
   <meta name="theme-color" content="#4b2fdf">
+  <!-- END favicon content -->
 <meta property="og:type" content="article" />
 <meta property="og:article:published_time" content="2018-10-25 23:14:00-05:00" />
 <meta property="og:article:author" content="Kay Ohtie" />
@@ -31,7 +27,6 @@
 <meta property="og:url" content="https://coyotesin.space/articles/2018/custom-emoji-activate.html" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="" />
-  <!-- END favicon content -->
 </head>
 <body>
   <section class="section">
@@ -39,22 +34,36 @@
 <h1 class="title">
   <a href="/">coyotes in space</a>
 </h1>
-<div class="card">
+<div class="card h-entry">
 	<div class="header pt-5 pl-5 pr-5">
-		<p class="title is-3">
+		<p class="title is-3 p-name">
 			Custom Emoji, Activate!
 		</p>
 			<p class="title subtitle is-5">
-				<time datetime="2018-10-25T23:14:00-05:00">
+				<time class="dt-published" datetime="2018-10-25T23:14:00-05:00">
 						Thu 25 Oct 2018 @ 11:14 PM
 				</time>
 			</p>
+		<span style="display: none;" hidden="from-humans">
+		<span class="p-summary" hidden="from-humans"><p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
+<p>This is based roughly off of Mastodon's CSS implementation using emojione. The script implementing this scours a setting directory for …</p></span>
+		<span class="p-author h-card" hidden="from-humans">  <div style="display: none;" hidden="from-humans">
+    <!-- h-card data -->
+    <a class="p-name u-url" rel="me" href="https://coyotesin.space">Kay Ohtie</a>
+    <img class="u-photo" src="https://coyotesin.space/images/avatar.png" hidden="from-humans" />
+    <span class="p-gender-identity">Male</span>
+    <span class="p-label">Balloon Coyote</span>
+
+  </div></span>
+		<span class="u-url" hidden="from-humans">https://coyotesin.space/articles/2018/custom-emoji-activate.html</span>
+		<a class="u-bridgy-fed" rel="webmention" href="https://fed.brid.gy/" hidden="from-humans"></a>
+		</span>
 	</div>
 	<div class="content article p-5">
-		<p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
+		<span class="e-content"><p>Oh hey, I just wanted to say, custom emoji work! <i class="pelimoji pelimoji-kay_grinning" aria-label="kay_grinning" title="kay_grinning"></i> I call it Pelimoji, a plugin for Pelican to allow simple replacement of colon-called emoji stored in a pre-defined directory.</p>
 <p>This is based roughly off of Mastodon's CSS implementation using emojione. The script implementing this scours a setting directory for <code>.png</code> files, and then builds a list of those based on filename, so replacements are done using the filename minus the png, such as &#58;kay_grinning&#58; for the emoji in the opening! I'll try not to<i class="pelimoji pelimoji-bike_pump" aria-label="bike_pump" title="bike_pump"></i>this too much but it's very fun to have this working and usable.</p>
-<p>This is based roughly off of the old replacer plugin for Pelican, functioning the same way but completely rewritten to make use of settings and building its own list for replacements to search for. The messy part is this requires scouring EVERY HTML file on write, but it works in the end. I'll have to find a nicer way to hook into this pre-write during the actual HTML-ization.</p>
-<p>tags: <a class="tag" href="/tag/website.html">website</a> <a class="tag" href="/tag/tech.html">tech</a> <a class="tag" href="/tag/emoji.html">emoji</a> <a class="tag" href="/tag/mastodon.html">mastodon</a> </p>	</div>
+<p>This is based roughly off of the old replacer plugin for Pelican, functioning the same way but completely rewritten to make use of settings and building its own list for replacements to search for. The messy part is this requires scouring EVERY HTML file on write, but it works in the end. I'll have to find a nicer way to hook into this pre-write during the actual HTML-ization.</p></span>
+<p>tags: <a class="tag p-category" href="/tag/website.html">website</a> <a class="tag p-category" href="/tag/tech.html">tech</a> <a class="tag p-category" href="/tag/emoji.html">emoji</a> <a class="tag p-category" href="/tag/mastodon.html">mastodon</a> </p>	</div>
 	<footer class="article-footer">
 		<p class="card-footer-item">
 			<a class="link" href="/category/blog.html">Back to index of articles</a>
@@ -65,18 +74,23 @@
   </section>
   <nav class="level">
     <p class="level-item has-text-centered">
+      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/badges.html">Badges</a>
     </p>
     <p class="level-item has-text-centered">
+      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/avatar-retexture-commissions.html">Avatar Retexture Commissions</a>
     </p>
     <p class="level-item has-text-centered">
+      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/index.html">Home</a>
     </p>
     <p class="level-item has-text-centered">
+      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/stories.html">Stories</a>
     </p>
     <p class="level-item has-text-centered">
+      <a rel="webmention" href="https://fed.brid.gy"></a>
       <a class="link" href="/pages/sundry-details.html">Sundry Details</a>
     </p>
   </nav>
