@@ -14,9 +14,9 @@ That is an e-paper badge I built! I came up with the design and had a proof-of-c
 
 The badge is comprised of the following components:
 
- - [Waveshare 2.9" 3-color e-Paper display 🔗](https://www.waveshare.com/product/modules/oleds-lcds/e-paper/2.9inch-e-paper-module-c.htm)
- - [Adafruit Feather M0 Adalogger 🔗](https://www.adafruit.com/product/2796)
- - [150 mAh battery 🔗](https://www.adafruit.com/product/1317)
+ - [Waveshare 2.9" 3-color e-Paper display](https://www.waveshare.com/product/modules/oleds-lcds/e-paper/2.9inch-e-paper-module-c.htm)
+ - [Adafruit Feather M0 Adalogger](https://www.adafruit.com/product/2796)
+ - [150 mAh battery](https://www.adafruit.com/product/1317)
  - 3D-printed backing
  - Button
  - 1GB microSD card
@@ -32,7 +32,7 @@ Speaking of images...
 
 <hr>
 
-### [Barnem 🔗](https://www.furaffinity.net/user/barnem)
+### [Barnem](https://www.furaffinity.net/user/barnem)
 
 These were really my first e-paper badges, done as a proof of concept for me by my wonderful friend Barnem, and they're very cute! The blushy first one was designed around a smaller display I started to use with a Raspberry Pi Zero, but opted for the larger display powered by a Cortex M0 instead.
 
@@ -40,7 +40,7 @@ These were really my first e-paper badges, done as a proof of concept for me by 
 
 <hr>
 
-### [Kit Sovereign 🔗](https://furaffinity.net/user/kitsovereign)
+### [Kit Sovereign](https://furaffinity.net/user/kitsovereign)
 
 Kit did the first full-display image last year, taking advantage of every pixel for a fun effect!
 
@@ -48,7 +48,7 @@ Kit did the first full-display image last year, taking advantage of every pixel 
 
 <hr>
 
-### [Frengers 🔗](https://www.furaffinity.net/user/frengers)
+### [Frengers](https://www.furaffinity.net/user/frengers)
 
 One of my new badges this year! Frengers has done some pixel work in the past, and did an incredible job on this limited-palette image! The dithering to get the hair color as almost a 4th color is great! Much thanks for their work!
 
@@ -56,7 +56,7 @@ One of my new badges this year! Frengers has done some pixel work in the past, a
 
 <hr>
 
-### [Reluctant Draggin 🔗](https://www.furaffinity.net/user/reluctantdraggin/)
+### [Reluctant Draggin](https://www.furaffinity.net/user/reluctantdraggin/)
 
 I reached out to Reluctant to see if he'd be down for doing a badge, and he wasn't remotely reluctant to do it! Is this false advertising? Cute blimpiness either way!
 
