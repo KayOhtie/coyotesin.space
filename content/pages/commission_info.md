@@ -45,7 +45,7 @@ Please note you must own a copy of the bases used in your commission. Exported p
     - [clothing and piercing bundles](https://juliawinterpaw.gumroad.com/l/canine)
     - [Morghus' Masc Canine Hoodie](https://morghus.gumroad.com/l/winterpawcaninehoodie)
 - [Winterpaw Fem Canine](https://juliawinterpaw.gumroad.com/l/vrchatcanine)
-- [Nicoreda's Snoggodal](https://nicoreda.gumroad.com/l/snoggodal) (snake+dog hybrid)
+- [Zephyxus' ZWerewolf](https://zephyxus.gumroad.com/l/ZWerewolf)
 - [Soap Dogs](https://ironicsoap.gumroad.com/l/SoapDogs)
 	- [Clothing DLC Pack 1](https://ironicsoap.gumroad.com/l/catclothes)
 - [Ozlo Squeakfox V3](https://ozlofox.gumroad.com/l/squeakfox_v3)
@@ -64,11 +64,16 @@ These items fit multiple Winterpaw canines:
 - [Winterpaw's VRChat Cat](https://juliawinterpaw.gumroad.com/l/vrchatcat)
 - [Nicoreda's Felidal](https://nicoreda.gumroad.com/l/felidal)
 
-### Other Species
+### Dragons
 
 - [Nardoragon](https://nardoiri.gumroad.com/l/Nardoragon) and expanded versions
 - [Nicoreda's Dergotoy](https://nicoreda.gumroad.com/l/dergotoy)
+- [Stripe's Moonfang Dragon](https://scritt.gumroad.com/l/Moonfang)
+
+### Other Species
+
 - [Nicoreda's Protogen (protodal)](https://nicoreda.gumroad.com/l/protodal)
+- [Nicoreda's Snoggodal](https://nicoreda.gumroad.com/l/snoggodal)
 - [Bento's VRChat Tanuki](https://bentobox.gumroad.com/l/TanukiVR)
 
 ### Accessories
