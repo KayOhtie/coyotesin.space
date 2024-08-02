@@ -1,1 +1,21 @@
-./fursona.json
+{
+    "sonas": [
+        {
+            "name": "Kay Ohtie",
+            "pronouns": "He/Him",
+            "gender": "Male",
+            "species": "Inflatable Coyote",
+            "description": "A cartoony coyote made of latex and air and bouncy happiness.",
+            "ref": "https://files.sqkyote.me/s/KayOhtieRefUpdated",
+            "avatar": "https://mediacdn.blimps.xyz/accounts/avatars/110/460/862/826/700/846/original/13c4889fb6af87ed.jpg",
+            "age": 35,
+            "colors": [
+                "#c27b31",
+                "#d3ae7a",
+                "#481d09",
+                "#602900",
+                "#c46200"
+            ]
+        }
+    ]
+}
