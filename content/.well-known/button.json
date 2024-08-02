@@ -1,0 +1,13 @@
+{
+    "$schema": "https://codeberg.org/LunarEclipse/well-known-button/raw/branch/main/drafts/button-2024-06.schema.json",
+    "default": "coyotesin.space",
+    "buttons": [
+        {
+            "id": "coyotesin.space",
+            "uri": "https://coyotesin.space/88x31.gif",
+            "alt": "Button to Coyotes in Space, Kay Ohtie's Website",
+            "link": "https://coyotesin.space",
+            "sha256": "e2a78864a9ea58aa02504718c92cad328849fdfc6d56218ae39bd01f2488ab6a"
+        }
+    ]
+}
