@@ -2,7 +2,7 @@ pelican<5.0.0
 webassets<3.0
 jsmin<4.0.0
 cssmin<0.3.0
-libsass==0.22.0
+libsass==0.23.0
 Markdown<3.7
 pelimoji
 pelican-webassets
