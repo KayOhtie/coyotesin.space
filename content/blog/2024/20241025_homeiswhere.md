@@ -1,6 +1,7 @@
 Title:Home is where...
 Date:2024-10-25 2:07 PM
 Tags:home,love,thoughts
+Status: draft
 ### Visiting Home
 
 I recently visited my parents as a quick trip to see just them. They still live in my home city, though a distance from where I grew up. It was a little emotional as I opened up about some feelings with them, past, trauma I've begun to heal from -- some inadvertently caused by them.
