@@ -32,7 +32,7 @@ CONFIG = {
     "github_pages_branch": "gh-pages",
     "commit_message": f"\"Publish site on {datetime.date.today().isoformat()}\"",
     # Host and port for `serve`
-    "host": "0.0.0.0",
+    "host": "127.0.0.1",
     "port": 8000,
     "site_domain": SETTINGS["SITE_DOMAIN"]
 }
