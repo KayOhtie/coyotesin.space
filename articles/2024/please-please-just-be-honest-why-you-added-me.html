@@ -86,6 +86,79 @@
 <p>Just be honest and direct. And if you really, <em>really</em> don't know why you added me other than "to be friends" -- I'm sorry, I don't know what to tell you other than I do not have the brain space to forge a friendship out of trying to find something in common for you. You came to me, you need to bring something to the table here, that's only fair to me.</p>
 <p>I know this is venty and stupid but I'm just stunned with how this has happened several times and I never can tell which is a scammer who's claiming they're not early on so they can ask me to test their game in a week or what. Argh.</p></span>
 <p>tags: <a class="tag p-category" href="/tag/messengers.html">messengers</a> <a class="tag p-category" href="/tag/discord.html">discord</a> <a class="tag p-category" href="/tag/chat.html">chat</a> </p>	</div>
+<script>
+    var templComment = "";
+    function evalTemplate(template) {
+        if (template.startsWith('<!-- emoji')) {
+            Sqrl.templates.define('emoji',Sqrl.compile(template)); 
+            Sqrl.helpers.define('emojify', (content, blocks) => {
+                let output = content.params[0];
+                content.params[1].forEach((emoji) => {
+                    output = output.replace(`:${emoji.shortcode}:`, Sqrl.render("{{@include('emoji',it) /}}",emoji));
+                });
+                return output;
+            });
+        } else {
+            templComment = template
+        }
+    }
+    function renderComments() {
+        fetch('https://blimps.xyz/api/v1/statuses/113431874307656722/context')
+        .then(resp => resp.json())
+        .then((data) => { 
+            if (Object.hasOwn(data,'descendants') && (data['descendants'].length>0)) {
+                let commentSection = document.getElementById('comments-container');
+                data['descendants'].forEach((comment) => {
+                    comment['is_op'] = (comment.account.acct == "KayOhtie");
+                    comment['is_reply'] = (comment.in_reply_to_id !== '113431874307656722');
+                    comment['fmtdate'] = new Date( comment.created_at ).toLocaleString(undefined,
+                        {dateStyle:"long",timeStyle:"short"});
+                    if (!comment.account.acct.includes("@")) {
+                        comment.account['dispuser'] = [comment.account.acct, 'blimps.xyz'];
+                    } else {
+                        comment.account['dispuser'] = comment.account.acct.split('@');
+                    }
+                    var renderedComment = Sqrl.render(templComment, comment);
+                    if (!comment.is_reply) {
+                        commentSection.innerHTML += renderedComment;
+                    } else {
+                        try {
+                            document.getElementById(`replies-${comment.in_reply_to_id}`).innerHTML += renderedComment;
+                        } catch {
+                            commentSection.innerHTML += renderedComment;
+                        }
+                    }
+                }); 
+            } 
+        }); 
+    }
+    function prepareRender() {
+        const urls = ['/templates/comment.sqrl','/templates/emoji.sqrl'];
+        Promise.all(urls.map(u => fetch(u)
+            .then(response => response.text())
+            .then(template => evalTemplate(template)) 
+        ))
+        .finally(() => {renderComments();});
+    }
+</script>
+<div id="comments-header" class="container is-max-widescreen">
+    <header>
+        <p class="card-header-title is-size-4">Comments</p>
+    </header>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://blimps.xyz/@KayOhtie/113431874307656722">the original post</a> on Mastodon.</p></noscript>
+    <noscript>You need JavaScript to view the comments.</noscript>
+    <p class="mb-3 ml-3">
+        <a rel="syndication" class="u-syndication" href="https://blimps.xyz/@KayOhtie/113431874307656722" class="button is-black">
+            <span class="icon-text">
+                <span class="icon"><i class="fab fa-mastodon"></i></span>
+                <span>Leave a comment</span>
+            </span>
+        </a>
+    </p>
+    <div id="comments-container" class="mastodon-comment-content"></div>
+</div>
+
+<script>prepareRender();</script>
 	<footer class="article-footer">
 		<p class="card-footer-item">
 			<a class="link" href="/category/blog.html">Back to index of articles</a>
