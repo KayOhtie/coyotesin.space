@@ -2,8 +2,8 @@ Title:Please, please just be honest why you added me
 Date:2024-11-05 11:58 AM
 Tags:messengers,discord,chat
 fedi_comment_url:https://blimps.xyz/@KayOhtie/113431874307656722
-Fore-warning, I basically completely disregard fanfare and repeatedly mention the concept of someone, anyone, getting off, because I wish they'd be honest they want that.
 status: draft
+Fore-warning, I basically completely disregard fanfare and repeatedly mention the concept of someone, anyone, getting off, because I wish they'd be honest they want that.
 -----
 
 Look, I literally do not care if:
