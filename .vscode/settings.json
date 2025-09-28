@@ -2,5 +2,6 @@
     "files.associations": {
         "*.html": "jinja-html",
         "*.sqrl": "jinja-html"
-      }
+      },
+      "makefile.configureOnOpen": false
 }
