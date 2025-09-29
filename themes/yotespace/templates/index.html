@@ -3,8 +3,15 @@
 {% block title %}{{ SITENAME }}{% endblock %}
 
 {% block richmeta %}
+{% set articles = articles_page.object_list %}
+{% set is_story = 'story' in articles[0].tags %}
+{% if is_story %}
+<meta property="og:title" content="{{ articles[0].series.name }} - Chapters" />
+<meta property="og:description" content="{{ articles[0].series_summary }}" />
+{% else %}
 <meta property="og:title" content="{{ SITENAME }} - Blog Index" />
 <meta property="og:description" content="Blog posts from coyotesin.space" />
+{% endif %}
 {% endblock %}
 
 {% block content %}
