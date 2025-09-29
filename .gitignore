@@ -10,3 +10,4 @@ content/emoji_map
 node_modules/
 cache/
 plugins/
+.python-version
