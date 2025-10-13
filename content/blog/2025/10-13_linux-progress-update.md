@@ -1,0 +1,5 @@
+Still happy so far with Bazzite but I ran into a strange game bug I may reboot to Windows to verify -- Dishonored is somewhat broken now. Just getting off the ship, Geoff Curnow gets stuck trying to walk the exit ramp. And until I changed some things Emily wouldn't look for Corvo. Very strange stuff. Sunshine works but I had a weird green bar at the bottom on the client PC, and it tried to use my secondary, portrait display instead of primary o.O I'm sure I can adjust that somehow.
+
+Next: plugin forks for Stream Deck Controller to allow me to select alternate state icons for sources or scenes to toggle visibly which is active, WITHOUT doing weird state switch stuff in the software that misbehaves. I'm happy Open Deck has some good features for using other plugins but it's very buggy and keeps becoming unusable in UI for most things. May remove all plugins I'm not using and try and fork/update ones for the Python software I'm using instead.
+
+Lastly
